@@ -1,0 +1,9 @@
+version: '2'
+services:
+  server:
+    build:
+      context: server
+    volumes:
+      - ./server/html:/var/www/html
+    ports:
+      - 8080:80
