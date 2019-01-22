@@ -1,0 +1,16 @@
+dist: xenial
+matrix:
+  include:
+    - language: php
+      php:
+        - 7.3
+      before_script:
+        - composer require -d server --dev phpunit/phpunit ^7
+      script: ./server/vendor/bin/phpunit --bootstrap ./server/vendor/autoload.php ./server/tests/ --whitelist ./server/html/classes/ --coverage-text
+      notifications:
+        email:
+          recipients:
+            - doriann.corlouer@epitech.eu
+            - quentin.santos@epitech.eu
+        on_success: never
+        on_failure: always
