@@ -4,7 +4,7 @@
             "outputFile": "/home/vemassa/Epitech_2019/DEV_area_2018/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/vemassa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b97f8494942d71d5ce84612f990adecd/res/values-v24/values-v24.xml",
+                    "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e2b0aa12f471f19c80ec93c87e961bd1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
