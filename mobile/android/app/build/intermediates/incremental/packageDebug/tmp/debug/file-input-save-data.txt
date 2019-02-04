@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Feb 04 15:32:13 CET 2019
+#Mon Feb 04 15:55:46 CET 2019
 23.set=NATIVE_RESOURCE
 2.base=/home/vemassa/Epitech_2019/DEV_area_2018/mobile/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 15.set=NATIVE_RESOURCE
