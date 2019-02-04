@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {AppRegistry} from 'react-native';
 import App from './App';
 import React from 'react';
@@ -14,3 +15,12 @@ const RNRedux = () => (
   )
   
 AppRegistry.registerComponent(appName, () => RNRedux)
+=======
+/** @format */
+
+import {AppRegistry} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
+
+AppRegistry.registerComponent(appName, () => App);
+>>>>>>> 9f138f6b3b53e19da4456b928560bf55e05cb272
