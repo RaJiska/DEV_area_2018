@@ -1,4 +1,5 @@
 <<<<<<< dev
+<<<<<<< dev
 function fetchUser() {
     return dispatch => {
       dispatch()
@@ -20,6 +21,9 @@ function receiveUserDetails() {
     }
 }
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> feat(redux): add complete redux architecture
 // Action file define functions that are called by components to modify store variables
 
 export const fetchUser = () => {
@@ -46,4 +50,29 @@ export const receiveUser = (json) => {
         }
     }
 };
+<<<<<<< dev
 >>>>>>> feat(redux): add basic redux architecture"
+=======
+=======
+function fetchUser() {
+    return dispatch => {
+      dispatch()
+      return fetch(`https://randomuser.me/api/`)
+        .then(response => response.json())
+        .then(json => dispatch(receiveUserDetails(json)))
+    }
+}
+
+function requestUserDetails() {
+    return {
+        type: 'REQUEST_USER_DETAILS'
+    }
+}
+
+function receiveUserDetails() {
+    return {
+        type: 'RECEIVE_USER_DETAILS'
+    }
+}
+>>>>>>> 5c602a7... feat(redux): add complete redux architecture
+>>>>>>> feat(redux): add complete redux architecture
