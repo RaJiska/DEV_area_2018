@@ -1,4 +1,6 @@
 <?php
+require_once('config/config.php');
+
 class Page
 {
 	public $title;
@@ -8,10 +10,5 @@ class Page
 	{
 		$this->title = $title;
 		$this->path = $path;
-	}
-
-	public function load()
-	{
-		require_once($this->path);
 	}
 }
