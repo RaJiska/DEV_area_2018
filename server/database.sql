@@ -7,8 +7,6 @@ CREATE TABLE users (
 	email CHAR(255) NOT NULL,
 	username CHAR(255) NOT NULL,
 	pwd CHAR(255) NOT NULL,
-	imgur_access_token CHAR(255),
-	imgur_refresh_token CHAR(255),
 	enabled TINYINT(1) NOT NULL,
 	PRIMARY KEY(id),
 	UNIQUE(email),
