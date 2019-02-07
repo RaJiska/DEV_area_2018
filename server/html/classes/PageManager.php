@@ -19,6 +19,9 @@ class PageManager
 		case 'about':
 			$this->Page = new PageJSON('About', 'pages/about.php');
 			break;
+		case 'registerUser':
+			$this->Page = new PageJSON('About', 'pages/registerUser.php');
+			break;
 		default:
 			$this->Page = new PageHTML('404', 'pages/status/404.php');
 		}

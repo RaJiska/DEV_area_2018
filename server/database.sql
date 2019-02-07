@@ -4,8 +4,15 @@ GRANT ALL PRIVILEGES ON area.* TO 'area'@'localhost' IDENTIFIED BY 'hello';
 USE area;
 CREATE TABLE users (
 	id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
-
-	PRIMARY KEY(id)
+	email CHAR(255) NOT NULL,
+	username CHAR(255) NOT NULL,
+	pwd CHAR(255) NOT NULL,
+	imgur_access_token CHAR(255),
+	imgur_refresh_token CHAR(255),
+	enabled TINYINT(1) NOT NULL,
+	PRIMARY KEY(id),
+	UNIQUE(email),
+	UNIQUE(username)
 );
 
 CREATE TABLE services (
