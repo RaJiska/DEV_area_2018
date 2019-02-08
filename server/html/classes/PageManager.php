@@ -11,13 +11,13 @@ class PageManager
 		switch ($page)
 		{
 		case null:
-			$this->Page = new PageHTML('', 'pages/home.php');
+			$this->Page = new PageHTML('', 'pages/home.php', "test");
 			break;
 		case 'jsonexample':
-			$this->Page = new PageJSON('JSON Example', 'pages/jsonexample.php');
+			$this->Page = new PageJSON('JSON Example', 'pages/jsonexample.php', 'test');
 			break;
 		case 'about':
-			$this->Page = new PageJSON('About', 'pages/about.php');
+			$this->Page = new PageJSON('About', 'pages/about.php', null);
 			break;
 		case 'user':
 			$this->Page = new PageJSON('user', 'pages/user.php');

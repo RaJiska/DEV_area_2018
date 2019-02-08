@@ -1,2 +1,11 @@
 <?php
-echo json_encode(["Hello" => ["A", "B", "C"], "World", 1]);
+
+function testGET()
+{
+	echo json_encode("GET");
+}
+
+function testPOST()
+{
+	echo json_encode("POST");
+}
