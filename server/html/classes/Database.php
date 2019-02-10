@@ -1,8 +1,9 @@
 <?php
+require_once 'scripts/json.php';
 
 class Database extends PDO
 {
-	public function __construct()
+	public function __construct($json = true, $throw = false)
 	{
 		try {
 			parent::__construct(
@@ -15,7 +16,14 @@ class Database extends PDO
 			);
 		}
 		catch (PDOException $e) {
-			throw new PDOException("Database Error: " . $e->getMessage());
+			if ($throw)
+				throw new PDOException("Database Error: " . $e->getMessage());
+			else {
+				if ($json)
+					die(jsonError("Database Error: " . $e->getMessage()));
+				else
+					echo "Database Error: " . $e->getMessage();
+			}
 		}
 	}
 

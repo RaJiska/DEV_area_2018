@@ -1,21 +1,19 @@
 <?php
-require_once 'classes/Database.php';
-require_once 'classes/ManageUsers.php';
-
-$UserManager = new ManageUsers();
-$db = new Database();
-
-function GET()
-{
-	$username = isset($_GET['username']) ? $_GET['username'] : null;
-	$pwd = isset($_GET['pwd']) ? $_GET['pwd'] : null;
-	$UserManager->ConnectUser($db, $username, $pwd);
-}
+require_once 'classes/User.php';
+require_once 'scripts/json.php';
 
 function POST()
 {
-	$username = isset($_GET['username']) ? $_GET['username'] : null;
-	$email = isset($_GET['email']) ? $_GET['email'] : null;
-	$pwd = isset($_GET['pwd']) ? $_GET['pwd'] : null;
-	$UserManager->AddUser($db, $username, $email, $pwd);
+	if (!isset($_POST['login'], $_POST['pass']))
+		die(jsonError("Mandatory parameter not given"));
+	$User = new User();
+	$User->login = $_POST['login'];
+	$User->pass = $_POST['pass'];
+	try {
+		$User->insert();
+	}
+	catch (PDOException $e) {
+		die (jsonError("SQL Error: " . $e->getMessage()));
+	}
+	echo jsonMsg();
 }

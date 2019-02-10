@@ -4,20 +4,16 @@ GRANT ALL PRIVILEGES ON area.* TO 'area'@'localhost' IDENTIFIED BY 'hello';
 USE area;
 CREATE TABLE users (
 	id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
-	email CHAR(255) NOT NULL,
-	username CHAR(255) NOT NULL,
-	pwd CHAR(255) NOT NULL,
+	login VARCHAR(255) NOT NULL,
+	pass VARCHAR(255) NOT NULL,
 	enabled TINYINT(1) NOT NULL,
-	PRIMARY KEY(id),
-	UNIQUE(email),
-	UNIQUE(username)
+	PRIMARY KEY(id)
 );
 
 CREATE TABLE services (
 	id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
-	name CHAR(255) NOT NULL,
-	PRIMARY KEY(id),
-	UNIQUE (name)
+	name VARCHAR(255) NOT NULL,
+	PRIMARY KEY(id)
 );
 
 CREATE TABLE tokens (
@@ -27,3 +23,14 @@ CREATE TABLE tokens (
 	token VARCHAR(255) NOT NULL,
 	PRIMARY KEY(id)
 );
+
+INSERT INTO users (login, pass, enabled) VALUES ('Foo', 'a', 1);
+INSERT INTO users (login, pass, enabled) VALUES ('Bar', 'b', 1);
+INSERT INTO services (name) VALUES ('Facebook');
+INSERT INTO services (name) VALUES ('Imgur');
+INSERT INTO services (name) VALUES ('Yammer');
+INSERT INTO tokens (user_id, service_id, token) VALUES (1, 1, "aaaa");
+INSERT INTO tokens (user_id, service_id, token) VALUES (1, 2, "bbbb");
+INSERT INTO tokens (user_id, service_id, token) VALUES (1, 3, "cccc");
+INSERT INTO tokens (user_id, service_id, token) VALUES (2, 1, "dddd");
+INSERT INTO tokens (user_id, service_id, token) VALUES (2, 2, "eeee");

@@ -22,6 +22,9 @@ class PageManager
 		case 'user':
 			$this->Page = new PageJSON('user', 'pages/user.php');
 			break;
+		case 'token':
+			$this->Page = new PageJSON('token', 'pages/token.php');
+			break;
 		case 'services':
 			$this->Page = new PageJSON('services', 'pages/services.php');
 			break;
