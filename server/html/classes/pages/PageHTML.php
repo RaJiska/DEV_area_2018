@@ -1,5 +1,5 @@
 <?php
-require_once 'classes/Page.php';
+require_once 'classes/pages/Page.php';
 
 class PageHTML extends Page
 {

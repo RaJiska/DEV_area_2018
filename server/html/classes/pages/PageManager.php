@@ -1,6 +1,6 @@
 <?php
-require_once 'classes/PageHTML.php';
-require_once 'classes/PageJSON.php';
+require_once 'classes/pages/PageHTML.php';
+require_once 'classes/pages/PageJSON.php';
 
 class PageManager
 {

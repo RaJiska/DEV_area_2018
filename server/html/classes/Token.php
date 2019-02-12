@@ -15,8 +15,8 @@ class Token extends DatabaseObject
 			SELECT tokens.* FROM tokens
 			LEFT JOIN users ON users.id = tokens.user_id
 			LEFT JOIN services ON services.id = tokens.service_id
-			WHERE users.login = 'Foo'
-			AND services.name = 'Imgur'
+			WHERE users.login = ?
+			AND services.name = ?
 			LIMIT 1;"
 		);
                 $stmt->execute([$login, $service]);

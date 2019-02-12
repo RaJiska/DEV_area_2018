@@ -25,6 +25,7 @@ RUN \
 	mysqld --user=mysql >/dev/null 2>&1& sleep 10 && \
 	mysql -u root < /tmp/database.sql
 
+ADD composer.json /tmp/composer.json
 ADD entrypoint.sh /tmp/entrypoint.sh
 RUN chmod 700 /tmp/entrypoint.sh
 ENTRYPOINT ["/tmp/entrypoint.sh"]

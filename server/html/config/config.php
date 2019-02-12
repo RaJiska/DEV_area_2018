@@ -18,6 +18,15 @@ $config['services'] = [
 		],
 		'keyid' => '648470835603551',
 		'keysecret' => '0e6871780cfc0b82657952d2fb0ec7f3'
+	],
+	'imgur' => [
+		'brief' => [
+			'name' => 'imgur',
+			'actions' => [],
+			'reactions' => []
+		],
+		'keyid' => '',
+		'keysecret' => ''
 	]
 ];
 
