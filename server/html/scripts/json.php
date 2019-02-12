@@ -7,8 +7,8 @@ function jsonError($msg)
 
 function jsonMsg($field = null, $data = null)
 {
-	if ($field !== null)
-		return json_encode(["status" => "ok", "msg" => "Data properly served", $field => $data ], JSON_PRETTY_PRINT);
+	if ($field !== null || $data)
+		return json_encode(["status" => "ok", "msg" => "Data properly served", (($field !== null) ? $field : 'result') => $data ], JSON_PRETTY_PRINT);
 	else
 		return json_encode(["status" => "ok", "msg" => "Data properly served"], JSON_PRETTY_PRINT);
 }

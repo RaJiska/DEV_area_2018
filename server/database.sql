@@ -26,8 +26,8 @@ CREATE TABLE tokens (
 	PRIMARY KEY(id)
 );
 
-INSERT INTO users (login, pass, enabled) VALUES ('Foo', 'a', 1);
-INSERT INTO users (login, pass, enabled) VALUES ('Bar', 'b', 1);
+INSERT INTO users (login, pass, token, enabled) VALUES ('Foo', 'a', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 1);
+INSERT INTO users (login, pass, token, enabled) VALUES ('Bar', 'b', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 1);
 INSERT INTO services (name) VALUES ('Facebook');
 INSERT INTO services (name) VALUES ('Imgur');
 INSERT INTO services (name) VALUES ('Yammer');

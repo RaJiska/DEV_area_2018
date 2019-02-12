@@ -10,7 +10,7 @@ class DatabaseObject
 
 	public function __construct($Database = null)
 	{
-		$this->$Database = ($Database !== null) ? $Database : new Database();
+		$this->Database = ($Database !== null) ? $Database : new Database();
 	}
 
 	public function __get($property)

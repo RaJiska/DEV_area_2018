@@ -8,24 +8,43 @@ $config['database']['name'] = 'area';
 $config['database']['user'] = 'area';
 $config['database']['pass'] = 'hello';
 
+$config['actions'] = [
+	'actions_name' => [
+		'facebook' => [
+
+		],
+		'imgur' => [
+			'account_gallery_favorites'
+		]
+	],
+	'actions_function' => [
+		'facebook' => [
+
+		],
+		'imgur' => [
+			'req_accountGalleryFavorites'
+		]
+	]
+];
+
 /* Services */
 $config['services'] = [
 	'facebook' => [
 		'brief' => [
 			'name' => 'facebook',
-			'actions' => [],
+			'actions' => $config['actions']['actions_name']['facebook'],
 			'reactions' => []
 		],
 		'keyid' => '648470835603551',
-		'keysecret' => '0e6871780cfc0b82657952d2fb0ec7f3'
+		'keysecret' => ''
 	],
 	'imgur' => [
 		'brief' => [
 			'name' => 'imgur',
-			'actions' => [],
+			'actions' => $config['actions']['actions_name']['imgur'],
 			'reactions' => []
 		],
-		'keyid' => '',
+		'keyid' => '21cc07288d6ea72',
 		'keysecret' => ''
 	]
 ];
