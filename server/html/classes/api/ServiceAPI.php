@@ -25,6 +25,6 @@ class ServiceAPI
 			throw new Exception('Invalid AREA User Token');
 		}
 		$this->Token = new Token($this->Database);
-		$this->Token->loadByLoginAndServiceId($this->User->login, $serviceName);
+		$this->Token->loadByLoginAndService($this->User->login, $serviceName);
 	}
 }

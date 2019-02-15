@@ -9,8 +9,9 @@ class Token extends DatabaseObject
 	protected $field_service_id;
 	protected $field_token;
 
-	function loadByLoginAndServiceId($login, $service)
+	function loadByLoginAndService($login, $service)
 	{
+		var_dump($login, $service);
 		$stmt = $this->Database->prepare("
 			SELECT tokens.* FROM tokens
 			LEFT JOIN users ON users.id = tokens.user_id
@@ -29,9 +30,15 @@ class Token extends DatabaseObject
 		$this->field_token = $res['token'];
 	}
 
+	function loadByAll($user_id, $service_id, $token)
+	{
+		$this->field_user_id = $user_id;
+		$this->field_service_id = $service_id;
+		$this->field_token = $token;
+	}
+
 	function insert() /* throw */
         {
-
 		parent::insertQuery("INSERT INTO tokens (user_id, service_id, token) VALUES (?, ?, ?);", array(
                         $this->field_user_id,
 			$this->field_service_id,
