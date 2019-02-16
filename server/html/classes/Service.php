@@ -4,12 +4,11 @@ require_once 'classes/DatabaseObject.php';
 class Service extends DatabaseObject
 {
 	/* DB Fields */
-	protected $field_id;
 	protected $field_name;
 
 	function loadByName($name)
 	{
-		$stmt = $this->Database->prepare("SELECT * from services WHERE name = ?;");
+		$stmt = $this->Database->prepare("SELECT * FROM services WHERE name = ?;");
 		$stmt->execute([$name]);
 		if (!$stmt->rowCount())
 			throw new Exception("Service with specified name doesn't exist");

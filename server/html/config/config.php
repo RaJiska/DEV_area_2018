@@ -36,7 +36,7 @@ $config['services'] = [
 			'reactions' => []
 		],
 		'keyid' => '648470835603551',
-		'keysecret' => ''
+		'keysecret' => '0e6871780cfc0b82657952d2fb0ec7f3'
 	],
 	'imgur' => [
 		'brief' => [
@@ -45,7 +45,7 @@ $config['services'] = [
 			'reactions' => []
 		],
 		'keyid' => '21cc07288d6ea72',
-		'keysecret' => ''
+		'keysecret' => '59fe535430b90c34ec9e59eaebf2369e3b329a0c'
 	]
 ];
 

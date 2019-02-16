@@ -29,19 +29,33 @@ function POST()
 	if (!isset($_SERVER['HTTP_AUTHORIZATION']))
 		die(jsonError('Authorization Header Not Set'));
 	try {
-		$db = new Database();
-		$User = new User($db);
+		$Database = new Database();
+		$User = new User($Database);
 		$User->loadByToken($_SERVER['HTTP_AUTHORIZATION']);
-		$Service = new Service($db);
+		$Service = new Service($Database);
 		$Service->loadByName($_POST['service']);
-		$Token = new Token($db);
-		$Token->loadByAll($User->id, $Service->id, $_POST['service_token']);
+		$Token = new Token($Database);
 	}
 	catch (PDOException $e) {
 		die(jsonError("SQL Error: " . $e->getMessage()));
 	}
 	catch (Exception $e) {
 		die(jsonError("Error: " . $e->getMessage()));
+	}
+	try {
+		$Token->loadByAll($User->id, $Service->id, $_POST['service_token']);
+	}
+	catch (Exception $e) {
+		die(jsonError("Token Already Exists For Service"));
+	}
+	$Token->user_id = $User->id;
+	$Token->service_id = $Service->id;
+	$Token->token = $_POST['service_token'];
+	try {
+		$Token->insert();
+	}
+	catch (Exception $e) {
+		die(jsonError($e->getMessage()));
 	}
 	echo jsonMsg();
 }
