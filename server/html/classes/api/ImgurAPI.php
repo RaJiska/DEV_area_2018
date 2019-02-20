@@ -13,9 +13,47 @@ class ImgurAPI extends ServiceAPI
 		$this->keySecret = $GLOBALS['config']['services']['imgur']['keysecret'];
 	}
 
-	function req_accountGalleryFavorites() /* throw */
+	function reqReaction_followTag($tag) /* throw */
 	{
-		return $this->formatResponse($this->request('/3/account/me/gallery_favorites'));
+		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $tag, 'POST'));
+	}
+
+	function reqReaction_unfollowTag($tag) /* throw */
+	{
+		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $tag, 'DELETE'));
+	}
+
+	function reqReaction_comment($imageId, $comment) /* throw */
+	{
+		return $this->formatResponse($this->request(
+			'3/comment',
+			'POST',
+			'image_id=' . $imageId . '&comment=' . $comment)
+		);
+	}
+
+	function reqReaction_uncomment($commentId) /* throw */
+	{
+		return $this->formatResponse($this->request('3/comment/' . $commentId, 'DELETE'));
+	}
+
+	function reqReaction_favoriteAlbum($albumId) /* throw */
+	{
+		return $this->formatResponse($this->request('3/album/' . $albumId, 'POST'));
+	}
+
+	function reqReaction_uploadImage($image) /* throw */
+	{
+		return $this->formatResponse($this->request(
+			'3/image',
+			'POST',
+			'image=' . $image)
+		);
+	}
+
+	function reqReaction_deleteImage($imageId) /* throw */
+	{
+		return $this->formatResponse($this->request('3/image/' . $imageId, 'DELETE'));
 	}
 
 	private function formatResponse($res)
