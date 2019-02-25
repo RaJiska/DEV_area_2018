@@ -6,6 +6,10 @@ class LoginPage extends Component {
         return (
             <View style={styles.container}>
                 <StatusBar barStyle="light-content"/>
+                <View style={styles.textView}>
+                    <Text style={styles.loginText}>Welcome to the AREA</Text>
+                </View>
+                <View style={styles.inputview}>
                 <TextInput style = {styles.input} 
                             autoCapitalize="none" 
                             onSubmitEditing={() => this.passwordInput.focus()} 
@@ -19,9 +23,10 @@ class LoginPage extends Component {
                            placeholder='Password' 
                            placeholderTextColor='rgba(225,225,225,0.7)' 
                            secureTextEntry/>
-              <Button title='login' style={styles.buttonContainer} onPress={onButtonPress}>
+              <TouchableOpacity style={styles.buttonContainer}>
                     <Text  style={styles.buttonText}>LOGIN</Text>
-                </Button>
+                </TouchableOpacity>
+                </View>
             </View>
         );
     }
@@ -29,7 +34,7 @@ class LoginPage extends Component {
 
 const styles = StyleSheet.create({
     container: {
-     padding: 20
+        padding: 30
     },
     input:{
         height: 40,
@@ -40,18 +45,24 @@ const styles = StyleSheet.create({
         borderRadius: 30,
     },
     buttonContainer:{
-        backgroundColor: '#2980b6',
-        paddingVertical: 15
+        backgroundColor: '#0effee',
+        paddingVertical: 15,
+        borderRadius: 30,
     },
     buttonText:{
         color: '#fff',
         textAlign: 'center',
         fontWeight: '700'
-    }, 
-    loginButton:{
-      backgroundColor:  '#2980b6',
-       color: '#fff',
-       borderRadius: 30,
+    },
+    loginText: {
+        fontSize: 25,
+        color: 'rgba(37, 241, 227, 0.77)',
+    },
+    textView:{
+        alignItems: 'center'
+    },
+    inputview:{
+        paddingVertical: 10,
     }
    
 });

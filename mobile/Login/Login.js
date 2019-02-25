@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text, Image, StyleSheet,KeyboardAvoidingView } from 'react-native';
+import { View, Text, Image, StyleSheet,KeyboardAvoidingView, Dimensions } from 'react-native';
 import LoginPage from './LoginPage';
+import SignUp from './Signup'
 
 class Login extends Component {
     render() {
         return (
             <KeyboardAvoidingView behavior="padding" style={styles.container}>
                 <View style={styles.loginContainer}>
-                    <Image resizeMode="contain" style={styles.logo} source={require('./area_logo.png')} />
+                    <Image resizeMode="contain" style={styles.logo} source={require('./blockchain.jpg')} />
                 </View>
                 <View style={styles.formContainer}>
                     <LoginPage />
+                    <SignUp />
                 </View>
             </KeyboardAvoidingView>
         );
@@ -20,17 +22,16 @@ class Login extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2c3e50',
+        backgroundColor: 'rgba(0, 0, 0, 0.85)',
     },
     loginContainer:{
         alignItems: 'center',
-        flexGrow: 1,
+        flex: 1,
         justifyContent: 'center'
     },
     logo: {
         position: 'absolute',
-        width: 300,
-        height: 100
+        width: Dimensions.get('window').width,
     },
 });
 
