@@ -5,6 +5,7 @@ require_once 'classes/Database.php';
 require_once 'classes/Service.php';
 require_once 'scripts/json.php';
 
+// Get registered token of a service
 function GET()
 {
 	if (!isset($_GET['login'], $_GET['service']))
@@ -22,6 +23,7 @@ function GET()
 	echo jsonMsg("token", $Token->token);
 }
 
+// Add token to a service
 function POST()
 {
 	if (!isset($_POST['service'], $_POST['service_token']))
