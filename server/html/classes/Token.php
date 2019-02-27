@@ -87,7 +87,7 @@ class Token extends DatabaseObject
                 ));
 	}
 
-	private function loadBy()
+	private function loadBy($query, $arr)
 	{
 		$stmt = $this->Database->prepare($query);
 		$stmt->execute($arr);
