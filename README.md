@@ -3,11 +3,17 @@
 
 Vous êtes bien sur le projet DEV_area_2018 alias "kkkkkkkkkk".
 
-## Comment lancer l'app
+## Comment lancer l'app android
 
 1. **Cloner** le repository
 
-2.  ..?
+2. cd mobile
+
+3. npm install
+
+4. export ANDROID_HOME='*your_sdk_location*'
+
+5. react-native run-android
 
 ## Contributeurs
 

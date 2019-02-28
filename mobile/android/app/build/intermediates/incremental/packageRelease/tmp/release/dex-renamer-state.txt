@@ -1,0 +1,4 @@
+#Wed Feb 27 13:00:41 UTC 2019
+base.0=/usr/src/app/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
