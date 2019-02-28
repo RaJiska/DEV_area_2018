@@ -40,7 +40,6 @@ class User extends DatabaseObject
         function loadByToken($token)
         {
                 $this->loadBy("SELECT * FROM users WHERE token = ?;", [$token]);
-
                 /*
                 $stmt = $this->Database->prepare("SELECT * FROM users WHERE token = ?;");
                 $stmt->execute([$token]);

@@ -14,7 +14,7 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			'account_gallery_favorites'
+
 		]
 	],
 	'actions_function' => [
@@ -22,7 +22,38 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			'req_accountGalleryFavorites'
+
+		]
+	]
+];
+
+$config['reactions'] = [
+	'reactions_name' => [
+		'facebook' => [
+
+		],
+		'imgur' => [
+			'follow_tag',
+			'unfollow_tag',
+			'comment',
+			'uncomment',
+			'favorite_album',
+			'upload_image',
+			'delete_image'
+		]
+	],
+	'reactions_function' => [
+		'facebook' => [
+
+		],
+		'imgur' => [
+			'reqReaction_followTag',
+			'reqReaction_unfollowTag',
+			'reqReaction_comment',
+			'reqReaction_uncomment',
+			'reqReaction_favoriteAlbum',
+			'reqReaction_uploadImage',
+			'reqReaction_deleteImage'
 		]
 	]
 ];
