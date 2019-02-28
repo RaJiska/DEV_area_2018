@@ -5,11 +5,10 @@ require_once 'scripts/json.php';
 // Connect user and reply user's token
 function GET()
 {
-	if (!isset($_GET['login'], $_GET['pass']))
+	if (!isset($_GET['login']))
 		die(jsonError("Mandatory parameter not given"));
 	$User = new User();
 	$User->login = $_GET['login'];
-	$User->pass = $_GET['pass'];
 	try {
 		$User->loadByLogin($User->login);
 	}
