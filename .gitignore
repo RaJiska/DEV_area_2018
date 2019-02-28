@@ -1,2 +1,3 @@
 /server/autoload.php
-/mobile/android/app/build/generated/source/r/release/com/
+/mobile/android/app/build/
+/server/html/vendor
