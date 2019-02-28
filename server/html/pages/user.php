@@ -25,11 +25,11 @@ function GET()
 // Register new user and reply user's token
 function POST()
 {
-	if (!isset($_GET['login'], $_GET['pass']))
+	if (!isset($_POST['login'], $_POST['pass']))
 		die(jsonError("Mandatory parameter not given"));
 	$User = new User();
-	$User->login = $_GET['login'];
-	$User->pass = $_GET['pass'];
+	$User->login = $_POST['login'];
+	$User->pass = $_POST['pass'];
 	try {
 		$User->insert();
 	}
