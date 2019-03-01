@@ -35,7 +35,7 @@ CREATE TABLE triggers (
 	reaction VARCHAR(255) NOT NULL,
 	action_params TEXT NOT NULL,
 	reaction_params TEXT NOT NULL,
-	enabled TINYINT(1) NOT NULL DEFAULT = 1
+	enabled TINYINT(1) NOT NULL DEFAULT 1,
 	PRIMARY KEY(id)
 );
 
