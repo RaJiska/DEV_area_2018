@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from webClient import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('web/', include('webClient.urls')),
+    url('accounts/profile/', views.profile),
     url(r'^accounts/', include('allauth.urls')),
 ]
