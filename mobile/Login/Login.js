@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, StyleSheet, KeyboardAvoidingView, Dimensions, StatusBar, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, KeyboardAvoidingView, Dimensions, StatusBar, TextInput, TouchableOpacity} from 'react-native';
 
 class Login extends Component {
 
@@ -8,9 +8,19 @@ class Login extends Component {
 
         this.state = {
             isRegister: false,
+            token: "",
         };
     }
-
+    async logMe() {
+       try {
+            const response = await fetch(`http://10.15.190.103:8080/user?username=test&login=test@gmail.com&pass=test`, { method: 'GET' });
+            const responseJson = await response.json();
+            this.setState({ token: responseJson.token });
+        }
+        catch (error) {
+            console.error(error);
+        }
+    }
     _loginFields() {
         if (!this.state.isRegister) {
             return (
@@ -33,7 +43,7 @@ class Login extends Component {
                             placeholder='Password' 
                             placeholderTextColor='rgba(225,225,225,0.7)' 
                             secureTextEntry/>
-                        <TouchableOpacity style={styles.buttonContainer}>
+                        <TouchableOpacity style={styles.buttonContainer} onPress={this.logMe.bind(this)}>
                             <Text  style={styles.buttonText}>LOGIN</Text>
                         </TouchableOpacity>
                     </View>
@@ -79,14 +89,21 @@ class Login extends Component {
             return (
                 <View style={styles.signupView}>
                     <Text style={styles.signup}>Dont have an account?</Text>
-                    <Text style={styles.register} onPress={this.register.bind(this)} >Register</Text>
+                    <Text style={styles.register} onPress={() => this.register(true)} >Register</Text>
+                </View>
+            );
+        } else {
+            return (
+                <View style={styles.signupView}>
+                    <Text style={styles.signup}>Already have an account?</Text>
+                    <Text style={styles.register} onPress={() => this.register(false)} >Login</Text>
                 </View>
             );
         }
     }
 
-    register() {
-        this.setState({ isRegister: true })
+    register(state) {
+        this.setState({ isRegister: state })
     }
 
     render() {
