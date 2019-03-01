@@ -17,18 +17,52 @@ class Login extends Component {
        try {
             const response = await fetch('http://10.15.190.103:8080/user?login=' + this.state.username + '&pass=' + this.state.password, { method: 'GET' });
             const responseJson = await response.json();
-            this.setState({ token: responseJson.token });
+            this.setState({ token: responseJson.token, username: "", password: "" });
         }
         catch (error) {
             console.error(error);
         }
     }
+
+    async registerMe() {
+        try {
+            var formData = new FormData();
+            formData.append('login', this.state.username);
+            formData.append('pass', this.state.password);
+            const response = await fetch('http://10.15.190.103:8080/user', {
+                method: 'POST',
+                body: formData,
+            });
+            const responseJson = await response.json();
+            this.setState({ token: responseJson.token, username: "", password: "" });
+        }
+        catch (error) {
+            console.error(error);
+        }
+    }
+
+    _button() {
+        if (!this.state.isRegister) {
+            return (
+                <TouchableOpacity style={styles.buttonContainer} onPress={this.logMe.bind(this)}>
+                    <Text style={styles.buttonText}>LOGIN</Text>
+                </TouchableOpacity>
+            );
+        } else {
+            return (
+                <TouchableOpacity style={styles.buttonContainer} onPress={this.registerMe.bind(this)}>
+                    <Text style={styles.buttonText}>REGISTER</Text>
+                </TouchableOpacity>
+            );
+        }
+    }
+
     _loginFields() {
         return (
             <View style={styles.containerLogin}>
                 <StatusBar barStyle="light-content"/>
                 <View style={styles.textView}>
-                    <Text style={styles.loginText}>Welcome to the AREA</Text>
+                    <Text style={styles.loginText}>Welcome to the AREA {this.state.token}</Text>
                 </View>
                 <View style={styles.inputview}>
                     <TextInput style = {styles.input}
@@ -46,9 +80,7 @@ class Login extends Component {
                         placeholder='Password' 
                         placeholderTextColor='rgba(225,225,225,0.7)' 
                         secureTextEntry/>
-                    <TouchableOpacity style={styles.buttonContainer} onPress={this.logMe.bind(this)}>
-                        {this.state.isRegister ? <Text style={styles.buttonText}>REGISTER</Text> : <Text style={styles.buttonText}>LOGIN</Text>}
-                    </TouchableOpacity>
+                    {this._button()}
                 </View>
             </View>
         );
