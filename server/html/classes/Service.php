@@ -31,5 +31,11 @@ class Service extends DatabaseObject
                         $this->field_name,
 			$this->field_id
                 ));
-        }
+	}
+	
+	function fill($arr)
+	{
+		$this->field_id = $arr['id'];
+		$this->field_name = $arr['name'];
+	}
 }

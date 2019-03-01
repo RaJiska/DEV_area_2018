@@ -26,6 +26,19 @@ CREATE TABLE tokens (
 	PRIMARY KEY(id)
 );
 
+CREATE TABLE triggers (
+	id INT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+	user_id INT(8) UNSIGNED NOT NULL,
+	action_service_id INT(8) UNSIGNED NOT NULL,
+	reaction_service_id INT(8) UNSIGNED NOT NULL,
+	action VARCHAR(255) NOT NULL,
+	reaction VARCHAR(255) NOT NULL,
+	action_params TEXT NOT NULL,
+	reaction_params TEXT NOT NULL,
+	enabled TINYINT(1) NOT NULL DEFAULT = 1
+	PRIMARY KEY(id)
+);
+
 INSERT INTO users (login, pass, token, enabled) VALUES ('Foo', 'a', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 1);
 INSERT INTO users (login, pass, token, enabled) VALUES ('Bar', 'b', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 1);
 INSERT INTO services (name) VALUES ('Facebook');

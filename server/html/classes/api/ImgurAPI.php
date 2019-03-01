@@ -8,7 +8,7 @@ class ImgurAPI extends ServiceAPI
 	function __construct($Database = null)
 	{
 		parent::__construct(self::SERVICE_NAME, $Database);
-		$this->urlBase = 'https://api.imgur.com';
+		$this->urlBase = 'https://api.imgur.com/';
 		$this->keyId = $GLOBALS['config']['services']['imgur']['keyid'];
 		$this->keySecret = $GLOBALS['config']['services']['imgur']['keysecret'];
 	}

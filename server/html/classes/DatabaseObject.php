@@ -1,7 +1,7 @@
 <?php
 require_once 'classes/Database.php';
 
-class DatabaseObject
+abstract class DatabaseObject
 {
 	protected $Database;
 
@@ -23,6 +23,8 @@ class DatabaseObject
 		$this->{ 'field_' . $property } = $value;
 		return $this->{ 'field_' . $property };
 	}
+
+	abstract public function fill($arr);
 
 	protected function insertQuery($query, $binds)
 	{
