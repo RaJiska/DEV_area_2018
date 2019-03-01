@@ -9,11 +9,13 @@ class Login extends Component {
         this.state = {
             isRegister: false,
             token: "",
+            username: "",
+            password: ""
         };
     }
     async logMe() {
        try {
-            const response = await fetch(`http://10.15.190.103:8080/user?username=test&login=test@gmail.com&pass=test`, { method: 'GET' });
+            const response = await fetch('http://10.15.190.103:8080/user?login=' + this.state.username + '&pass=' + this.state.password, { method: 'GET' });
             const responseJson = await response.json();
             this.setState({ token: responseJson.token });
         }
@@ -22,66 +24,34 @@ class Login extends Component {
         }
     }
     _loginFields() {
-        if (!this.state.isRegister) {
-            return (
-                <View style={styles.containerLogin}>
-                    <StatusBar barStyle="light-content"/>
-                    <View style={styles.textView}>
-                        <Text style={styles.loginText}>Welcome to the AREA</Text>
-                    </View>
-                    <View style={styles.inputview}>
-                        <TextInput style = {styles.input} 
-                                autoCapitalize="none" 
-                                onSubmitEditing={() => this.passwordInput.focus()} 
-                                autoCorrect={false} 
-                                keyboardType='email-address' 
-                                returnKeyType="next" 
-                                placeholder='Email or Mobile Num' 
-                                placeholderTextColor='rgba(225,225,225,0.7)'/>
-                        <TextInput style = {styles.input}   
-                            returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                            placeholder='Password' 
-                            placeholderTextColor='rgba(225,225,225,0.7)' 
-                            secureTextEntry/>
-                        <TouchableOpacity style={styles.buttonContainer} onPress={this.logMe.bind(this)}>
-                            <Text  style={styles.buttonText}>LOGIN</Text>
-                        </TouchableOpacity>
-                    </View>
+        return (
+            <View style={styles.containerLogin}>
+                <StatusBar barStyle="light-content"/>
+                <View style={styles.textView}>
+                    <Text style={styles.loginText}>Welcome to the AREA</Text>
                 </View>
-            );
-        } else {
-            return (
-                <View style={styles.containerLogin}>
-                    <StatusBar barStyle="light-content"/>
-                    <View style={styles.textView}>
-                        <Text style={styles.loginText}>Welcome to the AREA</Text>
-                    </View>
-                    <View style={styles.inputview}>
-                        <TextInput style = {styles.input} 
-                                autoCapitalize="none" 
-                                onSubmitEditing={() => this.passwordInput.focus()} 
-                                autoCorrect={false} 
-                                keyboardType='email-address' 
-                                returnKeyType="next" 
-                                placeholder='Email or Mobile Num' 
-                                placeholderTextColor='rgba(225,225,225,0.7)'/>
-                        <TextInput style = {styles.input}   
-                            returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                            placeholder='Password' 
-                            placeholderTextColor='rgba(225,225,225,0.7)' 
-                            secureTextEntry/>
-                        <TextInput style = {styles.input}   
-                            returnKeyType="go" ref={(input)=> this.passwordInputConfirm = input} 
-                            placeholder='Confirm Password' 
-                            placeholderTextColor='rgba(225,225,225,0.7)' 
-                            secureTextEntry/>
-                        <TouchableOpacity style={styles.buttonContainer}>
-                            <Text  style={styles.buttonText}>LOGIN</Text>
-                        </TouchableOpacity>
-                    </View>
+                <View style={styles.inputview}>
+                    <TextInput style = {styles.input}
+                        autoCapitalize="none" 
+                        onChangeText={(username) => this.setState({username})}
+                        value={this.state.username}
+                        autoCorrect={false} 
+                        returnKeyType="next" 
+                        placeholder='Login' 
+                        placeholderTextColor='rgba(225,225,225,0.7)'/>
+                    <TextInput style = {styles.input}   
+                        returnKeyType="go"
+                        onChangeText={(password) => this.setState({password})}
+                        value={this.state.password}
+                        placeholder='Password' 
+                        placeholderTextColor='rgba(225,225,225,0.7)' 
+                        secureTextEntry/>
+                    <TouchableOpacity style={styles.buttonContainer} onPress={this.logMe.bind(this)}>
+                        {this.state.isRegister ? <Text style={styles.buttonText}>REGISTER</Text> : <Text style={styles.buttonText}>LOGIN</Text>}
+                    </TouchableOpacity>
                 </View>
-            );
-        }
+            </View>
+        );
     }
 
     _signUp() {
