@@ -13,6 +13,14 @@ class ImgurAPI extends ServiceAPI
 		$this->keySecret = $GLOBALS['config']['services']['imgur']['keysecret'];
 	}
 
+	function reqAction_newComment($argsArr) : bool /* $galleryHash, $time */
+	{
+		$arr = $this->formatResponse($this->request('3/gallery/' . $argsArr[0] . '/comments/new'));
+		if (!count($arr))
+			return false;
+		return $argsArr[1] < $arr[0]['datetime'];
+	}
+
 	function reqReaction_followTag($tag) /* throw */
 	{
 		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $tag, 'POST'));
