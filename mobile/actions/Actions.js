@@ -1,20 +1,5 @@
-function fetchUser() {
-    return dispatch => {
-      dispatch()
-      return fetch(`https://randomuser.me/api/`)
-        .then(response => response.json())
-        .then(json => dispatch(receiveUserDetails(json)))
-    }
-}
-
-function requestUserDetails() {
+export function setUser(token) {
     return {
-        type: 'REQUEST_USER_DETAILS'
-    }
-}
-
-function receiveUserDetails() {
-    return {
-        type: 'RECEIVE_USER_DETAILS'
+        type: 'SET_USER_TOKEN', token
     }
 }
