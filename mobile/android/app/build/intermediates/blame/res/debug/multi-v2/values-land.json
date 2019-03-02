@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bibibrutal/travail/Tek3/DEV_area_2018/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/bibibrutal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d09a12a25e211e15b802429d71344606/res/values-land/values-land.xml",
+                    "source": "/home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cfc51d6ccddabee3043063d68b2587de/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
