@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet, KeyboardAvoidingView, Dimensions, StatusBar, TextInput, TouchableOpacity} from 'react-native';
+import {setUser} from '../actions/Actions'
 
 class Login extends Component {
 
@@ -18,6 +19,7 @@ class Login extends Component {
             const response = await fetch('http://10.15.190.103:8080/user?login=' + this.state.username + '&pass=' + this.state.password, { method: 'GET' });
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
+            this.props.setUser(this.state.token);
         }
         catch (error) {
             console.error(error);
@@ -35,6 +37,7 @@ class Login extends Component {
             });
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
+            this.props.setUser(this.state.token);
         }
         catch (error) {
             console.error(error);

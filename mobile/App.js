@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Login from './Login/Login'
+import {connect} from 'react-redux'
+import {setUser} from './actions/Actions'
 
-export default class App extends Component {
+class App extends Component {
   render() {
+    console.log(this.props);
     return (
       <View style={styles.container}>
-        <Login />
+        <Login {...this.props}/>
       </View>
     );
   }
@@ -18,3 +21,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.85)',
   }
 });
+
+const mapStateToProps = state => {
+  return state
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setUser: (token) => {
+      dispatch(setUser(token))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
