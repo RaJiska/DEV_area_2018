@@ -42,10 +42,10 @@ CREATE TABLE triggers (
 
 INSERT INTO users (login, pass, token, enabled) VALUES ('Foo', 'a', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 1);
 INSERT INTO users (login, pass, token, enabled) VALUES ('Bar', 'b', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 1);
-INSERT INTO services (name) VALUES ('Facebook');
-INSERT INTO services (name) VALUES ('Imgur');
-INSERT INTO services (name) VALUES ('Yammer');
-INSERT INTO services (name) VALUES ('Twitter');
+INSERT INTO services (name) VALUES ('facebook');
+INSERT INTO services (name) VALUES ('imgur');
+INSERT INTO services (name) VALUES ('yammer');
+INSERT INTO services (name) VALUES ('twitter');
 INSERT INTO tokens (user_id, service_id, token, token_secret) VALUES (1, 4, "1094546485037944832-FtWJ3t2gdaggCxR1pTC3C421Q9hNT6", "");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 2, "bbbb");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 3, "cccc");
