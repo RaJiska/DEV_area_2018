@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo docker-compose build && docker-compose up
+sudo docker-compose build && sudo docker-compose up

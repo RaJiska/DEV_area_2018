@@ -20,6 +20,7 @@ from webClient import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('web/', include('webClient.urls')),
+    url('', views.home),
     url('accounts/profile/', views.profile),
     url(r'^accounts/', include('allauth.urls')),
 ]

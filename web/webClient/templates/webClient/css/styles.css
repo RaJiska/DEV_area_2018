@@ -1,14 +1,4 @@
-<div id='cssmenu'>
-    <ul>
-    <li><a href='http://localhost:8000/'><span>Home</span></a></li>
-    <li><a href='http://localhost:8000/web/profile'><span>Profile</span></a></li>
-    <li class='last'><a href='http://localhost:8000/web/services'><span>Action/Réaction</span></a></li>
-    <li class='last'><a href='http://localhost:8000/web/connexion'><span>Connexion aux services</span></a></li>
-    <li class='last'><a href='http://localhost:8000/web/login'><span>Login</span></a></li>
-    </ul>
-</div>
-<style>
-
+@charset "UTF-8";
 #cssmenu {
   padding: 0;
   margin: 0;
