@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet, KeyboardAvoidingView, Dimensions, StatusBar, TextInput, TouchableOpacity} from 'react-native';
-import {setUser} from '../actions/Actions'
+import { twitter } from 'react-native-simple-auth'
 
 class Login extends Component {
 
@@ -20,6 +20,15 @@ class Login extends Component {
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
             this.props.setUser(this.state.token);
+            twitter({
+                appId: 'U7v6riqMAzPWN0IkAXqr67G3x ',
+                appSecret: 'RjtJxqJG5vyzdCWwX0KALMfl0Bj8MkumZXCrcjX6Y8UcUrPAMs ',
+                callback: 'http://10.15.190.103:8080/',
+              }).then((info) => {
+                console.log(info.credidentials);
+              }).catch((error) => {
+                console.log("ERROR ur mom gay" + error);
+              });
         }
         catch (error) {
             console.error(error);
@@ -176,7 +185,8 @@ const styles = StyleSheet.create({
 		color: '#707070',
 	},
 	signupView:{
-		alignItems: 'center',
+        alignItems: 'center',
+        marginBottom: 20
 	},
     register:{
 		color: 'rgba(37, 241, 227, 0.77)',
