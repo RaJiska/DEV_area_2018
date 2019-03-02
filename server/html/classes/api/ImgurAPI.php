@@ -21,14 +21,14 @@ class ImgurAPI extends ServiceAPI
 		return $argsArr[1] < $arr[0]['datetime'];
 	}
 
-	function reqReaction_followTag($tag) /* throw */
+	function reqReaction_followTag($argsArr) /* $tag */ /* throw */
 	{
-		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $tag, 'POST'));
+		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $argsArr[0], 'POST'));
 	}
 
-	function reqReaction_unfollowTag($tag) /* throw */
+	function reqReaction_unfollowTag($argsArr) /* $tag */ /* throw */
 	{
-		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $tag, 'DELETE'));
+		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $argsArr[0], 'DELETE'));
 	}
 
 	function reqReaction_comment($argsArr) /* $imageId, $comment) */ /* throw */
@@ -40,9 +40,9 @@ class ImgurAPI extends ServiceAPI
 		);
 	}
 
-	function reqReaction_uncomment($commentId) /* throw */
+	function reqReaction_uncomment($argsArr) /* $commentId */ /* throw */
 	{
-		return $this->formatResponse($this->request('3/comment/' . $commentId, 'DELETE'));
+		return $this->formatResponse($this->request('3/comment/' . $argsArr[0], 'DELETE'));
 	}
 
 	function reqReaction_favoriteAlbum($argsArr) /* $albumId */ /* throw */
@@ -50,18 +50,18 @@ class ImgurAPI extends ServiceAPI
 		return $this->formatResponse($this->request('3/album/' . $argsArr[0] . '/favorite', 'POST'));
 	}
 
-	function reqReaction_uploadImage($image) /* throw */
+	function reqReaction_uploadImage($argsArr) /* $image */ /* throw */
 	{
 		return $this->formatResponse($this->request(
 			'3/image',
 			'POST',
-			'image=' . $image)
+			'image=' . $argsArr[0])
 		);
 	}
 
-	function reqReaction_deleteImage($imageId) /* throw */
+	function reqReaction_deleteImage($argsArr) /* $imageId */ /* throw */
 	{
-		return $this->formatResponse($this->request('3/image/' . $imageId, 'DELETE'));
+		return $this->formatResponse($this->request('3/image/' . $argsArr[0], 'DELETE'));
 	}
 
 	private function formatResponse($res)
