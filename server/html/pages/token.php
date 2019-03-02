@@ -4,6 +4,7 @@ require_once 'classes/User.php';
 require_once 'classes/Database.php';
 require_once 'classes/Service.php';
 require_once 'scripts/json.php';
+require_once 'scripts/user.php';
 
 // Get registered token of a service
 function GET()
@@ -11,7 +12,9 @@ function GET()
 	if (!isset($_GET['login'], $_GET['service']))
 		die(jsonError("Mandatory parameter not given"));
 	try {
-		$Token = new Token();
+		$Database = new Database();
+		verifyUserToken($Database);
+		$Token = new Token($Database);
 		$Token->loadByLoginAndService($_GET['login'], $_GET['service']);
 	}
 	catch (PDOException $e) {
@@ -28,12 +31,9 @@ function POST()
 {
 	if (!isset($_POST['service'], $_POST['service_token']))
 		die(jsonError("Mandatory parameter not given"));
-	if (!isset($_SERVER['HTTP_AUTHORIZATION']))
-		die(jsonError('Authorization Header Not Set'));
 	try {
 		$Database = new Database();
-		$User = new User($Database);
-		$User->loadByToken($_SERVER['HTTP_AUTHORIZATION']);
+		$User = verifyUserToken($Database);
 		$Service = new Service($Database);
 		$Service->loadByName($_POST['service']);
 		$Token = new Token($Database);

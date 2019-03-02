@@ -12,19 +12,10 @@ class ServiceAPI
 	protected $keySecret;
 	protected $urlBase;
 
-	public function __construct($serviceName, $Database = null)
+	public function __construct($serviceName, $User, $Database = null)
 	{
-		$this->$Database = ($Database !== null) ? $Database : new Database();
-		if (!isset($_SERVER['HTTP_AUTHORIZATION']))
-			throw new Exception('Authorization Header Not Set');
-		$this->User = new User($this->Database);
-		try {
-			$this->User->loadByToken($_SERVER['HTTP_AUTHORIZATION']);
-		}
-		catch (Exception $e) {
-			throw new Exception('Invalid AREA User Token');
-		}
+		$this->User = $User;
 		$this->Token = new Token($this->Database);
-		$this->Token->loadByLoginAndService($this->User->login, $serviceName);
+		$this->Token->loadByLoginAndService($this->User->login, strtolower($serviceName));
 	}
 }

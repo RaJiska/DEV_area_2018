@@ -5,9 +5,9 @@ class ImgurAPI extends ServiceAPI
 {
 	const SERVICE_NAME = "Imgur";
 
-	function __construct($Database = null)
+	function __construct($User, $Database = null)
 	{
-		parent::__construct(self::SERVICE_NAME, $Database);
+		parent::__construct(self::SERVICE_NAME, $User, $Database);
 		$this->urlBase = 'https://api.imgur.com/';
 		$this->keyId = $GLOBALS['config']['services']['imgur']['keyid'];
 		$this->keySecret = $GLOBALS['config']['services']['imgur']['keysecret'];
