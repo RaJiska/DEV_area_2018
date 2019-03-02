@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import Login from './Login/Login'
 import {connect} from 'react-redux'
-import {setUser} from './actions/Actions'
+import {setUser, twitterSignIn} from './actions/Actions'
 
 class App extends Component {
   render() {
-    console.log(this.props);
     return (
       <View style={styles.container}>
         <Login {...this.props}/>
@@ -30,6 +29,9 @@ const mapDispatchToProps = dispatch => {
   return {
     setUser: (token) => {
       dispatch(setUser(token))
+    },
+    twitterSignIn: (authToken, authTokenSecret) => {
+      dispatch(twitterSignIn(authToken, authTokenSecret))
     }
   }
 }

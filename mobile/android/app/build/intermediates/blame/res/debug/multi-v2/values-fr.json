@@ -29,6 +29,23 @@
                         "endColumns": "110,114,110,81,105,129,82,79,90,92,98,94,100,92,92,94,90,90,85,109,111,102,110,106,106,158,98,85",
                         "endOffsets": "211,326,437,519,625,755,838,918,1009,1102,1201,1296,1397,1490,1583,1678,1769,1860,1946,2056,2168,2271,2382,2489,2596,2755,2854,2940"
                     }
+                },
+                {
+                    "source": "/home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/res/values-fr/values-fr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    },
+                    "to": {
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "3046",
+                        "endColumns": "71",
+                        "endOffsets": "3113"
+                    }
                 }
             ]
         }
