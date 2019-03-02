@@ -15,6 +15,9 @@ $config['actions'] = [
 		],
 		'imgur' => [
 
+		],
+		'twitter' => [
+
 		]
 	],
 	'actions_function' => [
@@ -22,6 +25,9 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
+
+		],
+		'twitter' => [
 
 		]
 	]
@@ -40,6 +46,9 @@ $config['reactions'] = [
 			'favorite_album',
 			'upload_image',
 			'delete_image'
+		],
+		'twitter' => [
+
 		]
 	],
 	'reactions_function' => [
@@ -54,6 +63,9 @@ $config['reactions'] = [
 			'reqReaction_favoriteAlbum',
 			'reqReaction_uploadImage',
 			'reqReaction_deleteImage'
+		],
+		'twitter' => [
+
 		]
 	]
 ];
@@ -77,6 +89,15 @@ $config['services'] = [
 		],
 		'keyid' => '21cc07288d6ea72',
 		'keysecret' => ''
+	],
+	'twitter' => [
+		'brief' => [
+			'name' => 'twitter',
+			'actions' => $config['actions']['actions_name']['imgur'],
+			'reactions' => []
+		],
+		'keyid' => 'oGBlfZ2W73pTm8kV4SgVDIu3w',
+		'keysecret' => 'insert here'
 	]
 ];
 

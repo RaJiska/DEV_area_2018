@@ -31,6 +31,9 @@ class PageManager
 		case 'imgur':
 			$this->Page = new PageJSON('imgur', 'pages/imgur.php');
 			break;
+		case 'twitter':
+			$this->Page = new PageJSON('twitter', 'pages/twitter.php');
+			break;
 		default:
 			$this->Page = new PageHTML('404', 'pages/status/404.php');
 		}

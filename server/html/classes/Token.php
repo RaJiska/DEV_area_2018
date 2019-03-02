@@ -52,7 +52,7 @@ class Token extends DatabaseObject
                 ));
 	}
 
-	function fill($arr)
+	function fill($res)
 	{
 		$this->field_id = $res['id'];
                 $this->field_user_id = $res['user_id'];

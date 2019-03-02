@@ -44,7 +44,8 @@ INSERT INTO users (login, pass, token, enabled) VALUES ('Bar', 'b', 'bbbbbbbbbbb
 INSERT INTO services (name) VALUES ('Facebook');
 INSERT INTO services (name) VALUES ('Imgur');
 INSERT INTO services (name) VALUES ('Yammer');
-INSERT INTO tokens (user_id, service_id, token) VALUES (1, 1, "aaaa");
+INSERT INTO services (name) VALUES ('Twitter');
+INSERT INTO tokens (user_id, service_id, token) VALUES (1, 4, "1ba82310f9fa73312ef889235faee447");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 2, "bbbb");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 3, "cccc");
 INSERT INTO tokens (user_id, service_id, token) VALUES (2, 1, "dddd");
