@@ -25,6 +25,9 @@ class PageManager
 		case 'services':
 			$this->Page = new PageJSON('services', 'pages/services.php');
 			break;
+		case 'trigger':
+			$this->Page = new PageJSON('trigger', 'pages/trigger.php');
+			break;
 		default:
 			$this->Page = new PageHTML('404', 'pages/status/404.php');
 		}

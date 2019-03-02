@@ -59,7 +59,7 @@ class User extends DatabaseObject
 		else
 			$this->insert();
 	}
-	
+
 	function fill($arr)
         {
                 $this->field_id = $arr['id'];

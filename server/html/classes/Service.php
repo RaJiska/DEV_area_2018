@@ -6,7 +6,7 @@ class Service extends DatabaseObject
 	/* DB Fields */
 	protected $field_name;
 
-	function loadById($name)
+	function loadById($id)
 	{
 		$stmt = $this->Database->prepare("SELECT * FROM services WHERE id = ?;");
 		$stmt->execute([$id]);

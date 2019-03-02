@@ -15,8 +15,8 @@ function triggerReactionByName($service, $reaction)
 
 function triggerUnpackParams($params)
 {
-	$params = explode(";", $Trigger->action_params);
-	foreach ($actionParams as &$val)
+	$newParams = explode(";", $params);
+	foreach ($newParams as &$val)
 		$val = base64_decode($val);
-	return $params;
+	return $newParams;
 }

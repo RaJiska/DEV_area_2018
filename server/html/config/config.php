@@ -76,7 +76,7 @@ $config['services'] = [
 		'brief' => [
 			'name' => 'facebook',
 			'actions' => $config['actions']['actions_name']['facebook'],
-			'reactions' => []
+			'reactions' => $config['reactions']['reactions_name']['facebook']
 		],
 		'keyid' => '648470835603551',
 		'keysecret' => ''
@@ -85,20 +85,26 @@ $config['services'] = [
 		'brief' => [
 			'name' => 'imgur',
 			'actions' => $config['actions']['actions_name']['imgur'],
-			'reactions' => []
+			'reactions' => $config['reactions']['reactions_name']['imgur']
 		],
 		'keyid' => '21cc07288d6ea72',
-		'keysecret' => ''
+		'keysecret' => 'df09325752c0352f8395ca6f361e795b1da84423'
 	],
 	'twitter' => [
 		'brief' => [
 			'name' => 'twitter',
-			'actions' => $config['actions']['actions_name']['imgur'],
-			'reactions' => []
+			'actions' => $config['actions']['actions_name']['twitter'],
+			'reactions' => $config['reactions']['reactions_name']['twitter']
 		],
 		'keyid' => 'oGBlfZ2W73pTm8kV4SgVDIu3w',
 		'keysecret' => 'insert here'
 	]
+];
+
+$config['api'] = [
+	'facebook' => 'FacebookAPI',
+	'imgur' => 'ImgurAPI',
+	'twitter' => 'TwitterAPI'
 ];
 
 /* JSON Messages */

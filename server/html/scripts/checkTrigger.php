@@ -2,10 +2,14 @@
 require_once 'config/config.php';
 require_once 'scripts/triggersFunctions.php';
 require_once 'classes/Trigger.php';
+require_once 'classes/Service.php';
+require_once 'classes/User.php';
+require_once 'classes/api/ImgurAPI.php';
+require_once 'classes/api/TwitterAPI.php';
 
 try {
 	$Database = new Database();
-	$res = $Database->execute("SELECT * FROM triggers WHERE enabled = 1;");
+	$res = $Database->query("SELECT * FROM triggers WHERE enabled = 1;");
 	while (($row = $res->fetch())) {
 		$Trigger = new Trigger($Database);
 		$Trigger->fill($row);
@@ -13,10 +17,16 @@ try {
 		$ServiceAction->loadById($Trigger->action_service_id);
 		$ServiceReaction = new Service($Database);
 		$ServiceReaction->loadById($Trigger->reaction_service_id);
+		$User = new User($Database);
+		$User->loadById($Trigger->user_id);
+		$ActionAPI = new $GLOBALS['config']['api'][$ServiceAction->name]($User, $Database);
 		$actionParams = triggerUnpackParams($Trigger->action_params);
-		if (triggerActionByName($ServiceAction->name, $Trigger->action)($actionParams)) {
+		if ($ActionAPI->{ triggerActionByName($ServiceAction->name, $Trigger->action) }($actionParams)) {
 			$reactionParams = triggerUnpackParams($Trigger->reaction_params);
-			triggerReactionByName($ServiceReaction->name, $Trigger->reaction)($reactionParams);
+			$ReactionAPI = new $GLOBALS['config']['api'][$ServiceReaction->name]($User, $Database);
+			$ReactionAPI->{ triggerReactionByName($ServiceReaction->name, $Trigger->reaction) }($reactionParams);
+			$Trigger->enabled = 0;
+			$Trigger->update();
 		}
 	}
 }

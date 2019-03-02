@@ -31,12 +31,12 @@ class ImgurAPI extends ServiceAPI
 		return $this->formatResponse($this->request('3/account/me/follow/tag/' . $tag, 'DELETE'));
 	}
 
-	function reqReaction_comment($imageId, $comment) /* throw */
+	function reqReaction_comment($argsArr) /* $imageId, $comment) */ /* throw */
 	{
 		return $this->formatResponse($this->request(
 			'3/comment',
 			'POST',
-			'image_id=' . $imageId . '&comment=' . $comment)
+			'image_id=' . $argsArr[0] . '&comment=' . $argsArr[1])
 		);
 	}
 
@@ -45,9 +45,9 @@ class ImgurAPI extends ServiceAPI
 		return $this->formatResponse($this->request('3/comment/' . $commentId, 'DELETE'));
 	}
 
-	function reqReaction_favoriteAlbum($albumId) /* throw */
+	function reqReaction_favoriteAlbum($argsArr) /* $albumId */ /* throw */
 	{
-		return $this->formatResponse($this->request('3/album/' . $albumId, 'POST'));
+		return $this->formatResponse($this->request('3/album/' . $argsArr[0] . '/favorite', 'POST'));
 	}
 
 	function reqReaction_uploadImage($image) /* throw */
@@ -67,7 +67,7 @@ class ImgurAPI extends ServiceAPI
 	private function formatResponse($res)
 	{
 		if (!$res['success'])
-			throw new Exception($res['data']['error']);
+			throw new Exception(self::SERVICE_NAME . ': ' . $res['data']['error']);
 		return $res['data'];
 	}
 
@@ -84,7 +84,7 @@ class ImgurAPI extends ServiceAPI
 		if ($data)
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		if (($res = curl_exec($ch)) === false)
-			throw new Exception('Request Error: ' . curl_error($ch));
+			throw new Exception(self::SERVICE_NAME . ': Request Error: ' . curl_error($ch));
 		curl_close($ch);
 		return json_decode($res, true);
 	}

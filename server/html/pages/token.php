@@ -45,16 +45,16 @@ function POST()
 		die(jsonError("Error: " . $e->getMessage()));
 	}
 	try {
-		$Token->loadByAll($User->id, $Service->id, $_POST['service_token']);
+		$Token->loadByLoginAndService($User->login, $Service->name);
+		$exists = true;
 	}
 	catch (Exception $e) {
-		die(jsonError("Token Already Exists For Service"));
 	}
 	$Token->user_id = $User->id;
 	$Token->service_id = $Service->id;
 	$Token->token = $_POST['service_token'];
 	try {
-		$Token->insert();
+		$exists ? $Token->update() : $Token->insert();
 	}
 	catch (Exception $e) {
 		die(jsonError($e->getMessage()));
