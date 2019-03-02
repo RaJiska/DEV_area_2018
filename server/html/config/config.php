@@ -14,7 +14,7 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-
+			"new_comment"
 		],
 		'twitter' => [
 
@@ -25,7 +25,7 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-
+			"reqAction_newComment"
 		],
 		'twitter' => [
 

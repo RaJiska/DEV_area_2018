@@ -6,6 +6,17 @@ class Service extends DatabaseObject
 	/* DB Fields */
 	protected $field_name;
 
+	function loadById($name)
+	{
+		$stmt = $this->Database->prepare("SELECT * FROM services WHERE id = ?;");
+		$stmt->execute([$id]);
+		if (!$stmt->rowCount())
+			throw new Exception("Service with specified id doesn't exist");
+		$res = $stmt->fetch();
+		$this->field_id = $res['id'];
+		$this->field_name = $res['name'];
+	}
+
 	function loadByName($name)
 	{
 		$stmt = $this->Database->prepare("SELECT * FROM services WHERE name = ?;");
@@ -32,7 +43,7 @@ class Service extends DatabaseObject
 			$this->field_id
                 ));
 	}
-	
+
 	function fill($arr)
 	{
 		$this->field_id = $arr['id'];
