@@ -5,12 +5,11 @@ require_once 'scripts/json.php';
 // Connect user and reply user's token
 function GET()
 {
-	if (!isset($_GET['login']))
+	if (!isset($_GET['login']) || !isset($_GET['pass']))
 		die(jsonError("Mandatory parameter not given"));
 	$User = new User();
-	$User->login = $_GET['login'];
 	try {
-		$User->loadByLogin($User->login);
+		$User->loadByLoginAndPass($_GET['login'], $_GET['pass']);
 	}
 	catch (PDOException $e) {
 		die(jsonError("SQL Error: " . $e->getMessage()));

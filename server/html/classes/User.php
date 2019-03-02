@@ -9,6 +9,11 @@ class User extends DatabaseObject
 	protected $field_token;
         protected $field_enabled = 1;
 
+	function loadByLoginAndPass($login, $pass)
+	{
+                $this->loadBy("SELECT * FROM users WHERE login = ? AND pass = ?;", [$login, $pass]);
+	}
+
 	function loadByLogin($login)
 	{
                 $this->loadBy("SELECT * FROM users WHERE login = ?;", [$login]);
