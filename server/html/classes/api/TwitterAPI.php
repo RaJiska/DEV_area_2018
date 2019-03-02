@@ -10,19 +10,13 @@ class TwitterAPI extends ServiceAPI
 	private $accessTokenSecret;
 	private $connection;
 
-	function __construct($Database = null)
+	function __construct($User, $Database = null)
 	{
-		parent::__construct(self::SERVICE_NAME, $Database);
+		parent::__construct(self::SERVICE_NAME, $User, $Database);
 		$this->urlBase = 'https://api.twitter.com/1.1/';
 		$this->keyId = $GLOBALS['config']['services']['twitter']['keyid'];
 		$this->keySecret = $GLOBALS['config']['services']['twitter']['keysecret'];
-	}
-
-	function loadUserTokens($token, $tokenSecret)
-	{
-		$this->accessToken = $token;
-		$this->accessTokenSecret = $tokenSecret;
-		$this->connection = new TwitterOAuth($this->keyId, $this->keySecret, $this->accessToken, $this->accessTokenSecret);
+		$this->connection = new TwitterOAuth($this->keyId, $this->keySecret, $this->Token->token, $this->Token->token_secret);
 	}
 
 	// Tweet the tag passed as parameter on user's account

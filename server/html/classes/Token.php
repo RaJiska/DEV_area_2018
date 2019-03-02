@@ -7,6 +7,7 @@ class Token extends DatabaseObject
 	protected $field_user_id;
 	protected $field_service_id;
 	protected $field_token;
+	protected $field_token_secret = '';
 
 	function loadByLoginAndService($login, $service)
 	{
@@ -35,19 +36,21 @@ class Token extends DatabaseObject
 
 	function insert() /* throw */
         {
-		parent::insertQuery("INSERT INTO tokens (user_id, service_id, token) VALUES (?, ?, ?);", array(
+		parent::insertQuery("INSERT INTO tokens (user_id, service_id, token, token_secret) VALUES (?, ?, ?, ?);", array(
                         $this->field_user_id,
 			$this->field_service_id,
-			$this->field_token
+			$this->field_token,
+			$this->field_token_secret
                 ));
         }
 
         function update() /* throw */
         {
-                parent::updateQuery("UPDATE tokens SET user_id = ?, service_id = ?, token = ? WHERE id = ?;", array(
+                parent::updateQuery("UPDATE tokens SET user_id = ?, service_id = ?, token = ?, token_secret = ? WHERE id = ?;", array(
                         $this->field_user_id,
 			$this->field_service_id,
 			$this->field_token,
+			$this->field_token_secret,
 			$this->field_id
                 ));
 	}
@@ -58,6 +61,7 @@ class Token extends DatabaseObject
                 $this->field_user_id = $res['user_id'];
                 $this->field_service_id = $res['service_id'];
 		$this->field_token = $res['token'];
+		$this->field_token_secret = $res['token_secret'];
 	}
 
 	private function loadBy($query, $arr)

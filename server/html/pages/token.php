@@ -53,6 +53,8 @@ function POST()
 	$Token->user_id = $User->id;
 	$Token->service_id = $Service->id;
 	$Token->token = $_POST['service_token'];
+	if (isset($_POST['service_token_secret']))
+		$Token->token_secret = $_POST['service_token_secret'];
 	try {
 		$exists ? $Token->update() : $Token->insert();
 	}
