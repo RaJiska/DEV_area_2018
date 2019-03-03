@@ -12,10 +12,11 @@ class ServiceAPI
 	protected $keySecret;
 	protected $urlBase;
 
-	public function __construct($serviceName, $User, $Database = null)
+	public function __construct($serviceName, $User, $Database = null, $needToken = false)
 	{
 		$this->User = $User;
 		$this->Token = new Token($this->Database);
-		$this->Token->loadByLoginAndService($this->User->login, strtolower($serviceName));
+		if ($needToken)
+			$this->Token->loadByLoginAndService($this->User->login, strtolower($serviceName));
 	}
 }

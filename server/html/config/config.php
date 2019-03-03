@@ -19,10 +19,15 @@ $config['actions'] = [
 			'score_below'
 		],
 		'twitter' => [
-
+			'new_tweet',
+			'new_follower',
+			'new_follower_request'
 		],
 		'github' => [
 			'new_commit'
+		],
+		'openweathermap' => [
+
 		]
 	],
 	'actions_function' => [
@@ -35,10 +40,15 @@ $config['actions'] = [
 			'reqAction_scoreBelow'
 		],
 		'twitter' => [
-
+			'reqAction_newTweet',
+			'reqAction_newFollower',
+			'reqAction_newFollowerRequest'
 		],
 		'github' => [
 			'reqAction_newCommit'
+		],
+		'openweathermap' => [
+
 		]
 	]
 ];
@@ -58,12 +68,15 @@ $config['reactions'] = [
 			'delete_image'
 		],
 		'twitter' => [
-
+			'tweet'
 		],
 		'github' => [
 			'star_repo',
 			'unstar_repo',
 			'post_gist'
+		],
+		'openweathermap' => [
+
 		]
 	],
 	'reactions_function' => [
@@ -80,12 +93,14 @@ $config['reactions'] = [
 			'reqReaction_deleteImage'
 		],
 		'twitter' => [
-
+			'reqReaction_tweet'
 		],
 		'github' => [
 			'reqReaction_starRepo',
 			'reqReaction_unstarRepo',
 			'reqReaction_postGist'
+		],
+		'openweathermap' => [
 		]
 	]
 ];
@@ -127,6 +142,15 @@ $config['services'] = [
 		],
 		'keyid' => 'defc017cb0cdfcc7bedf',
 		'keysecret' => ''
+	],
+	'openweathermap' => [
+		'brief' => [
+			'name' => 'openweathermap',
+			'actions' => $config['actions']['actions_name']['openweathermap'],
+			'reactions' => $config['reactions']['reactions_name']['openweathermap']
+		],
+		'keyid' => '43acdedfb0a9864db7785dd1c0307d77',
+		'keysecret' => ''
 	]
 ];
 
@@ -134,7 +158,8 @@ $config['api'] = [
 	'facebook' => 'FacebookAPI',
 	'imgur' => 'ImgurAPI',
 	'twitter' => 'TwitterAPI',
-	'github' => 'GithubAPI'
+	'github' => 'GithubAPI',
+	'openweathermap' => 'OpenWeatherMapAPI'
 ];
 
 /* JSON Messages */
