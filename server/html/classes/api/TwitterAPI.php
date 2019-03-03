@@ -19,6 +19,23 @@ class TwitterAPI extends ServiceAPI
 		$this->connection = new TwitterOAuth($this->keyId, $this->keySecret, $this->Token->token, $this->Token->token_secret);
 	}
 
+	// Return true if there is a recent tweet, false otherwhise.
+	function reqAction_newTweet($name = null)
+	{
+		$name ?
+		$content = $this->connection->get("statuses/user_timeline", ["name" => $name]) :
+		$content = $this->connection->get("statuses/user_timeline");
+		$date = $content[0]->{'created_at'};
+		$datetime1 = new DateTime(date('Y-M-d H:i:s', strtotime($date)));
+		$datetime2 = new DateTime('NOW');
+		$interval = $datetime1->diff($datetime2);
+		$minutes = $interval->format('%h') * 60 + $interval->format('%i');
+
+		if ($minutes <= 1)
+			return true;
+		return false;
+	}
+
 	// Tweet the tag passed as parameter on user's account
 	function reqReaction_tweet($tag)
 	{
@@ -29,7 +46,7 @@ class TwitterAPI extends ServiceAPI
 	// Get user tweet timeline
 	function reqReaction_userTimeline($name)
 	{
-		$content = $this->connection->get("statuses/user_timeline", ["name" => $name]);
+		$content = $this->connection->get("statuses/user_timeline");
 		return $content;
 	}
 
