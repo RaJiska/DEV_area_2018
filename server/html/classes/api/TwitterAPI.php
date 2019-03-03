@@ -23,7 +23,7 @@ class TwitterAPI extends ServiceAPI
 	function reqAction_newTweet($name = null)
 	{
 		$name ?
-		$content = $this->connection->get("statuses/user_timeline", ["name" => $name]) :
+		$content = $this->connection->get("statuses/user_timeline", ["name" => $name[0]]) :
 		$content = $this->connection->get("statuses/user_timeline");
 		$date = $content[0]->{'created_at'};
 		$datetime1 = new DateTime(date('Y-M-d H:i:s', strtotime($date)));
