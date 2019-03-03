@@ -26,13 +26,26 @@ class TwitterAPI extends ServiceAPI
 		$content = $this->connection->get("statuses/user_timeline", ["name" => $name[0]]) :
 		$content = $this->connection->get("statuses/user_timeline");
 		$date = $content[0]->{'created_at'};
-		$datetime1 = new DateTime(date('Y-M-d H:i:s', strtotime($date)));
-		$datetime2 = new DateTime('NOW');
-		$interval = $datetime1->diff($datetime2);
-		$minutes = $interval->format('%h') * 60 + $interval->format('%i');
+		$interval = abs(strtotime('now') - strtotime($date));
+		$minutes = $interval / (60);
 
 		if ($minutes <= 1)
 			return true;
+		return false;
+	}
+
+	// Return true if there is a recent follower, false otherwhise.
+	function reqAction_newFollower()
+	{
+		$content = $this->connection->get("followers/list");
+		$users = $content->{'users'};
+		foreach ($users as &$user) {
+			$date = $user->{'created_at'};
+			$interval = abs(strtotime('now') - strtotime($date));
+			$minutes = $interval / (60);
+			if ($minutes <= 1)
+				return true;
+		}
 		return false;
 	}
 
