@@ -71,6 +71,10 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
+    <color name="tw__blue_default">#FF5BAAF4</color>
+    <color name="tw__blue_pressed">#FF4186C8</color>
+    <color name="tw__light_gray">#ccd6dd</color>
+    <color name="tw__solid_white">#FFFFFFFF</color>
     <declare-styleable name="ActionBar">
         <!-- The type of navigation to use. -->
         <attr name="navigationMode">
@@ -1701,6 +1705,12 @@
     <dimen name="tooltip_vertical_padding">6.5dp</dimen>
     <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
     <dimen name="tooltip_y_offset_touch">16dp</dimen>
+    <dimen name="tw__login_btn_drawable_padding">4dp</dimen>
+    <dimen name="tw__login_btn_height">32dp</dimen>
+    <dimen name="tw__login_btn_left_padding">8dp</dimen>
+    <dimen name="tw__login_btn_radius">5dp</dimen>
+    <dimen name="tw__login_btn_right_padding">12dp</dimen>
+    <dimen name="tw__login_btn_text_size">14sp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
     <item name="accessibility_hint" type="id"/>
@@ -1801,6 +1811,7 @@
     <string name="search_description" translatable="false">Search Field</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tw__login_btn_txt">Log in with Twitter</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

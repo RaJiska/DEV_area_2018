@@ -408,6 +408,10 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color tw__blue_default
+color tw__blue_pressed
+color tw__light_gray
+color tw__solid_white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -522,6 +526,12 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen tw__login_btn_drawable_padding
+dimen tw__login_btn_height
+dimen tw__login_btn_left_padding
+dimen tw__login_btn_radius
+dimen tw__login_btn_right_padding
+dimen tw__login_btn_text_size
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -621,6 +631,11 @@ drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tw__ic_logo_default
+drawable tw__login_btn
+drawable tw__login_btn_default
+drawable tw__login_btn_disabled
+drawable tw__login_btn_pressed
 id ALT
 id CTRL
 id FUNCTION
@@ -772,6 +787,8 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tw__spinner
+id tw__web_view
 id uniform
 id up
 id useLogo
@@ -827,6 +844,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout tw__activity_oauth
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -900,6 +918,7 @@ string link_description
 string search_description
 string search_menu_title
 string status_bar_notification_info_overflow
+string tw__login_btn_txt
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
