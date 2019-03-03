@@ -20,7 +20,7 @@ class Login extends Component {
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
             this.props.setUser(this.state.token);
-            if (this.state.token !== "")
+            if (this.props.token)
                 this.props.setPage('LOGIN_SERVICES')
         }
         catch (error) {
@@ -40,7 +40,7 @@ class Login extends Component {
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
             this.props.setUser(this.state.token);
-            if (this.state.token !== "")
+            if (this.state.token)
                 this.props.setPage('LOGIN_SERVICES')
         }
         catch (error) {
