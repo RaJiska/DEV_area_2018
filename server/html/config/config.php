@@ -20,6 +20,9 @@ $config['actions'] = [
 		],
 		'twitter' => [
 
+		],
+		'github' => [
+
 		]
 	],
 	'actions_function' => [
@@ -32,6 +35,9 @@ $config['actions'] = [
 			"reqAction_scoreBelow"
 		],
 		'twitter' => [
+
+		],
+		'github' => [
 
 		]
 	]
@@ -53,6 +59,9 @@ $config['reactions'] = [
 		],
 		'twitter' => [
 
+		],
+		'github' => [
+
 		]
 	],
 	'reactions_function' => [
@@ -69,6 +78,9 @@ $config['reactions'] = [
 			'reqReaction_deleteImage'
 		],
 		'twitter' => [
+
+		],
+		'github' => [
 
 		]
 	]
@@ -92,7 +104,7 @@ $config['services'] = [
 			'reactions' => $config['reactions']['reactions_name']['imgur']
 		],
 		'keyid' => '21cc07288d6ea72',
-		'keysecret' => 'df09325752c0352f8395ca6f361e795b1da84423'
+		'keysecret' => ''
 	],
 	'twitter' => [
 		'brief' => [
@@ -102,13 +114,23 @@ $config['services'] = [
 		],
 		'keyid' => 'oGBlfZ2W73pTm8kV4SgVDIu3w',
 		'keysecret' => 'insert here'
+	],
+	'github' => [
+		'brief' => [
+			'name' => 'github',
+			'actions' => $config['actions']['actions_name']['github'],
+			'reactions' => $config['reactions']['reactions_name']['github']
+		],
+		'keyid' => 'defc017cb0cdfcc7bedf',
+		'keysecret' => ''
 	]
 ];
 
 $config['api'] = [
 	'facebook' => 'FacebookAPI',
 	'imgur' => 'ImgurAPI',
-	'twitter' => 'TwitterAPI'
+	'twitter' => 'TwitterAPI',
+	'github' => 'GithubAPI'
 ];
 
 /* JSON Messages */

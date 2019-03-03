@@ -46,6 +46,7 @@ INSERT INTO services (name) VALUES ('facebook');
 INSERT INTO services (name) VALUES ('imgur');
 INSERT INTO services (name) VALUES ('yammer');
 INSERT INTO services (name) VALUES ('twitter');
+INSERT INTO services (name) VALUES ('github');
 INSERT INTO tokens (user_id, service_id, token, token_secret) VALUES (1, 4, "1094546485037944832-FtWJ3t2gdaggCxR1pTC3C421Q9hNT6", "");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 2, "bbbb");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 3, "cccc");
