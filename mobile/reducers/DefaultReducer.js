@@ -1,7 +1,8 @@
 const initialState = {
     token: "",
     twitterAuthToken: "",
-    twitterAuthTokenSecret: ""
+    twitterAuthTokenSecret: "",
+    actualPage: 'LOGIN'
 }
 
 const defaultReducer = (state = initialState, action) => {
@@ -9,6 +10,9 @@ const defaultReducer = (state = initialState, action) => {
         case 'SET_USER_TOKEN':
             return Object.assign({}, state, {
                 token: action.token})
+        case 'SET_PAGE':
+            return Object.assign({}, state, {
+                actualPage: action.page})
         case 'SET_TWITTER_TOKEN':
             return Object.assign({}, state, {
                 twitterAuthToken: action.authToken,

@@ -2,13 +2,26 @@ import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import Login from './Login/Login'
 import {connect} from 'react-redux'
-import {setUser, twitterSignIn} from './actions/Actions'
+import {setUser, twitterSignIn, setPage} from './actions/Actions'
+import LoginServices from './Login/LoginServices';
 
 class App extends Component {
+
+  _getPage() {
+    switch (this.props.actualPage) {
+      case 'LOGIN':
+        return (<Login {...this.props}/>)
+      case 'LOGIN_SERVICES':
+        return (<LoginServices {...this.props}/>)
+      default:
+        return (<Login {...this.props}/>)
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Login {...this.props}/>
+        {this._getPage()}
       </View>
     );
   }
@@ -29,6 +42,9 @@ const mapDispatchToProps = dispatch => {
   return {
     setUser: (token) => {
       dispatch(setUser(token))
+    },
+    setPage: (page) => {
+      dispatch(setPage(page))
     },
     twitterSignIn: (authToken, authTokenSecret) => {
       dispatch(twitterSignIn(authToken, authTokenSecret))

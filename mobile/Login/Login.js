@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet, KeyboardAvoidingView, Dimensions, StatusBar, TextInput, TouchableOpacity, NativeModules } from 'react-native';
 
-
-const { RNTwitterSignIn } = NativeModules
-
-const Constants = {
-  //Dev Parse keys
-  TWITTER_COMSUMER_KEY: 'U7v6riqMAzPWN0IkAXqr67G3x ',
-  TWITTER_CONSUMER_SECRET: 'RjtJxqJG5vyzdCWwX0KALMfl0Bj8MkumZXCrcjX6Y8UcUrPAMs '
-}
 class Login extends Component {
 
     constructor(props) {
@@ -22,28 +14,14 @@ class Login extends Component {
         };
     }
 
-    _twitterSignIn = () => {
-        RNTwitterSignIn.init(Constants.TWITTER_COMSUMER_KEY, Constants.TWITTER_CONSUMER_SECRET)
-        RNTwitterSignIn.logIn()
-          .then(loginData => {
-            console.log(loginData)
-            const { authToken, authTokenSecret } = loginData
-            if (authToken && authTokenSecret) {
-              this.props.twitterSignIn(authToken, authTokenSecret)
-            }
-          })
-          .catch(error => {
-            console.log(error)
-          }
-        )
-    }
-
     async logMe() {
        try {
             const response = await fetch('http://10.15.190.103:8080/user?login=' + this.state.username + '&pass=' + this.state.password, { method: 'GET' });
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
             this.props.setUser(this.state.token);
+            if (this.state.token !== "")
+                this.props.setPage('LOGIN_SERVICES')
         }
         catch (error) {
             console.error(error);
@@ -62,6 +40,8 @@ class Login extends Component {
             const responseJson = await response.json();
             this.setState({ token: responseJson.token, username: "", password: "" });
             this.props.setUser(this.state.token);
+            if (this.state.token !== "")
+                this.props.setPage('LOGIN_SERVICES')
         }
         catch (error) {
             console.error(error);
