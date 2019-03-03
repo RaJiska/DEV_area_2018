@@ -13,11 +13,21 @@ class GithubAPI extends ServiceAPI
 		$this->keySecret = $GLOBALS['config']['services']['github']['keysecret'];
 	}
 
-	private function formatResponse($res)
+	function reqAction_newCommit($argsArr) : bool /* $owner, $repo, $time */ /* throw */
 	{
-		if (!$res['success'])
-			throw new Exception(self::SERVICE_NAME . ': ' . $res['data']['error']);
-		return $res['data'];
+		$DateTime = new DateTime('@' . $argsArr['2']);
+		$res = $this->request('repos/' . $argsArr[0] . '/' . $argsArr[1] . '/commits?since=' . $DateTime->format(DateTimeInterface::ISO8601));
+		return count($res) > 0;
+	}
+
+	function reqReaction_starRepo($argsArr) : bool /* $owner, $repo */ /* throw */
+	{
+		return $this->request('user/starred/' . $argsArr[0] . '/' . $argsArr[1], 'PUT');
+	}
+
+	function reqReaction_unstarRepo($argsArr) : bool /* $owner, $repo */ /* throw */
+	{
+		return $this->request('user/starred/' . $argsArr[0] . '/' . $argsArr[1], 'DELETE');
 	}
 
 	private function request($uri, $method = 'GET', $data = null)
@@ -29,12 +39,18 @@ class GithubAPI extends ServiceAPI
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: token " . $this->Token->token));
+		$headers = array("Authorization: token " . $this->Token->token);
+		if ($method == 'PUT')
+			array_push($headers, "Content-Length: 0");
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		if ($data)
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		if (($res = curl_exec($ch)) === false)
 			throw new Exception(self::SERVICE_NAME . ': Request Error: ' . curl_error($ch));
+		$status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		curl_close($ch);
+		if ($status >= 400 && $status < 500)
+			throw new Exception(self::SERVICE_NAME . ': Response Error: ' . json_decode($res, true)['message']);
 		return json_decode($res, true);
 	}
 }

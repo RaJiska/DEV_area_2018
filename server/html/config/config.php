@@ -14,15 +14,15 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			"new_comment",
-			"score_above_or_eq",
-			"score_below"
+			'new_comment',
+			'score_above_or_eq',
+			'score_below'
 		],
 		'twitter' => [
 
 		],
 		'github' => [
-
+			'new_commit'
 		]
 	],
 	'actions_function' => [
@@ -30,15 +30,15 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			"reqAction_newComment",
-			"reqAction_scoreAboveOrEq",
-			"reqAction_scoreBelow"
+			'reqAction_newComment',
+			'reqAction_scoreAboveOrEq',
+			'reqAction_scoreBelow'
 		],
 		'twitter' => [
 
 		],
 		'github' => [
-
+			'reqAction_newCommit'
 		]
 	]
 ];
@@ -61,7 +61,8 @@ $config['reactions'] = [
 
 		],
 		'github' => [
-
+			'star_repo',
+			'unstar_repo'
 		]
 	],
 	'reactions_function' => [
@@ -81,7 +82,8 @@ $config['reactions'] = [
 
 		],
 		'github' => [
-
+			'reqReaction_starRepo',
+			'reqReaction_unstarRepo'
 		]
 	]
 ];
