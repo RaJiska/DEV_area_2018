@@ -6,8 +6,6 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 class TwitterAPI extends ServiceAPI
 {
 	const SERVICE_NAME = "Twitter";
-	private $accessToken;
-	private $accessTokenSecret;
 	private $connection;
 
 	function __construct($User, $Database = null)
@@ -49,42 +47,26 @@ class TwitterAPI extends ServiceAPI
 		return false;
 	}
 
+	// Return true if there is a follow request, false otherwhise.
+	function reqAction_newFollowerRequest()
+	{
+		$content = $this->connection->get("friendships/incoming");
+		if (!count($content->{'ids'}))
+			return false;
+		return true;
+	}
+
 	// Tweet the tag passed as parameter on user's account
 	function reqReaction_tweet($tag)
 	{
-		$content = $this->connection->post("statuses/update", ["status" => $tag]);
-		return $content;
-	}
-
-	// Get user tweet timeline
-	function reqReaction_userTimeline($name)
-	{
-		$content = $this->connection->get("statuses/user_timeline");
-		return $content;
+		$content = $this->connection->post("statuses/update", ["statuss" => $tag]);
+		return $this->formatResponse($content);
 	}
 
 	private function formatResponse($res)
 	{
-		if (!$res['success'])
-			throw new Exception($res['data']['error']);
-		return $res['data'];
-	}
-
-	private function request($uri, $method = 'GET', $data = null)
-	{
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $this->urlBase . $uri);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $this->Token->token));
-		if ($data)
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-		if (($res = curl_exec($ch)) === false)
-			throw new Exception('Request Error: ' . curl_error($ch));
-		curl_close($ch);
-		return json_decode($res, true);
+		if ($res->{'errors'})
+			throw new Exception(self::SERVICE_NAME . ': ' . $res->{'errors'}[0]->{'message'});
+		return $res;
 	}
 }
