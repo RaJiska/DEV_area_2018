@@ -13,12 +13,23 @@ class ImgurAPI extends ServiceAPI
 		$this->keySecret = $GLOBALS['config']['services']['imgur']['keysecret'];
 	}
 
-	function reqAction_newComment($argsArr) : bool /* $galleryHash, $time */
+	function reqAction_newComment($argsArr) : bool /* $galleryHash, $time */ /* throw */
 	{
 		$arr = $this->formatResponse($this->request('3/gallery/' . $argsArr[0] . '/comments/new'));
 		if (!count($arr))
 			return false;
 		return $argsArr[1] < $arr[0]['datetime'];
+	}
+
+	function reqAction_scoreAboveOrEq($argsArr) : bool /* $galleryHash, $score */ /* throw */
+	{
+		$res = $this->formatResponse($this->request('3/gallery/' . $argsArr[0] . '/votes'));
+		return ($res['ups'] - $res['downs']) >= $argsArr[1];
+	}
+
+	function reqAction_scoreBelow($argsArr) : bool /* $galleryHash, $score */ /* throw */
+	{
+		return !reqAction_scoreAboveOrEq($argsArr);
 	}
 
 	function reqReaction_followTag($argsArr) /* $tag */ /* throw */

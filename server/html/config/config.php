@@ -14,7 +14,9 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			"new_comment"
+			"new_comment",
+			"score_above_or_eq",
+			"score_below"
 		],
 		'twitter' => [
 
@@ -25,7 +27,9 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			"reqAction_newComment"
+			"reqAction_newComment",
+			"reqAction_scoreAboveOrEq",
+			"reqAction_scoreBelow"
 		],
 		'twitter' => [
 
