@@ -62,7 +62,8 @@ $config['reactions'] = [
 		],
 		'github' => [
 			'star_repo',
-			'unstar_repo'
+			'unstar_repo',
+			'post_gist'
 		]
 	],
 	'reactions_function' => [
@@ -83,7 +84,8 @@ $config['reactions'] = [
 		],
 		'github' => [
 			'reqReaction_starRepo',
-			'reqReaction_unstarRepo'
+			'reqReaction_unstarRepo',
+			'reqReaction_postGist'
 		]
 	]
 ];

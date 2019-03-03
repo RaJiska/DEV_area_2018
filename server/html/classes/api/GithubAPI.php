@@ -30,6 +30,17 @@ class GithubAPI extends ServiceAPI
 		return $this->request('user/starred/' . $argsArr[0] . '/' . $argsArr[1], 'DELETE');
 	}
 
+	function reqReaction_postGist($argsArr) : bool /* $filename, $content */ /* throw */
+	{
+		return $this->request('gists', 'POST', json_encode(array(
+			'files' => [
+				$argsArr[0] => [
+					"content" => $argsArr[1]
+				]
+			]
+		)));
+	}
+
 	private function request($uri, $method = 'GET', $data = null)
 	{
 		$ch = curl_init();
