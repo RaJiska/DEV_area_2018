@@ -28,6 +28,9 @@ $config['actions'] = [
 		],
 		'openweathermap' => [
 
+		],
+		'trello' => [
+
 		]
 	],
 	'actions_function' => [
@@ -48,6 +51,9 @@ $config['actions'] = [
 			'reqAction_newCommit'
 		],
 		'openweathermap' => [
+
+		],
+		'trello' => [
 
 		]
 	]
@@ -77,6 +83,9 @@ $config['reactions'] = [
 		],
 		'openweathermap' => [
 
+		],
+		'trello' => [
+			'create_board'
 		]
 	],
 	'reactions_function' => [
@@ -101,6 +110,10 @@ $config['reactions'] = [
 			'reqReaction_postGist'
 		],
 		'openweathermap' => [
+
+		],
+		'trello' => [
+			'reqReaction_createBoard'
 		]
 	]
 ];
@@ -151,6 +164,15 @@ $config['services'] = [
 		],
 		'keyid' => '43acdedfb0a9864db7785dd1c0307d77',
 		'keysecret' => ''
+	],
+	'trello' => [
+		'brief' => [
+			'name' => 'trello',
+			'actions' => $config['actions']['actions_name']['trello'],
+			'reactions' => $config['reactions']['reactions_name']['trello']
+		],
+		'keyid' => '4620371a714f02f39fe4ac4db99bd5b1',
+		'keysecret' => ''
 	]
 ];
 
@@ -159,7 +181,8 @@ $config['api'] = [
 	'imgur' => 'ImgurAPI',
 	'twitter' => 'TwitterAPI',
 	'github' => 'GithubAPI',
-	'openweathermap' => 'OpenWeatherMapAPI'
+	'openweathermap' => 'OpenWeatherMapAPI',
+	'trello' => 'TrelloAPI'
 ];
 
 /* JSON Messages */
