@@ -22,7 +22,7 @@
         android:layout_below="@+id/bookIconImageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:text="@string/area"
+        android:text="@string/booki"
         android:textColor="@color/colorSplashText"
         android:textSize="16sp" />
 
@@ -52,7 +52,7 @@
             android:id="@+id/WelcomeTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/area"
+            android:text="@string/welcome_back"
             android:textColor="@color/colorBackground"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/WelcomeTextView"
             android:layout_marginTop="10dp"
-            android:text="@string/welcome_back"
+            android:text="@string/read_it_together"
             android:textColor="@color/colorAccent"
             android:textSize="15sp" />
 
@@ -92,7 +92,6 @@
                 android:hint="@string/password"
                 android:textColor="@color/colorTextView"
                 android:textColorHint="@color/colorAccent"
-                android:password="true"
                 android:textSize="15sp" />
 
             <FrameLayout
@@ -102,28 +101,38 @@
                 android:padding="5dp">
 
                 <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/sign_up"
-                        android:textColor="@color/colorTextView"
-                        android:textSize="14sp"
-                        android:textStyle="bold" android:onClick="onCLickRegisterActivity"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
             </FrameLayout>
 
         </LinearLayout>
 
         <Button
-                android:id="@+id/loginButton"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_above="@+id/skipTextView"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/button_drawable"
-                android:text="@string/login"
-                android:textAllCaps="false"
-                android:textColor="@color/colorAccent"
-                android:textSize="16sp" android:onClick="onClickLogIn"/>
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_above="@+id/skipTextView"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_drawable"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/skipTextView"
