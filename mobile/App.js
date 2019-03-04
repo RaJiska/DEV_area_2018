@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import Login from './Login/Login'
 import {connect} from 'react-redux'
-import {setUser, twitterSignIn, setPage} from './actions/Actions'
+import {setUser, twitterSignIn, setPage, googleSignIn} from './actions/Actions'
 import LoginServices from './Login/LoginServices';
 
 class App extends Component {
@@ -48,6 +48,9 @@ const mapDispatchToProps = dispatch => {
     },
     twitterSignIn: (authToken, authTokenSecret) => {
       dispatch(twitterSignIn(authToken, authTokenSecret))
+    },
+    googleSignIn: (googleToken) => {
+      dispatch(googleSignIn(googleToken))
     }
   }
 }

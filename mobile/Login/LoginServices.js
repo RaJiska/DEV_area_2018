@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, TouchableOpacity, Text, NativeModules} from 'react-native';
+import {GoogleSignin} from 'react-native-google-signin';
 
 const { RNTwitterSignIn } = NativeModules
 
@@ -24,12 +25,32 @@ class LoginServices extends Component {
             console.log(error)
         })
     }
+    
+    _googleSignIn = async () => {
+
+        try {
+            GoogleSignin.configure({
+                scopes: ['https://www.googleapis.com/auth/gmail.modify'],
+                webClientId: '537811531292-7b7dnasht4jgq4j20s394irjaas28gej.apps.googleusercontent.com'
+            })
+            await GoogleSignin.hasPlayServices();
+            const userInfo = await GoogleSignin.signIn();
+            const token = await GoogleSignin.getTokens();
+            this.props.googleSignIn(token.accessToken)
+            console.log(token.accessToken)
+          } catch (error) {
+            console.log(error)
+          }
+    }
 
     render() {
         return (
             <View style={styles.container}>
                 <TouchableOpacity style={styles.buttonContainer} onPress={this._twitterSignIn}>
                     <Text style={styles.buttonText}>TWITTER SIGN IN</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttonContainer} onPress={this._googleSignIn}>
+                    <Text style={styles.buttonText}>GOOGLE SIGN IN</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -46,6 +67,7 @@ const styles = StyleSheet.create({
     buttonContainer:{
         backgroundColor: '#0effee',
         paddingVertical: 15,
+        marginBottom: 15,
         borderRadius: 30,
     },
     buttonText:{

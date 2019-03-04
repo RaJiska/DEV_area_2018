@@ -4,43 +4,64 @@ ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/m
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-google-signin] /home/drping/Documents/Epitech/DEV_area_2018/mobile/node_modules/react-native-google-signin/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-twitter-signin] /home/drping/Documents/Epitech/DEV_area_2018/mobile/node_modules/react-native-twitter-signin/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cfc51d6ccddabee3043063d68b2587de/AndroidManifest.xml:17:1-22:12
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:18:1-35:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/dbe7c82a2e7b5c6fadfd3b4c8182806a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bf08202c5333ddc4ae5dd97f081aee83/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/72136570c155fd3cece46a9d092c4133/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/571917d77bc1624c1a3c3e3957d7b7b5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5518a51e8c1e3d9405ad0d8a9b19d861/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/fd4957815c4792f0fa8f1d0a1b073e7c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/a77af717374736ff99c85c72ecee56e5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/2f67ca5e3c87662c85981d3249495025/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/1b5449e77a435f663bdc3ccc59b14d5a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/a7f6b4cfda9a1751ace0f5cc467cd44d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/56f729cb1e466653408751765142dcf6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/513f6b06bf3bfae1b8393d3a5771b89f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c671d968c621b60aa2ccd4dde6639515/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c91cfcc7ac56768f005e08f73fb050ea/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ada6f4df80da427d0be140d138fcb9cd/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5b5f972671fb47e6f53a9d21938350d5/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fd63778fa53027017d6630173485377f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/41b20f930ddc7a6e8c6deee3a397baa6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8c094e65ec7fb071eb4f28baaca061fc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9b795ee21293d3004c74159f1de5ce1e/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7c7deb11be91d9833d4d23f14ff9f6ba/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0fbfcabf2f0e7c725d31be4b274a049b/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/932bb4702d3c7aca4444b78cba538816/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/67cbe0d4e386d9c21b847cabe5496eb3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e469fa3747a0f5a1daa54c16495cf5b9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/826cd61454ff072076c0677b0ae2ef46/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/9e141f56bb636a45e6dc7155a6a67dad/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/d1964182e1fa2e561e088c3d2bcc17ee/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/d20a53f47dd3870b17342495afa7c6d3/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/d91e72b9270b64c70b3d11b5e63304a6/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/72d351f47c39025f73cd73274eecf4a3/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r174650] /home/drping/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c8096998edab19d94e94cd00e7be01b5/AndroidManifest.xml:1:1-3:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/776ca1e790285ee27043b71736a589e3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aca97c653f6f16556a6c5ff6b12a03c8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.firebase:firebase-core:16.0.7] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/8ce8896dfc6b5c66e673a0768aca65a0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/55a17a2f6031a4fabd788f41ecff4fed/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/571a58fe9adcedc1bc82e8affaa4496a/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.3.0.aar/515a79d1748b407960e93a42e84810bf/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/beeb96c7f4401202a0a178b268f5bb2d/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/05736e9e20fa8a9936604f5a5cafab49/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.3.0.aar/13f18cc2f839744c8678ce4a280582ee/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/1b044ae12d1de0d8abe7aeafa086e566/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/4efa698c637619db958fdc794f6fcbb6/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/294515423c0a27683f796bf863b6dbc0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:17:1-31:12
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:18:1-35:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/0fcff0db0ded184338c6e87fd4da7d53/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/efa6e1dee70aff35c638f5adc8b66f51/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/69d5cd42a95e0d879c5e53fe01afb33f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4a45c8924e29aecd2f5c19b94b71a041/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/3108e68eb9b3eb959cdd14d7c774dd70/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:loader:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a3b93190fef0e4d34377be382fe44e39/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d30236967f31e46d277ea1e2ca3f8153/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/b3a33384347222cb6f2bfa5d93125cd5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/31be8f8f79e75bfa4c08944dd140978e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8c39247ed64412b1a0bc6514493fc4a0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/19f1dc20da26621411ef275f2e33bf95/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3260b80c1563df0086a06570544845cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/3e9162d8fc857d62e63311b5497568d0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c1a12d5eb7ef8071b907f148b875bef6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ee0d7d787358feb8d39d3ff1ce9af2fd/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c39b20c4fd39f6cb5bb9e0fa7e1d6438/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/55ef6c1aca4a0ba36bf980497e74422b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/6ef1e671546948b5587e3b43bd0c82c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/abdee6a4d6efa04edcb0c1a50c373239/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/3c23fb5ec79ecbfec06c1aa8a03f617a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/66e5a8ff787e2799c26c08333ccfb86e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/7d081d4ae6e99b6426090b00ac6c8673/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/523a0910687f4a3a788f6161a944d7fe/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8f4125c91a41939edbcc5b9758d26d7a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/3824048ba1028ac1203e1dcf7954f0e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/800e54b051ea8ddc9c7196775215ba57/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/a04acc9085b4beb664daf9398dd5f9ba/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/ab14d477a943564b617f7f65e527065e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/2479eafb91049e0ae555268141b37490/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/6eec074d242670368fbd694b4da0639c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/f6c815a6f483395e137612502474015d/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /home/drping/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/7c508c6a4e30b0eb2f0523c6c3973f08/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/cac020d76b76886ec8ada8ed282336c9/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12
@@ -60,32 +81,76 @@ INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/sr
 		ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:25:5-67
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:23:5-67
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:25:5-67
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:25:5-67
 	android:name
 		ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:5:22-75
 application
 ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:7:5-25:19
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:13:5-20
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:27:5-33:19
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:27:5-33:19
-MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c91cfcc7ac56768f005e08f73fb050ea/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c91cfcc7ac56768f005e08f73fb050ea/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ada6f4df80da427d0be140d138fcb9cd/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ada6f4df80da427d0be140d138fcb9cd/AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/72d351f47c39025f73cd73274eecf4a3/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/72d351f47c39025f73cd73274eecf4a3/AndroidManifest.xml:11:5-20
-MERGED from [org.webkit:android-jsc:r174650] /home/drping/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c8096998edab19d94e94cd00e7be01b5/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /home/drping/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c8096998edab19d94e94cd00e7be01b5/AndroidManifest.xml:2:3-17
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:13:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-core:16.0.7] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/8ce8896dfc6b5c66e673a0768aca65a0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.7] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/8ce8896dfc6b5c66e673a0768aca65a0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.3.0.aar/515a79d1748b407960e93a42e84810bf/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.3.0.aar/515a79d1748b407960e93a42e84810bf/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/beeb96c7f4401202a0a178b268f5bb2d/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/beeb96c7f4401202a0a178b268f5bb2d/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/05736e9e20fa8a9936604f5a5cafab49/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/05736e9e20fa8a9936604f5a5cafab49/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.3.0.aar/13f18cc2f839744c8678ce4a280582ee/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.3.0.aar/13f18cc2f839744c8678ce4a280582ee/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/1b044ae12d1de0d8abe7aeafa086e566/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/1b044ae12d1de0d8abe7aeafa086e566/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/4efa698c637619db958fdc794f6fcbb6/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/4efa698c637619db958fdc794f6fcbb6/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/294515423c0a27683f796bf863b6dbc0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/294515423c0a27683f796bf863b6dbc0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:25:5-29:19
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:27:5-33:19
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:27:5-33:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c1a12d5eb7ef8071b907f148b875bef6/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c1a12d5eb7ef8071b907f148b875bef6/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ee0d7d787358feb8d39d3ff1ce9af2fd/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ee0d7d787358feb8d39d3ff1ce9af2fd/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/f6c815a6f483395e137612502474015d/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/f6c815a6f483395e137612502474015d/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /home/drping/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/7c508c6a4e30b0eb2f0523c6c3973f08/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/drping/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/7c508c6a4e30b0eb2f0523c6c3973f08/AndroidManifest.xml:2:3-17
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c91cfcc7ac56768f005e08f73fb050ea/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c1a12d5eb7ef8071b907f148b875bef6/AndroidManifest.xml:22:18-91
 	android:label
 		ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:9:7-39
 	android:roundIcon
@@ -126,80 +191,124 @@ uses-sdk
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-google-signin] /home/drping/Documents/Epitech/DEV_area_2018/mobile/node_modules/react-native-google-signin/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /home/drping/Documents/Epitech/DEV_area_2018/mobile/node_modules/react-native-google-signin/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-twitter-signin] /home/drping/Documents/Epitech/DEV_area_2018/mobile/node_modules/react-native-twitter-signin/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-twitter-signin] /home/drping/Documents/Epitech/DEV_area_2018/mobile/node_modules/react-native-twitter-signin/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/6bc0e843eb680bb34923f9ea2020a9d7/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cfc51d6ccddabee3043063d68b2587de/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cfc51d6ccddabee3043063d68b2587de/AndroidManifest.xml:20:5-44
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:23:5-44
-MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:23:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/dbe7c82a2e7b5c6fadfd3b4c8182806a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/dbe7c82a2e7b5c6fadfd3b4c8182806a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bf08202c5333ddc4ae5dd97f081aee83/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bf08202c5333ddc4ae5dd97f081aee83/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/72136570c155fd3cece46a9d092c4133/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/72136570c155fd3cece46a9d092c4133/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/571917d77bc1624c1a3c3e3957d7b7b5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/571917d77bc1624c1a3c3e3957d7b7b5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5518a51e8c1e3d9405ad0d8a9b19d861/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5518a51e8c1e3d9405ad0d8a9b19d861/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/fd4957815c4792f0fa8f1d0a1b073e7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/fd4957815c4792f0fa8f1d0a1b073e7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/a77af717374736ff99c85c72ecee56e5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/a77af717374736ff99c85c72ecee56e5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/2f67ca5e3c87662c85981d3249495025/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/2f67ca5e3c87662c85981d3249495025/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/1b5449e77a435f663bdc3ccc59b14d5a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/1b5449e77a435f663bdc3ccc59b14d5a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/a7f6b4cfda9a1751ace0f5cc467cd44d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/a7f6b4cfda9a1751ace0f5cc467cd44d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/56f729cb1e466653408751765142dcf6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/56f729cb1e466653408751765142dcf6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/513f6b06bf3bfae1b8393d3a5771b89f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/513f6b06bf3bfae1b8393d3a5771b89f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c671d968c621b60aa2ccd4dde6639515/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c671d968c621b60aa2ccd4dde6639515/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c91cfcc7ac56768f005e08f73fb050ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c91cfcc7ac56768f005e08f73fb050ea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ada6f4df80da427d0be140d138fcb9cd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ada6f4df80da427d0be140d138fcb9cd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5b5f972671fb47e6f53a9d21938350d5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5b5f972671fb47e6f53a9d21938350d5/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fd63778fa53027017d6630173485377f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fd63778fa53027017d6630173485377f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/41b20f930ddc7a6e8c6deee3a397baa6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/41b20f930ddc7a6e8c6deee3a397baa6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8c094e65ec7fb071eb4f28baaca061fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8c094e65ec7fb071eb4f28baaca061fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9b795ee21293d3004c74159f1de5ce1e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9b795ee21293d3004c74159f1de5ce1e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7c7deb11be91d9833d4d23f14ff9f6ba/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7c7deb11be91d9833d4d23f14ff9f6ba/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0fbfcabf2f0e7c725d31be4b274a049b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0fbfcabf2f0e7c725d31be4b274a049b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/932bb4702d3c7aca4444b78cba538816/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/932bb4702d3c7aca4444b78cba538816/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/67cbe0d4e386d9c21b847cabe5496eb3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/67cbe0d4e386d9c21b847cabe5496eb3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e469fa3747a0f5a1daa54c16495cf5b9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e469fa3747a0f5a1daa54c16495cf5b9/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/826cd61454ff072076c0677b0ae2ef46/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/826cd61454ff072076c0677b0ae2ef46/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/9e141f56bb636a45e6dc7155a6a67dad/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/9e141f56bb636a45e6dc7155a6a67dad/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/d1964182e1fa2e561e088c3d2bcc17ee/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/d1964182e1fa2e561e088c3d2bcc17ee/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/d20a53f47dd3870b17342495afa7c6d3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/d20a53f47dd3870b17342495afa7c6d3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/d91e72b9270b64c70b3d11b5e63304a6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/d91e72b9270b64c70b3d11b5e63304a6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/72d351f47c39025f73cd73274eecf4a3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/72d351f47c39025f73cd73274eecf4a3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/776ca1e790285ee27043b71736a589e3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/776ca1e790285ee27043b71736a589e3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.6] /home/drping/.gradle/caches/transforms-1/files-1.1/react-native-0.58.6.aar/c86c9b8a08162346eb4ed41c78dc3289/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aca97c653f6f16556a6c5ff6b12a03c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/aca97c653f6f16556a6c5ff6b12a03c8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.7] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/8ce8896dfc6b5c66e673a0768aca65a0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.7] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/8ce8896dfc6b5c66e673a0768aca65a0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/55a17a2f6031a4fabd788f41ecff4fed/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/55a17a2f6031a4fabd788f41ecff4fed/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/571a58fe9adcedc1bc82e8affaa4496a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/571a58fe9adcedc1bc82e8affaa4496a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.3.0.aar/515a79d1748b407960e93a42e84810bf/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.3.0.aar/515a79d1748b407960e93a42e84810bf/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/beeb96c7f4401202a0a178b268f5bb2d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/beeb96c7f4401202a0a178b268f5bb2d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/05736e9e20fa8a9936604f5a5cafab49/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/05736e9e20fa8a9936604f5a5cafab49/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.3.0.aar/13f18cc2f839744c8678ce4a280582ee/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.3.0.aar/13f18cc2f839744c8678ce4a280582ee/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/1b044ae12d1de0d8abe7aeafa086e566/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/1b044ae12d1de0d8abe7aeafa086e566/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/4efa698c637619db958fdc794f6fcbb6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/4efa698c637619db958fdc794f6fcbb6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/294515423c0a27683f796bf863b6dbc0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/294515423c0a27683f796bf863b6dbc0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:21:5-23:54
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:23:5-44
+MERGED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:23:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/0fcff0db0ded184338c6e87fd4da7d53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/0fcff0db0ded184338c6e87fd4da7d53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/efa6e1dee70aff35c638f5adc8b66f51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/efa6e1dee70aff35c638f5adc8b66f51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/69d5cd42a95e0d879c5e53fe01afb33f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/69d5cd42a95e0d879c5e53fe01afb33f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4a45c8924e29aecd2f5c19b94b71a041/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4a45c8924e29aecd2f5c19b94b71a041/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/3108e68eb9b3eb959cdd14d7c774dd70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/3108e68eb9b3eb959cdd14d7c774dd70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:loader:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a3b93190fef0e4d34377be382fe44e39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a3b93190fef0e4d34377be382fe44e39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d30236967f31e46d277ea1e2ca3f8153/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d30236967f31e46d277ea1e2ca3f8153/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/b3a33384347222cb6f2bfa5d93125cd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/b3a33384347222cb6f2bfa5d93125cd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/31be8f8f79e75bfa4c08944dd140978e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/31be8f8f79e75bfa4c08944dd140978e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8c39247ed64412b1a0bc6514493fc4a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8c39247ed64412b1a0bc6514493fc4a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/19f1dc20da26621411ef275f2e33bf95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/19f1dc20da26621411ef275f2e33bf95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3260b80c1563df0086a06570544845cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/3260b80c1563df0086a06570544845cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/3e9162d8fc857d62e63311b5497568d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/3e9162d8fc857d62e63311b5497568d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c1a12d5eb7ef8071b907f148b875bef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c1a12d5eb7ef8071b907f148b875bef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ee0d7d787358feb8d39d3ff1ce9af2fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ee0d7d787358feb8d39d3ff1ce9af2fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c39b20c4fd39f6cb5bb9e0fa7e1d6438/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c39b20c4fd39f6cb5bb9e0fa7e1d6438/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/55ef6c1aca4a0ba36bf980497e74422b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/55ef6c1aca4a0ba36bf980497e74422b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/6ef1e671546948b5587e3b43bd0c82c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/6ef1e671546948b5587e3b43bd0c82c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/abdee6a4d6efa04edcb0c1a50c373239/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/abdee6a4d6efa04edcb0c1a50c373239/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/3c23fb5ec79ecbfec06c1aa8a03f617a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/3c23fb5ec79ecbfec06c1aa8a03f617a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/66e5a8ff787e2799c26c08333ccfb86e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/66e5a8ff787e2799c26c08333ccfb86e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/7d081d4ae6e99b6426090b00ac6c8673/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/7d081d4ae6e99b6426090b00ac6c8673/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/523a0910687f4a3a788f6161a944d7fe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/523a0910687f4a3a788f6161a944d7fe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8f4125c91a41939edbcc5b9758d26d7a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/drping/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8f4125c91a41939edbcc5b9758d26d7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/3824048ba1028ac1203e1dcf7954f0e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/3824048ba1028ac1203e1dcf7954f0e6/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/800e54b051ea8ddc9c7196775215ba57/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/800e54b051ea8ddc9c7196775215ba57/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/a04acc9085b4beb664daf9398dd5f9ba/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/a04acc9085b4beb664daf9398dd5f9ba/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/ab14d477a943564b617f7f65e527065e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/ab14d477a943564b617f7f65e527065e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/2479eafb91049e0ae555268141b37490/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/2479eafb91049e0ae555268141b37490/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/6eec074d242670368fbd694b4da0639c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/6eec074d242670368fbd694b4da0639c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/f6c815a6f483395e137612502474015d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/drping/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/f6c815a6f483395e137612502474015d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/cac020d76b76886ec8ada8ed282336c9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/drping/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/cac020d76b76886ec8ada8ed282336c9/AndroidManifest.xml:5:5-7:41
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
 		ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
@@ -208,16 +317,188 @@ INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/sr
 		INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
 		ADDED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml
-activity#com.twitter.sdk.android.core.identity.OAuthActivity
-ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:28:9-32:40
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:31:13-46
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:32:13-37
-	android:configChanges
-		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:30:13-59
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/db6e93f48306b63335c2eac96cc2a6cd/AndroidManifest.xml:29:13-79
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/66af3f404252a81c77c980f35032e58a/AndroidManifest.xml:34:13-89
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/c47a78f7692953e15585a4d3220d7118/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/3b824058b7196522596a58c593f42061/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.3.0] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.3.0.aar/b9f963884a0612e9d89cca799cdd5a44/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/2c2a35141b1bd120c771560fb89f0655/AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a161c578a7199ebb6c3ceaf69eea6ac7/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/drping/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/707bdfa274c04ca2f7c16cf2f663360f/AndroidManifest.xml:11:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/drping/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/04a029e20381a269dd6b5c095115e507/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4d8d74cd1d1aa3b43383bd57d741e3ae/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /home/drping/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/020e0edebe15f84ac7710592cac23676/AndroidManifest.xml:27:13-51
+activity#com.twitter.sdk.android.core.identity.OAuthActivity
+ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:28:9-32:40
+	android:excludeFromRecents
+		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:31:13-46
+	android:exported
+		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:30:13-59
+	android:name
+		ADDED from [com.twitter.sdk.android:twitter-core:3.0.0] /home/drping/.gradle/caches/transforms-1/files-1.1/twitter-core-3.0.0.aar/5dbfd996feaef3cfd75b1a3df30e3f9e/AndroidManifest.xml:29:13-79
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE

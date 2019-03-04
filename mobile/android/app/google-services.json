@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "537811531292",
+    "firebase_url": "https://devarea2018-ok.firebaseio.com",
+    "project_id": "devarea2018-ok",
+    "storage_bucket": "devarea2018-ok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537811531292:android:78b6445a17b7af26",
+        "android_client_info": {
+          "package_name": "com.dev_area_2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537811531292-7b7dnasht4jgq4j20s394irjaas28gej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFMfmjAwNmdVjAdDQ8RcshIuN1Yr6OKbQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

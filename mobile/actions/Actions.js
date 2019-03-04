@@ -10,8 +10,14 @@ export function setPage(page) {
     }
 }
 
-export function twitterSignIn(authToken, authTokenSecret) {
+export function twitterSignIn(twitterAuthToken, twitterAuthTokenSecret) {
     return {
-        type: 'SET_TWITTER_TOKEN', authToken, authTokenSecret
+        type: 'SET_TWITTER_TOKEN', twitterAuthToken, twitterAuthTokenSecret
+    }
+}
+
+export function googleSignIn(googleToken) {
+    return {
+        type: 'SET_GOOGLE_TOKEN', googleToken
     }
 }
