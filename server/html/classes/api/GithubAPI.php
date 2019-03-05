@@ -20,25 +20,14 @@ class GithubAPI extends ServiceAPI
 		return count($res) > 0;
 	}
 
-	function reqReaction_starRepo($argsArr) : bool /* $owner, $repo */ /* throw */
+	function reqReaction_starRepo($argsArr) /* $owner, $repo */ /* throw */
 	{
 		return $this->request('user/starred/' . $argsArr[0] . '/' . $argsArr[1], 'PUT');
 	}
 
-	function reqReaction_unstarRepo($argsArr) : bool /* $owner, $repo */ /* throw */
+	function reqReaction_unstarRepo($argsArr) /* $owner, $repo */ /* throw */
 	{
 		return $this->request('user/starred/' . $argsArr[0] . '/' . $argsArr[1], 'DELETE');
-	}
-
-	function reqReaction_postGist($argsArr) : bool /* $filename, $content */ /* throw */
-	{
-		return $this->request('gists', 'POST', json_encode(array(
-			'files' => [
-				$argsArr[0] => [
-					"content" => $argsArr[1]
-				]
-			]
-		)));
 	}
 
 	private function request($uri, $method = 'GET', $data = null)
