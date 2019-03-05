@@ -50,7 +50,10 @@ class GithubAPI extends ServiceAPI
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
-		$headers = array("Authorization: token " . $this->Token->token);
+		$headers = array(
+			"Authorization: token " . $this->Token->token,
+			"User-Agent: Area"
+		);
 		if ($method == 'PUT')
 			array_push($headers, "Content-Length: 0");
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
