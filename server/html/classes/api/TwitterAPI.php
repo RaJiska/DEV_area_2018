@@ -6,8 +6,6 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 class TwitterAPI extends ServiceAPI
 {
 	const SERVICE_NAME = "Twitter";
-	private $accessToken;
-	private $accessTokenSecret;
 	private $connection;
 
 	function __construct($User, $Database = null)
@@ -23,55 +21,52 @@ class TwitterAPI extends ServiceAPI
 	function reqAction_newTweet($name = null)
 	{
 		$name ?
-		$content = $this->connection->get("statuses/user_timeline", ["name" => $name]) :
+		$content = $this->connection->get("statuses/user_timeline", ["name" => $name[0]]) :
 		$content = $this->connection->get("statuses/user_timeline");
 		$date = $content[0]->{'created_at'};
-		$datetime1 = new DateTime(date('Y-M-d H:i:s', strtotime($date)));
-		$datetime2 = new DateTime('NOW');
-		$interval = $datetime1->diff($datetime2);
-		$minutes = $interval->format('%h') * 60 + $interval->format('%i');
+		$interval = abs(strtotime('now') - strtotime($date));
+		$minutes = $interval / (60);
 
 		if ($minutes <= 1)
 			return true;
 		return false;
 	}
 
+	// Return true if there is a recent follower, false otherwhise.
+	function reqAction_newFollower()
+	{
+		$content = $this->connection->get("followers/list");
+		$users = $content->{'users'};
+		foreach ($users as &$user) {
+			$date = $user->{'created_at'};
+			$interval = abs(strtotime('now') - strtotime($date));
+			$minutes = $interval / (60);
+			if ($minutes <= 1)
+				return true;
+		}
+		return false;
+	}
+
+	// Return true if there is a follow request, false otherwhise.
+	function reqAction_newFollowerRequest()
+	{
+		$content = $this->connection->get("friendships/incoming");
+		if (!count($content->{'ids'}))
+			return false;
+		return true;
+	}
+
 	// Tweet the tag passed as parameter on user's account
 	function reqReaction_tweet($tag)
 	{
-		$content = $this->connection->post("statuses/update", ["status" => $tag]);
-		return $content;
-	}
-
-	// Get user tweet timeline
-	function reqReaction_userTimeline($name)
-	{
-		$content = $this->connection->get("statuses/user_timeline");
-		return $content;
+		$content = $this->connection->post("statuses/update", ["statuss" => $tag]);
+		return $this->formatResponse($content);
 	}
 
 	private function formatResponse($res)
 	{
-		if (!$res['success'])
-			throw new Exception($res['data']['error']);
-		return $res['data'];
-	}
-
-	private function request($uri, $method = 'GET', $data = null)
-	{
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $this->urlBase . $uri);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $this->Token->token));
-		if ($data)
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-		if (($res = curl_exec($ch)) === false)
-			throw new Exception('Request Error: ' . curl_error($ch));
-		curl_close($ch);
-		return json_decode($res, true);
+		if ($res->{'errors'})
+			throw new Exception(self::SERVICE_NAME . ': ' . $res->{'errors'}[0]->{'message'});
+		return $res;
 	}
 }
