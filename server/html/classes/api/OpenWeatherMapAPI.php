@@ -9,21 +9,16 @@ class OpenWeatherMapAPI extends ServiceAPI
 	{
 		parent::__construct(self::SERVICE_NAME, $User, $Database);
 		$this->urlBase = 'api.openweathermap.org/data/2.5/weather?units=metric&APPID=' . $GLOBALS['config']['services']['openweathermap']['keyid'];
-		// $this->keyId = $GLOBALS['config']['services']['imgur']['keyid'];
-		// $this->keySecret = $GLOBALS['config']['services']['imgur']['keysecret'];
 	}
 
-	function reqAction_sunInCity()
+	function reqAction_rainInCity($city)
 	{
-		$arr = $this->request('&q=Toulouse');
-		return $arr;
-	}
-
-	private function formatResponse($res)
-	{
-		if (!$res['success'])
-			throw new Exception(self::SERVICE_NAME . ': ' . $res['data']['error']);
-		return $res['data'];
+		$content = $this->request('&q=' . $city);
+		$state = $content['weather'][0]['main'];
+		$temp = $content['main']['temp'];
+		if ($state == "Rain")
+			return true;
+		return false;
 	}
 
 	private function request($uri, $method = 'GET', $data = null)
