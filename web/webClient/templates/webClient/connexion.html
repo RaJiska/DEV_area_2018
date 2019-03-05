@@ -1,0 +1,324 @@
+<div id='cssmenu'>
+    <ul>
+    <li><a href='http://localhost:8000/'><span>Home</span></a></li>
+    <li><a href='http://localhost:8000/web/profile'><span>Profile</span></a></li>
+    <li><a href='http://localhost:8000/web/services'><span>Action/Réaction</span></a></li>
+    <li><a href='http://localhost:8000/web/connexion'><span>Services</span></a></li>
+    <li class="topnav-right" class='last'><a href='http://localhost:8000/web/login'><span>Login</span></a></li>
+     </ul>
+</div>
+
+    <div class="">
+        <div class="grid-1-5">
+            <h2>Twitter</h2>
+            <p>Developping</p>
+            <img src="https://politicalfails.files.wordpress.com/2014/08/twitter-logo.png?w=1024">
+            <a href="http://127.0.0.1:8000/accounts/twitter/login/" class="button">Sign Up</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Instagram</h2>
+            <p>Available</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png">
+            <a href="http://127.0.0.1:8000/accounts/instagram/login/" class="button">Sign Up</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Github</h2>
+            <p>Available</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png">
+            <a href="http://127.0.0.1:8000/accounts/github/login/" class="button">Sign Up</a>
+        </div>
+        <div class="grid-1-5">
+            <h2>Imgur</h2>
+            <p>Developping</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Imgur_logo.svg/1200px-Imgur_logo.svg.png">
+            <a href="http://api.imgur.com/oauth2/authorize?client_id=e5c2adbda765279&response_type=token" class="button">Sign Up</a>
+        </div>
+    </div>
+
+
+
+
+<style>
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid #47c9af;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+  background: #ffffff;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #47c9af;
+}
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  *zoom: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1-5 {
+  border: 2px solid #4ac9af;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+@media screen and (min-width: 700px) {
+  .grid-1-5 {
+    float: left;
+    width: 50%;
+  }
+  .grid-1-5:nth-child(odd) {
+    clear: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  .grid-1-5 {
+    width: 33.3333333%;
+  }
+  .grid-1-5:nth-child(3n+1) {
+    clear: left;
+  }
+  .grid-1-5:nth-child(odd) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .grid-1-5 {
+    width: 20%;
+  }
+  .grid-1-5:nth-child(odd), .grid-1-5:nth-child(3n+1) {
+    clear: none;
+  }
+}
+
+.grid-1-5:hover {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF53455B', endColorstr='#FF201D22');
+  border-top: 2px solid #4ac9af;
+  border-bottom: 2px solid #4ac9af;
+  box-shadow: 0px 0px 10px 0px #4ac9af;
+  transform: scale(1.025);
+  z-index: 2;
+}
+.grid-1-5:hover:before, .grid-1-5:hover:after {
+  content: "";
+  position: absolute;
+  background-color: #4ac9af;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#4ac9af', endColorstr='#4ac9af');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2N2QzNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmNGY2OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4ac9af), color-stop(100%, #4ac9af));
+  background-image: -moz-linear-gradient(top, #4ac9af 0%, #4ac9af 100%);
+  background-image: -webkit-linear-gradient(top, #4ac9af 0%, #4ac9af 100%);
+  background-image: linear-gradient(to bottom, #4ac9af 0%, #4ac9af 100%);
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+}
+.grid-1-5:hover:before {
+  left: -2px;
+}
+.grid-1-5:hover:after {
+  right: -2px;
+}
+.grid-1-5:hover .button {
+  background-color: #4ac9af;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#4ac9af', endColorstr='#4ac9af');
+   background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #4ac9af), color-stop(100%, #4ac9af));
+  background-image: -moz-linear-gradient(left, #4ac9af 0%, #4ac9af 100%);
+  background-image: -webkit-linear-gradient(left, #4ac9af 0%, #4ac9af 100%);
+  background-image: linear-gradient(to right, #4ac9af 0%, #4ac9af 100%);
+}
+
+h2, h3, p, ul {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+p, ul {
+  margin: 0 0 1.5em;
+}
+
+ul {
+  color: #4ac9af;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 0 0 0.8333333333333333em;
+}
+
+.button {
+  background-color: #4ac9af;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+
+.uppercase, .button, h2 {
+  text-transform: uppercase;
+}
+
+sup, .small {
+  font-size: 0.6125em;
+}
+
+img {
+  width: 50%;
+  height: 50%%;
+}
+
+
+
+</style>
