@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vemassa/Epitech_2019/DEV_area_2018/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "/home/drping/Documents/Epitech/DEV_area_2018/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e2b0aa12f471f19c80ec93c87e961bd1/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/home/drping/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cfc51d6ccddabee3043063d68b2587de/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

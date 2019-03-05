@@ -7,3 +7,10 @@ services:
       - ./server/html:/var/www/html
     ports:
       - 8080:80
+  mobile:
+    build:
+      context: mobile
+    volumes:
+      - './mobile:/usr/src/app'
+    environment:
+      - NODE_ENV=development

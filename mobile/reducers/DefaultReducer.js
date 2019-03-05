@@ -1,22 +1,21 @@
-import { combineReducers } from 'redux'
-
 const initialState = {
-    isFetching: false,
-    firstName: null,
-    lastName: null
+    token: "",
+    twitterAuthToken: "",
+    twitterAuthTokenSecret: ""
 }
 
 const defaultReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'REQUEST_USER_DETAILS':
-            return;
-        case 'RECEIVE USER_DETAILS':
-            return;
+        case 'SET_USER_TOKEN':
+            return Object.assign({}, state, {
+                token: action.token})
+        case 'SET_TWITTER_TOKEN':
+            return Object.assign({}, state, {
+                twitterAuthToken: action.authToken,
+                twitterAuthTokenSecret: action.authTokenSecret})
         default:
             return state
     }
 }
 
-export default combineReducers({
-    reducer: defaultReducer,
-})
+export default defaultReducer;

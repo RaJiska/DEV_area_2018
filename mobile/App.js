@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Login from './Login/Login'
+import {connect} from 'react-redux'
+import {setUser, twitterSignIn} from './actions/Actions'
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Welcome to React Native!</Text>
+        <Login {...this.props}/>
       </View>
     );
   }
@@ -14,8 +17,23 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'rgba(0, 0, 0, 0.85)',
   }
 });
+
+const mapStateToProps = state => {
+  return state
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setUser: (token) => {
+      dispatch(setUser(token))
+    },
+    twitterSignIn: (authToken, authTokenSecret) => {
+      dispatch(twitterSignIn(authToken, authTokenSecret))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
