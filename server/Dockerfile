@@ -26,6 +26,7 @@ RUN \
 	mysql -u root < /tmp/database.sql
 
 ADD composer.json /tmp/composer.json
+ADD triggerCheck.sh /tmp/triggerCheck.sh
 ADD entrypoint.sh /tmp/entrypoint.sh
-RUN chmod 700 /tmp/entrypoint.sh
+RUN chmod 700 /tmp/entrypoint.sh /tmp/triggerCheck.sh
 ENTRYPOINT ["/tmp/entrypoint.sh"]
