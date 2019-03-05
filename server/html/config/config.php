@@ -105,7 +105,7 @@ $config['reactions'] = [
 			'unfollow_tag' => [
 				"description" => "Unfollow a given tag",
 				"arguments" => [
-					"Tag" => "The tag to unfollow"
+					"Tag" => "(string) The tag to unfollow"
 				]
 			],
 			'comment' => [
