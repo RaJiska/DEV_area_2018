@@ -1,7 +1,6 @@
 package com.example.dev_area_2018
 
 import android.animation.Animator
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -17,13 +16,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_main.*
-import org.json.JSONArray
 import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.lang.Exception
-import java.net.HttpURLConnection
-import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 
@@ -87,6 +80,10 @@ class MainActivity : AppCompatActivity() {
                     println("token: $token")
                 } catch (e: Exception) {
                     println(e)
+                }
+                if (token.isNotEmpty()) {
+                    val intent = Intent(this, SignServices::class.java)
+                    startActivity(intent)
                 }
             },
             Response.ErrorListener { println("[ERROR]: FAILED") })

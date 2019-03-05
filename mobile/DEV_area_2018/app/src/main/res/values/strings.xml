@@ -10,4 +10,6 @@
     <string name="forget_password">Forget Password.?</string>
     <string name="register">Register</string>
     <string name="sign_in">Sign In</string>
+    <string name="twitter_key">U7v6riqMAzPWN0IkAXqr67G3x </string>
+    <string name="twitter_secret">RjtJxqJG5vyzdCWwX0KALMfl0Bj8MkumZXCrcjX6Y8UcUrPAMs </string>
 </resources>

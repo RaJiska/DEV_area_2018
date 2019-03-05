@@ -2,25 +2,21 @@ package com.example.dev_area_2018
 
 import android.animation.Animator
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
-import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
-import com.android.volley.VolleyError
-import java.lang.Exception
 
 
 class Register : AppCompatActivity() {
@@ -85,6 +81,10 @@ class Register : AppCompatActivity() {
                     println("token: $token")
                 } catch (e: Exception) {
                     println(e)
+                }
+                if (token.isNotEmpty()) {
+                    val intent = Intent(this, SignServices::class.java)
+                    startActivity(intent)
                 }
             },
             Response.ErrorListener { response ->
