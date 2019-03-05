@@ -80,6 +80,5 @@ def imgur(request):
 
     return render(request, 'webClient/imgur.html', locals())
 
-
 def services(request):
     return render(request, 'webClient/services.html', locals())

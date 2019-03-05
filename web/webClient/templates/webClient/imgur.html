@@ -24,4 +24,16 @@ $.ajax({
            console.log(data["HTTPRESPONSE"]);
    }
 });
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
+sleep(500).then(() => {
+
+window.location.replace("http://127.0.0.1:8000/web/home");
+console.log("Slept");
+});
+
+
+
 </script>
