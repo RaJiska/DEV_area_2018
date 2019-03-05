@@ -27,9 +27,12 @@ $config['actions'] = [
 			'new_commit'
 		],
 		'openweathermap' => [
-
+			'rain_in_city'
 		],
 		'trello' => [
+
+		],
+		'yammer' => [
 
 		]
 	],
@@ -51,9 +54,12 @@ $config['actions'] = [
 			'reqAction_newCommit'
 		],
 		'openweathermap' => [
-
+			'reqAction_rainInCity'
 		],
 		'trello' => [
+
+		],
+		'yammer' => [
 
 		]
 	]
@@ -86,6 +92,9 @@ $config['reactions'] = [
 		],
 		'trello' => [
 			'create_board'
+		],
+		'yammer' => [
+
 		]
 	],
 	'reactions_function' => [
@@ -114,6 +123,9 @@ $config['reactions'] = [
 		],
 		'trello' => [
 			'reqReaction_createBoard'
+		],
+		'yammer' => [
+
 		]
 	]
 ];
@@ -173,6 +185,15 @@ $config['services'] = [
 		],
 		'keyid' => '4620371a714f02f39fe4ac4db99bd5b1',
 		'keysecret' => ''
+	],
+	'yammer' => [
+		'brief' => [
+			'name' => 'yammer',
+			'actions' => $config['actions']['actions_name']['yammer'],
+			'reactions' => $config['reactions']['reactions_name']['yammer']
+		],
+		'keyid' => 'QEEGJfAvkXOv6FVUXktQ',
+		'keysecret' => 'TVh0R2oFrgclSLXo3DnRFfLckssRaMAJ0S1c3RLHHg'
 	]
 ];
 
@@ -182,7 +203,8 @@ $config['api'] = [
 	'twitter' => 'TwitterAPI',
 	'github' => 'GithubAPI',
 	'openweathermap' => 'OpenWeatherMapAPI',
-	'trello' => 'TrelloAPI'
+	'trello' => 'TrelloAPI',
+	'yammer' => 'YammerAPI'
 ];
 
 /* JSON Messages */

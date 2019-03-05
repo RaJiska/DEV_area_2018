@@ -12,7 +12,7 @@ class ServiceAPI
 	protected $keySecret;
 	protected $urlBase;
 
-	public function __construct($serviceName, $User, $Database = null, $needToken = false)
+	public function __construct($serviceName, $User, $Database = null, $needToken = true)
 	{
 		$this->User = $User;
 		$this->Token = new Token($this->Database);

@@ -48,6 +48,7 @@ INSERT INTO services (name) VALUES ('yammer');
 INSERT INTO services (name) VALUES ('twitter');
 INSERT INTO services (name) VALUES ('github');
 INSERT INTO services (name) VALUES ('openweathermap');
+INSERT INTO services (name) VALUES ('yammer');
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 2, "bbbb");
 INSERT INTO tokens (user_id, service_id, token) VALUES (1, 3, "cccc");
 INSERT INTO tokens (user_id, service_id, token) VALUES (2, 1, "dddd");

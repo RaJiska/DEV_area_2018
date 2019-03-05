@@ -1,23 +1,28 @@
 <?php
 require_once 'classes/api/ServiceAPI.php';
 
-class OpenWeatherMapAPI extends ServiceAPI
+class YammerAPI extends ServiceAPI
 {
-	const SERVICE_NAME = "OpenWeatherMap";
+	const SERVICE_NAME = "Yammer";
 
 	function __construct($User, $Database = null)
 	{
-		parent::__construct(self::SERVICE_NAME, $User, $Database, false);
-		$this->urlBase = 'api.openweathermap.org/data/2.5/weather?units=metric&APPID=' . $GLOBALS['config']['services']['openweathermap']['keyid'];
+		parent::__construct(self::SERVICE_NAME, $User, $Database);
+		$this->urlBase = 'https://www.yammer.com/api/v1/';
 	}
 
-	function reqAction_rainInCity($city)
+	// Return true if there is a new thread, false otherwhise.
+	function reqAction_newThread()
 	{
-		$content = $this->request('&q=' . $city);
-		$state = $content['weather'][0]['main'];
-		$temp = $content['main']['temp'];
-		if ($state == "Rain")
-			return true;
+		$content = $this->request('messages/my_feed.json');
+		$messages = $content['messages'];
+		foreach ($messages as &$message) {
+			$date = $message['created_at'];
+			$interval = abs(strtotime('now') - strtotime($date));
+			$minutes = $interval / (60);
+			if ($minutes <= 1)
+				return true;
+		}
 		return false;
 	}
 
@@ -30,6 +35,7 @@ class OpenWeatherMapAPI extends ServiceAPI
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $this->Token->token));
 		if ($data)
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		if (($res = curl_exec($ch)) === false)
