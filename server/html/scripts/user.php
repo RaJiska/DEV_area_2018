@@ -1,4 +1,5 @@
 <?php
+require_once 'classes/User.php';
 
 function verifyUserToken($Database) /* throw */
 {

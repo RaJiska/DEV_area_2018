@@ -1,11 +1,21 @@
 <?php
+
+function getRealIpAddr()
+{
+	if (!empty($_SERVER['HTTP_CLIENT_IP']))
+		return $_SERVER['HTTP_CLIENT_IP'];
+	if (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+		return $_SERVER['HTTP_X_FORWARDED_FOR'];
+	return $_SERVER['REMOTE_ADDR'];
+}
+
 $services = [];
 
 foreach ($GLOBALS['config']['services'] as $elem)
 	array_push($services, $elem['brief']);
 
 $data = [
-	"client" => ["host" => $_SERVER['REMOTE_ADDR']],
+	"client" => ["host" => getRealIpAddr()],
 	"server" => ["current_time" => time(), "services" => $services]
 ];
 

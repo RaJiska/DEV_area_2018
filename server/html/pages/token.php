@@ -49,6 +49,7 @@ function POST()
 		$exists = true;
 	}
 	catch (Exception $e) {
+		$exists = false;
 	}
 	$Token->user_id = $User->id;
 	$Token->service_id = $Service->id;
