@@ -162,4 +162,9 @@ class SignServices : AppCompatActivity() {
         }
         queue.add(postRequest)
     }
+
+    fun onClickArea(v: View) {
+        val intent = Intent(this, ActionReaction::class.java)
+        startActivity(intent)
+    }
 }

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActionReaction" android:orientation="vertical">
+
+    <Spinner
+            android:id="@+id/action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp" />
+
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/argvaction1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/colorTextView"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="15sp" />
+
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/argvaction2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/colorTextView"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="15sp" />
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/argvaction3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/colorTextView"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="15sp" />
+
+    <Spinner
+            android:id="@+id/reaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp" />
+
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/argvreaction1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/colorTextView"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="15sp" />
+
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/argvreaction2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/colorTextView"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="15sp" />
+    <android.support.design.widget.TextInputEditText
+            android:id="@+id/argvreaction3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/colorTextView"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="15sp" />
+
+    <Button
+            android:id="@+id/sendArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_drawable"
+            android:textColor="@color/colorAccent"
+            android:onClick="onClickSendArea"
+            android:text="Send Action Reaction"/>
+
+    <Button
+            android:id="@+id/BackSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_drawable"
+            android:textColor="@color/colorAccent"
+            android:onClick="onClickBack"
+            android:text="Back to Sign In"/>
+
+</LinearLayout>
