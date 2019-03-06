@@ -44,6 +44,7 @@ class SignServices : AppCompatActivity() {
                 "github" -> onResumeGitHub(uri)
                 "imgur" -> onResumeImgur(uri)
                 "trello" -> onResumeTrello(uri)
+                "yammer" -> onResumeYammer(uri)
             }
         }
     }
@@ -111,6 +112,22 @@ class SignServices : AppCompatActivity() {
     private fun onResumeTrello(uri: Uri) {
         println(uri)
         var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("token")
+        if (token != null) {
+            println("--------------------------------------{}{}>$token")
+        } else if (uri.getQueryParameter("error") != null) {
+            println("ERROR")
+        }
+    }
+
+    fun onClickYammer(v: View) {
+        globalclass.services = "yammer"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.yammer.com/oauth2/authorize?client_id=QEEGJfAvkXOv6FVUXktQ&response_type=token&redirect_uri=$redirectUri/"))
+        startActivity(intent)
+    }
+
+    private fun onResumeYammer(uri: Uri) {
+        println(uri)
+        var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("access_token")
         if (token != null) {
             println("--------------------------------------{}{}>$token")
         } else if (uri.getQueryParameter("error") != null) {
