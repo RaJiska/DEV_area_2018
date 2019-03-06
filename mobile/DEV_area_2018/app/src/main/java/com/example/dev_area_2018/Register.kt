@@ -22,9 +22,11 @@ import org.json.JSONObject
 class Register : AppCompatActivity() {
 
     var token = ""
+    lateinit var globalClass: GlobalClass
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        globalClass = applicationContext as GlobalClass
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -70,8 +72,10 @@ class Register : AppCompatActivity() {
     fun onClickRegister(v: View) {
         val login = findViewById<EditText>(R.id.emailEditText).text
         val pass = findViewById<EditText>(R.id.passwordEditText).text
+        val apiLink = findViewById<EditText>(R.id.apilink).text
+        globalClass.apilink = apiLink.toString()
         val queue = Volley.newRequestQueue(this)
-        var url = "http://area-server.rajiska.fr/user"
+        var url = globalClass.apilink + "/user"
         val postRequest = object : StringRequest(Request.Method.POST, url,
             Response.Listener { response ->
                 var strResp = response.toString()

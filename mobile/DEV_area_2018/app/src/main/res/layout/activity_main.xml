@@ -95,6 +95,16 @@
                 android:password="true"
                 android:textSize="15sp" />
 
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/apilink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="API Link"
+                android:textColor="@color/colorTextView"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="15sp" />
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

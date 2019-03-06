@@ -17,14 +17,17 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
     var token = ""
+    lateinit var globalClass: GlobalClass
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
+        globalClass = applicationContext as GlobalClass
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
@@ -68,8 +71,10 @@ class MainActivity : AppCompatActivity() {
     fun onClickLogIn(v: View) {
         val login = findViewById<EditText>(R.id.emailEditText).text
         val pass = findViewById<EditText>(R.id.passwordEditText).text
+        val apiLink = findViewById<EditText>(R.id.apilink).text
+        globalClass.apilink = apiLink.toString()
         val queue = Volley.newRequestQueue(this)
-        val url = "http://area-server.rajiska.fr/user?login=$login&pass=$pass"
+        val url = globalClass.apilink + "/user?login=$login&pass=$pass"
         val stringReq = StringRequest(
             Request.Method.GET, url,
             Response.Listener<String> { response ->
