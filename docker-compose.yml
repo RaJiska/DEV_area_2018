@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   server:
     build:
@@ -11,6 +11,7 @@ services:
     build:
       context: mobile
     volumes:
-      - './mobile:/usr/src/app'
+      - ./mobile:/usr/src/app
+      - ./shared_folder:/shared_folder
     environment:
       - NODE_ENV=development
