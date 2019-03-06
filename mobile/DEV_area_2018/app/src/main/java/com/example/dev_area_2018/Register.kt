@@ -73,7 +73,8 @@ class Register : AppCompatActivity() {
         val login = findViewById<EditText>(R.id.emailEditText).text
         val pass = findViewById<EditText>(R.id.passwordEditText).text
         val apiLink = findViewById<EditText>(R.id.apilink).text
-        globalClass.apilink = apiLink.toString()
+        if (apiLink.isNotEmpty())
+            globalClass.apilink = apiLink.toString()
         val queue = Volley.newRequestQueue(this)
         var url = globalClass.apilink + "/user"
         val postRequest = object : StringRequest(Request.Method.POST, url,

@@ -71,8 +71,9 @@ class MainActivity : AppCompatActivity() {
     fun onClickLogIn(v: View) {
         val login = findViewById<EditText>(R.id.emailEditText).text
         val pass = findViewById<EditText>(R.id.passwordEditText).text
-        val apiLink = findViewById<EditText>(R.id.apilink).text
-        globalClass.apilink = apiLink.toString()
+        val apiLink = findViewById<EditText>(R.id.apilink).text.toString()
+        if (apiLink.isNotEmpty())
+            globalClass.apilink = apiLink
         val queue = Volley.newRequestQueue(this)
         val url = globalClass.apilink + "/user?login=$login&pass=$pass"
         val stringReq = StringRequest(
