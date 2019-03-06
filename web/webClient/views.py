@@ -7,7 +7,8 @@ from django.contrib.auth.models import User
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
-
+import requests
+import json
 
 def username_present(username):
     if User.objects.filter(username=username).exists():
@@ -26,6 +27,9 @@ def signup(request):
             form.save()
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
+            url = "http://area-server.rajiska.fr/user?login=" + username + "&pass=" + raw_password
+            response = requests.post(url)
+            print(response.text)
             user = authenticate(username=username, password=raw_password)
             login(request, user)
             return redirect('home')
@@ -39,16 +43,31 @@ def loginview(request):
         # Ici nous pouvons traiter les données du formulaire
         username = form.cleaned_data['username']
         password = form.cleaned_data['password']
-        print(username)
-        print(password)
-        if (username_present(username)):
-            print("PRESENT !")
-            print("Login !")
+        url = "http://area-server.rajiska.fr/user?login=" + username + "&pass=" + password
+        response = requests.get(url)
+        content = response.text
+        content = content.replace("{", "").replace("}", "").replace("\n", "")
+        content = content.split(",")
+        status = content[0].split(":")[1].replace("\"", "").replace(" ", "")
+        print(status)
+        if status in ["ok"]:
+            token = content[2].split(":")[1].replace("\"", "")
+            print(token)
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                user.first_name = token
+                user.save()
+                login(request, user)
+            else:
+                user = User.objects.create_user(username, 'nomailattributed@nomail.com', password)
+                user = authenticate(username=username, password=password)
+                user.first_name = token
+                user.save()
+                login(request, user)
+            return redirect('home')
             # Recup token + mettre en BDD
         else:
-            print("NOT PRESENT")
-            print("Go to registration")
-
+            print(content)
     return render(request, 'webClient/login.html', locals())
 
 def profile(request):
