@@ -84,6 +84,7 @@ class MainActivity : AppCompatActivity() {
                     val obj = JSONObject(strResp)
                     token = obj.getString("token")
                     println("token: $token")
+                    globalClass.token = token
                 } catch (e: Exception) {
                     println(e)
                 }
