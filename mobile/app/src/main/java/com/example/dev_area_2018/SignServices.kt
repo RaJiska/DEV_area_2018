@@ -83,7 +83,7 @@ class SignServices : AppCompatActivity() {
 
     fun onClickImgur(v: View) {
         globalclass.services = "imgur"
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://api.imgur.com/oauth2/authorize?client_id=" + "ec72c3e74d6a371" + "&response_type=token"))
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://api.imgur.com/oauth2/authorize?client_id=" + "d1e08678c80ec65" + "&response_type=token"))
         startActivity(intent)
     }
 
