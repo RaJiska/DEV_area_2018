@@ -14,9 +14,27 @@ $config['actions'] = [
 
 		],
 		'imgur' => [
-			'new_comment',
-			'score_above_or_eq',
-			'score_below'
+			'new_comment' => [
+				"description" => "Awaits a new comment on a given gallery",
+				"arguments" => [
+					"Gallery ID" => "(string) The ID of the gallery",
+					"Date" => "(int) The date at which new comments will trigger the action"
+				]
+			],
+			'score_above_or_eq' => [
+				"description" => "Awaits for the image / gallery to have a score above or equal to the one provided in parameters",
+				"arguments" => [
+					"Gallery ID" => "(string) The ID of the gallery",
+					"Score" => "(int) Score"
+				]
+			],
+			'score_below' => [
+				"description" => "Awaits for the image / gallery to have a score below to the one provided in parameters",
+				"arguments" => [
+					"Gallery ID" => "(string) The ID of the gallery",
+					"Score" => "(int) Score"
+				]
+			]
 		],
 		'twitter' => [
 			'new_tweet',
@@ -24,7 +42,14 @@ $config['actions'] = [
 			'new_follower_request'
 		],
 		'github' => [
-			'new_commit'
+			'new_commit' => [
+				"description" => "Awaits for a new commit to happen on a given repository",
+				"arguments" => [
+					"Owner" => "(string) The user owning the repository",
+					"Repository" => "(string) The repository name",
+					"Date" => "(int) The date at which new commits will trigger the action"
+				]
+			]
 		],
 		'openweathermap' => [
 			'rain_in_city'
@@ -71,26 +96,79 @@ $config['reactions'] = [
 
 		],
 		'imgur' => [
-			'follow_tag',
-			'unfollow_tag',
-			'comment',
-			'uncomment',
-			'favorite_album',
-			'upload_image',
-			'delete_image'
+			'follow_tag' => [
+				"description" => "Follows a given tag",
+				"arguments" => [
+					"Tag" => "(string) The tag to follow"
+				]
+			],
+			'unfollow_tag' => [
+				"description" => "Unfollow a given tag",
+				"arguments" => [
+					"Tag" => "(string) The tag to unfollow"
+				]
+			],
+			'comment' => [
+				"description" => "Post a comment on a given gallery",
+				"arguments" => [
+					"Gallery ID" => "(string) The Gallery ID to post the comment on",
+					"Text" => "(string) The text of the comment to post"
+				]
+			],
+			'uncomment' => [
+				"description" => "Remove one of your own comment",
+				"arguments" => [
+					"Comment ID" => "(int) The comment ID you wish to remove"
+				]
+			],
+			'favorite_album' => [
+				"description" => "Add an album to the favorites",
+				"arguments" => [
+					"Album ID" => "(string) The ID if the album"
+				]
+			],
+			'upload_image' => [
+				"description" => "Upload an image / gallery",
+				"arguments" => [
+					"Image" => "(string) A base64 encoded image"
+				]
+			],
+			'delete_image' => [
+				"description" => "Delete an image",
+				"arguments" => [
+					"Image ID" => "(string) The ID of the image to be deleted"
+				]
+			]
 		],
 		'twitter' => [
 			'tweet'
 		],
 		'github' => [
-			'star_repo',
-			'unstar_repo',
+			'star_repo' => [
+				"description" => "Stars a repository",
+				"arguments" => [
+					"Owner" => "(string) The user owning the repository",
+					"Repository" => "(string) The repository name",
+				]
+			],
+			'unstar_repo' => [
+				"description" => "Unstar a repository",
+				"arguments" => [
+					"Owner" => "(string) The user owning the repository",
+					"Repository" => "(string) The repository name"
+				]
+			]
 		],
 		'openweathermap' => [
 
 		],
 		'trello' => [
-			'create_board'
+			'create_board' => [
+				"description" => "Create a trello board",
+				"arguments" => [
+					"Board Name" => "(string) The name of the board to be created"
+				]
+			]
 		],
 		'yammer' => [
 
