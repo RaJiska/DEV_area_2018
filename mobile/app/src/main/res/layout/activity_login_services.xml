@@ -9,7 +9,7 @@
         tools:context=".SignServices" android:orientation="vertical">
 
     <Button
-        android:id="@+id/login_button_twitter"
+        android:id="@+id/login_button_github"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -27,5 +27,15 @@
         android:layout_marginEnd="30dp"
         android:onClick="onClickImgur"
         android:text="Login Imgur" />
+
+    <Button
+            android:id="@+id/login_button_trello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:onClick="onClickTrello"
+            android:text="Login Trello" />
 
 </LinearLayout>

@@ -1,33 +1,36 @@
 package com.example.dev_area_2018
 
-
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
-import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.twitter.sdk.android.core.*
+import com.twitter.sdk.android.core.identity.TwitterLoginButton
 import org.json.JSONException
-import org.json.JSONObject
+
 
 class SignServices : AppCompatActivity() {
 
     private val clientId = "e86bb13fe8090d566b98"
     private val clientSecret = "ba43721037725760d996f39b7eb7e55abdf97d42"
     private val redirectUri = "futurestudio://callback"
+    private val trelloid = "4620371a714f02f39fe4ac4db99bd5b1"
 
     private lateinit var globalclass : GlobalClass
+    private lateinit var loginButtonTwitter: TwitterLoginButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_services)
 
         globalclass = applicationContext as GlobalClass
+
     }
 
     override fun onResume() {
@@ -40,6 +43,7 @@ class SignServices : AppCompatActivity() {
             when (globalclass.services) {
                 "github" -> onResumeGitHub(uri)
                 "imgur" -> onResumeImgur(uri)
+                "trello" -> onResumeTrello(uri)
             }
         }
     }
@@ -58,7 +62,8 @@ class SignServices : AppCompatActivity() {
         try {
             val requestQueue = Volley.newRequestQueue(this)
             val url = "https://github.com/login/oauth/access_token"
-            val postRequest = object : StringRequest(Request.Method.POST, url,
+            val postRequest = object : StringRequest(
+                Request.Method.POST, url,
                 Response.Listener { response ->
                     try {
                         val token = response.substring(response.indexOf("=") + 1, response.indexOf("&"))
@@ -90,6 +95,22 @@ class SignServices : AppCompatActivity() {
     private fun onResumeImgur(uri: Uri) {
         println(uri)
         var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("access_token")
+        if (token != null) {
+            println("0000000000000000000000000000000000>$token")
+        } else if (uri.getQueryParameter("error") != null) {
+            println("ERROR")
+        }
+    }
+
+    fun onClickTrello(v: View) {
+        globalclass.services = "trello"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://trello.com/1/authorize?expiration=1day&name=MyPersonalToken&scope=read&response_type=token&key=$trelloid&return_url=$redirectUri"))
+        startActivity(intent)
+    }
+
+    private fun onResumeTrello(uri: Uri) {
+        println(uri)
+        var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("token")
         if (token != null) {
             println("--------------------------------------{}{}>$token")
         } else if (uri.getQueryParameter("error") != null) {
