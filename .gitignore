@@ -4,6 +4,8 @@
 
 # Mobile
 /mobile/.gradle
+/mobile/local.properties
+/mobile/build
 
 # Web
 /web/AREA/__pycache__
