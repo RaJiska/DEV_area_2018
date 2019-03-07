@@ -7,7 +7,7 @@ services:
       - ./server/html:/var/www/html
     ports:
       - 8080:80
-  mobile:
+  mobile_user:
     build:
       context: mobile
     volumes:
@@ -15,3 +15,18 @@ services:
       - ./shared_folder:/shared_folder
     environment:
       - NODE_ENV=development
+  client_web:
+    build:
+      context: web
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./web:/code
+      - ./shared_folder:/shared_folder
+    ports:
+      - "8081:8000"
+    depends_on:
+      - web_db
+      - mobile_user
+      - server
+  web_db:
+    image: postgres

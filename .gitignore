@@ -1,2 +1,14 @@
+# Server
 /server/autoload.php
 /server/html/vendor
+
+# Mobile
+/mobile/.gradle
+
+# Web
+/web/AREA/__pycache__
+/web/webClient/__pycache__
+/web/webClient/migrations/__pycache__
+
+# Misc
+/shared_folder/area.apk
