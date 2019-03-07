@@ -22,9 +22,6 @@ class PageManager
 		case 'token':
 			$this->Page = new PageJSON('token', 'pages/token.php');
 			break;
-		case 'services':
-			$this->Page = new PageJSON('services', 'pages/services.php');
-			break;
 		case 'trigger':
 			$this->Page = new PageJSON('trigger', 'pages/trigger.php');
 			break;
