@@ -1,6 +1,7 @@
 version: '3'
 services:
   server:
+    container_name: area_server
     build:
       context: server
     volumes:
@@ -8,6 +9,7 @@ services:
     ports:
       - 8080:80
   mobile_user:
+    container_name: area_mobile
     build:
       context: mobile
     volumes:
@@ -16,6 +18,7 @@ services:
     environment:
       - NODE_ENV=development
   client_web:
+    container_name: area_web
     build:
       context: web
     command: python3 manage.py runserver 0.0.0.0:8000
@@ -25,8 +28,5 @@ services:
     ports:
       - "8081:8000"
     depends_on:
-      - web_db
       - mobile_user
       - server
-  web_db:
-    image: postgres
