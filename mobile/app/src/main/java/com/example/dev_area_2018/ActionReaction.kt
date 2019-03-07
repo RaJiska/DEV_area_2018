@@ -3,6 +3,7 @@ package com.example.dev_area_2018
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.TextInputEditText
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -20,6 +21,7 @@ class ActionReaction : AppCompatActivity() {
 
     lateinit var globalClass: GlobalClass
     lateinit var aboutJson : JSONArray
+    var args : ArrayList<Pair<String, ArrayList<String>>> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +40,7 @@ class ActionReaction : AppCompatActivity() {
                             val test = JSONObject(aboutJson.getJSONObject(i).getString("actions"))
                             val keys = test.keys()
                             while (keys.hasNext()) {
-                                var key = keys.next()
+                                val key = keys.next()
                                 arrayNameAction2.add(key)
                                 println(key)
                             }
@@ -56,6 +58,40 @@ class ActionReaction : AppCompatActivity() {
             }
         }
 
+        findViewById<Spinner>(R.id.action2).onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                for (i in 0..(aboutJson.length() - 1)) {
+                    if (parent != null) {
+                        if (aboutJson.getJSONObject(i).getString("name") == findViewById<Spinner>(R.id.action).selectedItem.toString()) {
+                            val test = JSONObject(aboutJson.getJSONObject(i).getString("actions"))
+                            val keys = test.keys()
+                            while (keys.hasNext()) {
+                                val key = keys.next()
+                                if (key == parent.getItemAtPosition(position).toString()) {
+                                    val test2 = JSONObject(test.get(key).toString()).getString("arguments")
+                                    val tab = test2.split(',')
+                                    var i3 = 1
+                                    for (string in tab) {
+                                        if (i3 == 1)
+                                            findViewById<TextInputEditText>(R.id.argvaction1).hint = string
+                                        if (i3 == 2)
+                                            findViewById<TextInputEditText>(R.id.argvaction2).hint = string
+                                        if (i3 == 3)
+                                            findViewById<TextInputEditText>(R.id.argvaction3).hint = string
+                                        i3++
+                                    }
+                                    println(key)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         findViewById<Spinner>(R.id.reaction).onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
@@ -68,9 +104,8 @@ class ActionReaction : AppCompatActivity() {
                             val test = JSONObject(aboutJson.getJSONObject(i).getString("reactions"))
                             val keys = test.keys()
                             while (keys.hasNext()) {
-                                var key = keys.next()
+                                val key = keys.next()
                                 arrayNameReaction2.add(key)
-                                println(key)
                             }
                         }
                         val spinnerAction2 = findViewById<Spinner>(R.id.reaction2)
@@ -81,6 +116,40 @@ class ActionReaction : AppCompatActivity() {
                         )
                         spinnerArrayAction2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                         spinnerAction2.adapter = spinnerArrayAction2
+                    }
+                }
+            }
+        }
+
+        findViewById<Spinner>(R.id.reaction2).onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                for (i in 0..(aboutJson.length() - 1)) {
+                    if (parent != null) {
+                        if (aboutJson.getJSONObject(i).getString("name") == findViewById<Spinner>(R.id.reaction).selectedItem.toString()) {
+                            val test = JSONObject(aboutJson.getJSONObject(i).getString("reactions"))
+                            val keys = test.keys()
+                            while (keys.hasNext()) {
+                                val key = keys.next()
+                                if (key == parent.getItemAtPosition(position).toString()) {
+                                    val test2 = JSONObject(test.get(key).toString()).getString("arguments")
+                                    val tab = test2.split(',')
+                                    var i3 = 1
+                                    for (string in tab) {
+                                        if (i3 == 1)
+                                            findViewById<TextInputEditText>(R.id.argvreaction1).hint = string
+                                        if (i3 == 2)
+                                            findViewById<TextInputEditText>(R.id.argvreaction2).hint = string
+                                        if (i3 == 3)
+                                            findViewById<TextInputEditText>(R.id.argvreaction3).hint = string
+                                        i3++
+                                    }
+                                    println(key)
+                                }
+                            }
+                        }
                     }
                 }
             }
