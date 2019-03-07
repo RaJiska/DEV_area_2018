@@ -10,9 +10,8 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.twitter.sdk.android.core.*
-import com.twitter.sdk.android.core.identity.TwitterLoginButton
 import org.json.JSONException
+import org.json.JSONObject
 
 
 class SignServices : AppCompatActivity() {
@@ -23,7 +22,6 @@ class SignServices : AppCompatActivity() {
     private val trelloid = "4620371a714f02f39fe4ac4db99bd5b1"
 
     private lateinit var globalclass : GlobalClass
-    private lateinit var loginButtonTwitter: TwitterLoginButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +66,7 @@ class SignServices : AppCompatActivity() {
                 Response.Listener { response ->
                     try {
                         val token = response.substring(response.indexOf("=") + 1, response.indexOf("&"))
+                        uploadToken("github", token)
                     } catch (e: Exception) {
                         println(e)
                     }
@@ -98,6 +97,7 @@ class SignServices : AppCompatActivity() {
         var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("access_token")
         if (token != null) {
             println("0000000000000000000000000000000000>$token")
+            uploadToken("imgur", token)
         } else if (uri.getQueryParameter("error") != null) {
             println("ERROR")
         }
@@ -114,6 +114,7 @@ class SignServices : AppCompatActivity() {
         var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("token")
         if (token != null) {
             println("--------------------------------------{}{}>$token")
+            uploadToken("trello", token)
         } else if (uri.getQueryParameter("error") != null) {
             println("ERROR")
         }
@@ -130,8 +131,40 @@ class SignServices : AppCompatActivity() {
         var token = Uri.parse("?" + uri.encodedFragment).getQueryParameter("access_token")
         if (token != null) {
             println("--------------------------------------{}{}>$token")
+            uploadToken("yammer", token)
         } else if (uri.getQueryParameter("error") != null) {
             println("ERROR")
         }
+    }
+
+    private fun uploadToken(service: String, token: String) {
+        val queue = Volley.newRequestQueue(this)
+        var url = globalclass.apilink + "/token"
+        val postRequest = object : StringRequest(Request.Method.POST, url,
+            Response.Listener { response ->
+                try {
+                    println("okkkkkkkkkkkkkkkkkkkkkkkk")
+                } catch (e: Exception) {
+                    println(e)
+                }
+            },
+            Response.ErrorListener { response ->
+                Log.d("Error.Response", response.toString())
+            }
+        ) {
+            override fun getParams(): Map<String, String> {
+                val params = HashMap<String, String>()
+                params["login"] = token
+                params["service"] = service
+
+                return params
+            }
+        }
+        queue.add(postRequest)
+    }
+
+    fun onClickArea(v: View) {
+        val intent = Intent(this, ActionReaction::class.java)
+        startActivity(intent)
     }
 }

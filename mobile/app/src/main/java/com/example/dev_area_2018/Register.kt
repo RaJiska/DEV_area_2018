@@ -84,6 +84,7 @@ class Register : AppCompatActivity() {
                     val obj = JSONObject(strResp)
                     token = obj.getString("token")
                     println("token: $token")
+                    globalClass.token = token
                 } catch (e: Exception) {
                     println(e)
                 }
@@ -99,7 +100,7 @@ class Register : AppCompatActivity() {
             override fun getParams(): Map<String, String> {
                 val params = HashMap<String, String>()
                 params["login"] = login.toString()
-                params["pass"] = pass.toString()
+                params["service"] = pass.toString()
 
                 return params
             }
