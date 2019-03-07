@@ -10,9 +10,6 @@ $config['database']['pass'] = 'hello';
 
 $config['actions'] = [
 	'actions_name' => [
-		'facebook' => [
-
-		],
 		'imgur' => [
 			'new_comment' => [
 				"description" => "Awaits a new comment on a given gallery",
@@ -84,9 +81,6 @@ $config['actions'] = [
 		]
 	],
 	'actions_function' => [
-		'facebook' => [
-
-		],
 		'imgur' => [
 			'reqAction_newComment',
 			'reqAction_scoreAboveOrEq',
@@ -114,9 +108,6 @@ $config['actions'] = [
 
 $config['reactions'] = [
 	'reactions_name' => [
-		'facebook' => [
-
-		],
 		'imgur' => [
 			'follow_tag' => [
 				"description" => "Follows a given tag",
@@ -201,9 +192,6 @@ $config['reactions'] = [
 		]
 	],
 	'reactions_function' => [
-		'facebook' => [
-
-		],
 		'imgur' => [
 			'reqReaction_followTag',
 			'reqReaction_unfollowTag',
@@ -234,15 +222,6 @@ $config['reactions'] = [
 
 /* Services */
 $config['services'] = [
-	'facebook' => [
-		'brief' => [
-			'name' => 'facebook',
-			'actions' => $config['actions']['actions_name']['facebook'],
-			'reactions' => $config['reactions']['reactions_name']['facebook']
-		],
-		'keyid' => '648470835603551',
-		'keysecret' => ''
-	],
 	'imgur' => [
 		'brief' => [
 			'name' => 'imgur',
@@ -300,7 +279,6 @@ $config['services'] = [
 ];
 
 $config['api'] = [
-	'facebook' => 'FacebookAPI',
 	'imgur' => 'ImgurAPI',
 	'twitter' => 'TwitterAPI',
 	'github' => 'GithubAPI',
