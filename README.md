@@ -56,7 +56,7 @@ POST **/token**
 POST **/trigger**
 > Ajoute un trigger pour l'utilisateur.
 > #### Header
-> - Authorization: Bearer ..(area access token)
+> - Authorization: (area access token)
 > #### Paramètres
 >  - action_service (string)
 >  - reaction_service (string)
