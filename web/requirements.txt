@@ -1,0 +1,10 @@
+Django == 1.11.*
+django-cors-headers == 1.*
+django-extensions == 1.8.*
+djangorestframework == 3.6.*
+gunicorn == 19.7.*
+requests == 2.18.*
+psycopg2-binary
+markdown
+django-filter
+django-allauth
