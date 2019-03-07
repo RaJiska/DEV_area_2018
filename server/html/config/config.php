@@ -37,9 +37,22 @@ $config['actions'] = [
 			]
 		],
 		'twitter' => [
-			'new_tweet',
-			'new_follower',
-			'new_follower_request'
+			'new_tweet' => [
+				"description" => "Awaits a new tweet on user's timeline",
+				"arguments" => [
+					"Username" => "(string) current username",
+				]
+			],
+			'new_follower' => [
+				"description" => "Awaits a new follower on user's account",
+				"arguments" => [
+				]
+			],
+			'new_follower_request' => [
+				"description" => "Awaits a new follow request on user's account",
+				"arguments" => [			
+				]
+			]
 		],
 		'github' => [
 			'new_commit' => [
@@ -52,13 +65,22 @@ $config['actions'] = [
 			]
 		],
 		'openweathermap' => [
-			'rain_in_city'
+			'rain_in_city' => [
+				"description" => "Awaits rain on a given city",
+				"arguments" => [
+					"City" => "(string) city",
+				]
+			]
 		],
 		'trello' => [
 
 		],
 		'yammer' => [
-
+			'new_thread' => [
+				"description" => "Awaits a new thread on user's timeline",
+				"arguments" => [
+				]
+			]
 		]
 	],
 	'actions_function' => [
@@ -141,7 +163,12 @@ $config['reactions'] = [
 			]
 		],
 		'twitter' => [
-			'tweet'
+			'tweet' => [
+				"description" => "Create a new status on user's account",
+				"arguments" => [
+					"Tag" => "(string) Tweet content"
+				]
+			]
 		],
 		'github' => [
 			'star_repo' => [
@@ -171,7 +198,6 @@ $config['reactions'] = [
 			]
 		],
 		'yammer' => [
-
 		]
 	],
 	'reactions_function' => [
@@ -233,7 +259,7 @@ $config['services'] = [
 			'reactions' => $config['reactions']['reactions_name']['twitter']
 		],
 		'keyid' => 'oGBlfZ2W73pTm8kV4SgVDIu3w',
-		'keysecret' => 'insert here'
+		'keysecret' => 'uqs2I5ZCCqaHpqWToDS3kEVDuxde8C1AJJxMkjKAiEeqONB3Fr'
 	],
 	'github' => [
 		'brief' => [

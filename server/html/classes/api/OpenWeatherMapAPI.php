@@ -11,6 +11,7 @@ class OpenWeatherMapAPI extends ServiceAPI
 		$this->urlBase = 'api.openweathermap.org/data/2.5/weather?units=metric&APPID=' . $GLOBALS['config']['services']['openweathermap']['keyid'];
 	}
 
+	// Return true if weather state is "rain" in city, false otherwhise.
 	function reqAction_rainInCity($city)
 	{
 		$content = $this->request('&q=' . $city);
