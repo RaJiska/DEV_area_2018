@@ -8,11 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9b8e14a-8a3f-4037-ab55-6d4a4523d52a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/ActionReaction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/ActionReaction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/Register.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/Register.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +59,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="30" />
-          <entry key="kt" value="3539" />
+          <entry key="kt" value="3559" />
           <entry key="txt" value="104" />
           <entry key="xml" value="286" />
         </counts>
@@ -71,7 +67,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="30" />
-          <entry key="Kotlin" value="3539" />
+          <entry key="Kotlin" value="3559" />
           <entry key="PLAIN_TEXT" value="104" />
           <entry key="XML" value="286" />
         </counts>
@@ -80,20 +76,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/Register.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="612">
               <caret line="102" column="28" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="164" column="47" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="47" />
+            <state relative-caret-position="-423">
+              <caret line="107" column="151" selection-start-line="107" selection-start-column="151" selection-end-line="107" selection-end-column="151" />
               <folding>
                 <element signature="e#35#424#0" expanded="true" />
               </folding>
@@ -122,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/ActionReaction.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="1287">
               <caret line="249" selection-start-line="249" selection-end-line="249" />
               <folding>
                 <element signature="e#35#628#0" expanded="true" />
@@ -2550,8 +2546,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_action_reaction.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/ActionReaction.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/Register.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt" />
       </list>
     </option>
   </component>
@@ -2715,6 +2711,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="1" />
@@ -2878,19 +2875,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/Register.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="164" column="47" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="47" />
-          <folding>
-            <element signature="e#35#424#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="102" column="28" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/ActionReaction.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="1287">
           <caret line="249" selection-start-line="249" selection-end-line="249" />
           <folding>
             <element signature="e#35#628#0" expanded="true" />
@@ -2898,10 +2892,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/Register.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/dev_area_2018/SignServices.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="102" column="28" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
+        <state relative-caret-position="-423">
+          <caret line="107" column="151" selection-start-line="107" selection-start-column="151" selection-end-line="107" selection-end-column="151" />
+          <folding>
+            <element signature="e#35#424#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
