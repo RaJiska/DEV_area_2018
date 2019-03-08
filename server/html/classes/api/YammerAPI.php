@@ -12,16 +12,17 @@ class YammerAPI extends ServiceAPI
 	}
 
 	// Return true if there is a new thread, false otherwhise.
-	function reqAction_newThread()
+	function reqAction_newThread($arr)
 	{
 		$content = $this->request('messages/my_feed.json');
 		$messages = $content['messages'];
 		foreach ($messages as &$message) {
 			$date = $message['created_at'];
-			$interval = abs(strtotime('now') - strtotime($date));
-			$minutes = $interval / (60);
-			if ($minutes <= 1)
+			if ($arr[0] > strtotime($date))
 				return true;
+			// $minutes = $interval / (60);
+			// if ($minutes <= 1)
+				// return true;
 		}
 		return false;
 	}
