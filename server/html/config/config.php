@@ -76,6 +76,7 @@ $config['actions'] = [
 			'new_thread' => [
 				"description" => "Awaits a new thread on user's timeline",
 				"arguments" => [
+					"date" => "(string) date"
 				]
 			]
 		]
