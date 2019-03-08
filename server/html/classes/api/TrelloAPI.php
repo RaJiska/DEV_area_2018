@@ -13,7 +13,7 @@ class TrelloAPI extends ServiceAPI
 		$this->keySecret = $GLOBALS['config']['services']['trello']['keysecret'];
 	}
 
-	function reqReaction_createBoard($argsArr) : bool /* $boardName */
+	function reqReaction_createBoard($argsArr) /* $boardName */
 	{
 		return $this->request('1/boards/?name=' . $argsArr[0] . '&key=' . $this->keyId . '&token=' . $this->Token->token, 'POST');
 	}

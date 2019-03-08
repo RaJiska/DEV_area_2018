@@ -16,13 +16,15 @@ class Trigger extends DatabaseObject
 	function insert() /* throw */
 	{
 		$found = parent::existsQuery("SELECT 1 FROM triggers
-			WHERE user_id = ? AND action_service_id = ? AND reaction_service_id = ? AND action = ? AND reaction = ? AND enabled = 1;",
+			WHERE user_id = ? AND action_service_id = ? AND reaction_service_id = ? AND action = ? AND reaction = ? AND action_params = ? AND reaction_params = ? AND enabled = 1;",
 			array(
 				$this->field_user_id,
 				$this->field_action_service_id,
 				$this->field_reaction_service_id,
 				$this->field_action,
-				$this->field_reaction
+				$this->field_reaction,
+				$this->field_action_params,
+				$this->field_reaction_params
 			)
 		);
 		if ($found)
