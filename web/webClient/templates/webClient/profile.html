@@ -1,7 +1,7 @@
 
 <div class="login-page">
 <div class="form">
-Login
+Sign in again - confirm your identity
 <form action="{% url "profile" %}" method="post">
     {% csrf_token %}
     {{ form.as_p }}

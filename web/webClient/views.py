@@ -171,5 +171,17 @@ def imgur(request):
     return render(request, 'webClient/imgur.html', locals())
 
 @login_required
+@csrf_exempt
 def services(request):
+    if request.method == 'POST':
+        user = request.user
+        auth_token = user.first_name.replace(' ', '')
+        datas = request.POST.get('token_list', None)
+        # make sure that you serialise "request_getdata"
+        print(datas)
+        
+        url = "http://area_server/trigger"
+        #response = requests.post(url, headers={'Authorization': auth_token}, data = {'action_service':'imgur', 'reaction_service': access_token, 'action': refresh_token,  'reaction': refresh_token, 'action_params': refresh_token, 'reaction_params': refresh_token})
+        #print(response.text)
+
     return render(request, 'webClient/services.html', locals())
