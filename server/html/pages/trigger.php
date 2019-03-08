@@ -20,8 +20,8 @@ function POST()
 		$ServiceAction->loadByName($_POST['action_service']);
 		$ServiceReaction = new Service($Database);
 		$ServiceReaction->loadByName($_POST['reaction_service']);
-		if (array_search($_POST['action'], $GLOBALS['config']['actions']['actions_name'][$ServiceAction->name]) === false ||
-			array_search($_POST['reaction'], $GLOBALS['config']['reactions']['reactions_name'][$ServiceReaction->name]) === false)
+		if (array_search($_POST['action'], array_keys($GLOBALS['config']['actions']['actions_name'][$ServiceAction->name])) === false ||
+			array_search($_POST['reaction'], array_keys($GLOBALS['config']['reactions']['reactions_name'][$ServiceReaction->name])) === false)
 			die(jsonError("Invalid Action Or Reaction"));
 		$Trigger = new Trigger($Database);
 		$Trigger->user_id = $User->id;
