@@ -57,7 +57,7 @@ class TwitterAPI extends ServiceAPI
 	// Tweet the tag passed as parameter on user's account
 	function reqReaction_tweet($tag)
 	{
-		$content = $this->connection->post("statuses/update", ["statuss" => $tag[0]]);
+		$content = $this->connection->post("statuses/update", ["status" => $tag[0]]);
 		return $this->formatResponse($content);
 	}
 
