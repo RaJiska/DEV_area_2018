@@ -1,7 +1,7 @@
 <?php
 require_once 'classes/api/ServiceAPI.php';
 
-class ImgurAPI extends ServiceAPI
+class TrelloAPI extends ServiceAPI
 {
 	const SERVICE_NAME = "Trello";
 
