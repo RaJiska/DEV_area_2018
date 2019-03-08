@@ -100,7 +100,7 @@ class Register : AppCompatActivity() {
             override fun getParams(): Map<String, String> {
                 val params = HashMap<String, String>()
                 params["login"] = login.toString()
-                params["service"] = pass.toString()
+                params["pass"] = pass.toString()
 
                 return params
             }

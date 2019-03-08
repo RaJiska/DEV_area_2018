@@ -4,6 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TextInputEditText
+import android.util.Base64
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -14,8 +16,6 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONArray
 import org.json.JSONObject
-import java.lang.Exception
-import java.text.FieldPosition
 
 class ActionReaction : AppCompatActivity() {
 
@@ -63,6 +63,9 @@ class ActionReaction : AppCompatActivity() {
             }
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                findViewById<TextInputEditText>(R.id.argvaction1).hint = ""
+                findViewById<TextInputEditText>(R.id.argvaction2).hint = ""
+                findViewById<TextInputEditText>(R.id.argvaction3).hint = ""
                 for (i in 0..(aboutJson.length() - 1)) {
                     if (parent != null) {
                         if (aboutJson.getJSONObject(i).getString("name") == findViewById<Spinner>(R.id.action).selectedItem.toString()) {
@@ -75,13 +78,15 @@ class ActionReaction : AppCompatActivity() {
                                     val tab = test2.split(',')
                                     var i3 = 1
                                     for (string in tab) {
-                                        if (i3 == 1)
-                                            findViewById<TextInputEditText>(R.id.argvaction1).hint = string
-                                        if (i3 == 2)
-                                            findViewById<TextInputEditText>(R.id.argvaction2).hint = string
-                                        if (i3 == 3)
-                                            findViewById<TextInputEditText>(R.id.argvaction3).hint = string
-                                        i3++
+                                        if (string != "[]") {
+                                            if (i3 == 1)
+                                                findViewById<TextInputEditText>(R.id.argvaction1).hint = string.split(':')[1].replace("}", "").replace("\"", "")
+                                            if (i3 == 2)
+                                                findViewById<TextInputEditText>(R.id.argvaction2).hint = string.split(':')[1].replace("}", "").replace("\"", "")
+                                            if (i3 == 3)
+                                                findViewById<TextInputEditText>(R.id.argvaction3).hint = string.split(':')[1].replace("}", "").replace("\"", "")
+                                            i3++
+                                        }
                                     }
                                     println(key)
                                 }
@@ -126,6 +131,9 @@ class ActionReaction : AppCompatActivity() {
             }
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                findViewById<TextInputEditText>(R.id.argvreaction1).hint = ""
+                findViewById<TextInputEditText>(R.id.argvreaction2).hint = ""
+                findViewById<TextInputEditText>(R.id.argvreaction3).hint = ""
                 for (i in 0..(aboutJson.length() - 1)) {
                     if (parent != null) {
                         if (aboutJson.getJSONObject(i).getString("name") == findViewById<Spinner>(R.id.reaction).selectedItem.toString()) {
@@ -138,13 +146,15 @@ class ActionReaction : AppCompatActivity() {
                                     val tab = test2.split(',')
                                     var i3 = 1
                                     for (string in tab) {
-                                        if (i3 == 1)
-                                            findViewById<TextInputEditText>(R.id.argvreaction1).hint = string
-                                        if (i3 == 2)
-                                            findViewById<TextInputEditText>(R.id.argvreaction2).hint = string
-                                        if (i3 == 3)
-                                            findViewById<TextInputEditText>(R.id.argvreaction3).hint = string
-                                        i3++
+                                        if (string != "[]") {
+                                            if (i3 == 1)
+                                                findViewById<TextInputEditText>(R.id.argvreaction1).hint = string.split(':')[1].replace("}", "").replace("\"", "")
+                                            if (i3 == 2)
+                                                findViewById<TextInputEditText>(R.id.argvreaction2).hint = string.split(':')[1].replace("}", "").replace("\"", "")
+                                            if (i3 == 3)
+                                                findViewById<TextInputEditText>(R.id.argvreaction3).hint = string.split(':')[1].replace("}", "").replace("\"", "")
+                                            i3++
+                                        }
                                     }
                                     println(key)
                                 }
@@ -185,12 +195,61 @@ class ActionReaction : AppCompatActivity() {
         queue.add(stringReq)
     }
 
-    fun onClickSendArea(v: View) {
-
-    }
-
     fun onClickBack(v: View) {
         val intent = Intent(this, SignServices::class.java)
         startActivity(intent)
+    }
+
+    fun onClickSendArea(v: View) {
+        val queue = Volley.newRequestQueue(this)
+        var url = globalClass.apilink + "/trigger"
+        val postRequest = object : StringRequest(Request.Method.POST, url,
+            Response.Listener { response ->
+                var strResp = response.toString()
+                println(strResp)
+            },
+            Response.ErrorListener { response ->
+                Log.d("Error.Response", response.toString())
+            }
+        ) {
+            override fun getParams(): Map<String, String> {
+                val act1 = findViewById<TextInputEditText>(R.id.argvaction1).text.toString()
+                val act2 = findViewById<TextInputEditText>(R.id.argvaction2).text.toString()
+                val act3 = findViewById<TextInputEditText>(R.id.argvaction3).text.toString()
+                val react1 = findViewById<TextInputEditText>(R.id.argvreaction1).text.toString()
+                val react2 = findViewById<TextInputEditText>(R.id.argvreaction2).text.toString()
+                val react3 = findViewById<TextInputEditText>(R.id.argvreaction3).text.toString()
+                var action = ""
+                var reaction = ""
+                if (findViewById<TextInputEditText>(R.id.argvaction1).hint.isNotEmpty())
+                    action += Base64.encodeToString(act1.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                if (findViewById<TextInputEditText>(R.id.argvaction2).hint.isNotEmpty())
+                    action += ";" + Base64.encodeToString(act2.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                if (findViewById<TextInputEditText>(R.id.argvaction3).hint.isNotEmpty())
+                    action += ";" + Base64.encodeToString(act3.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                if (findViewById<TextInputEditText>(R.id.argvreaction1).hint.isNotEmpty())
+                    reaction += Base64.encodeToString(react1.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                if (findViewById<TextInputEditText>(R.id.argvreaction2).hint.isNotEmpty())
+                    reaction += ";" + Base64.encodeToString(react2.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                if (findViewById<TextInputEditText>(R.id.argvreaction3).hint.isNotEmpty())
+                    reaction += ";" + Base64.encodeToString(react3.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                val params = HashMap<String, String>()
+                params["action_service"] = findViewById<Spinner>(R.id.action).selectedItem.toString()
+                params["reaction_service"] = findViewById<Spinner>(R.id.reaction).selectedItem.toString()
+                params["action"] = findViewById<Spinner>(R.id.action2).selectedItem.toString()
+                params["reaction"] = findViewById<Spinner>(R.id.reaction2).selectedItem.toString()
+                params["action_params"] = action
+                params["reaction_params"] = reaction
+
+                return params
+            }
+
+            override fun getHeaders(): MutableMap<String, String> {
+                val headers = HashMap<String, String>()
+                headers["Authorization"] = globalClass.token
+                return headers
+            }
+        }
+        queue.add(postRequest)
     }
 }

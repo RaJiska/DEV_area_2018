@@ -140,6 +140,7 @@ class SignServices : AppCompatActivity() {
     private fun uploadToken(service: String, token: String) {
         val queue = Volley.newRequestQueue(this)
         var url = globalclass.apilink + "/token"
+        val area = globalclass.token
         val postRequest = object : StringRequest(Request.Method.POST, url,
             Response.Listener { response ->
                 try {
@@ -158,6 +159,11 @@ class SignServices : AppCompatActivity() {
                 params["service"] = service
 
                 return params
+            }
+            override fun getHeaders(): MutableMap<String, String> {
+                val headers = HashMap<String, String>()
+                headers["Authorization"] = area
+                return headers
             }
         }
         queue.add(postRequest)
