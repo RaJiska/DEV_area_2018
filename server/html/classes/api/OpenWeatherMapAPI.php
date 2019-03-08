@@ -12,9 +12,9 @@ class OpenWeatherMapAPI extends ServiceAPI
 	}
 
 	// Return true if weather state is "rain" in city, false otherwhise.
-	function reqAction_rainInCity($city)
+	function reqAction_rainInCity($arr)
 	{
-		$content = $this->request('&q=' . $city);
+		$content = $this->request('&q=' . $arr[0]);
 		$state = $content['weather'][0]['main'];
 		$temp = $content['main']['temp'];
 		if ($state == "Rain")

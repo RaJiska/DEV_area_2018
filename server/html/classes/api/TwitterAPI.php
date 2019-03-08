@@ -18,10 +18,8 @@ class TwitterAPI extends ServiceAPI
 	}
 
 	// Return true if there is a recent tweet, false otherwhise.
-	function reqAction_newTweet($name = null)
+	function reqAction_newTweet($arr)
 	{
-		$name ?
-		$content = $this->connection->get("statuses/user_timeline", ["name" => $name[0]]) :
 		$content = $this->connection->get("statuses/user_timeline");
 		$date = $content[0]->{'created_at'};
 		$interval = abs(strtotime('now') - strtotime($date));
@@ -33,7 +31,7 @@ class TwitterAPI extends ServiceAPI
 	}
 
 	// Return true if there is a recent follower, false otherwhise.
-	function reqAction_newFollower()
+	function reqAction_newFollower($arr)
 	{
 		$content = $this->connection->get("followers/list");
 		$users = $content->{'users'};
@@ -48,7 +46,7 @@ class TwitterAPI extends ServiceAPI
 	}
 
 	// Return true if there is a follow request, false otherwhise.
-	function reqAction_newFollowerRequest()
+	function reqAction_newFollowerRequest($arr)
 	{
 		$content = $this->connection->get("friendships/incoming");
 		if (!count($content->{'ids'}))
@@ -59,7 +57,7 @@ class TwitterAPI extends ServiceAPI
 	// Tweet the tag passed as parameter on user's account
 	function reqReaction_tweet($tag)
 	{
-		$content = $this->connection->post("statuses/update", ["statuss" => $tag]);
+		$content = $this->connection->post("statuses/update", ["statuss" => $tag[0]]);
 		return $this->formatResponse($content);
 	}
 
