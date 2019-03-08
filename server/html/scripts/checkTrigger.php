@@ -4,8 +4,12 @@ require_once 'scripts/triggersFunctions.php';
 require_once 'classes/Trigger.php';
 require_once 'classes/Service.php';
 require_once 'classes/User.php';
+require_once 'classes/api/GithubAPI.php';
 require_once 'classes/api/ImgurAPI.php';
+require_once 'classes/api/OpenWeatherMapAPI.php';
+require_once 'classes/api/TrelloAPI.php';
 require_once 'classes/api/TwitterAPI.php';
+require_once 'classes/api/YammerAPI.php';
 
 try {
 	$Database = new Database();
