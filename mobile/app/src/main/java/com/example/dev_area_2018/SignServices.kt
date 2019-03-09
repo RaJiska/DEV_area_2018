@@ -105,7 +105,7 @@ class SignServices : AppCompatActivity() {
 
     fun onClickTrello(v: View) {
         globalclass.services = "trello"
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://trello.com/1/authorize?expiration=1day&name=MyPersonalToken&scope=read&response_type=token&key=$trelloid&return_url=$redirectUri"))
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://trello.com/1/authorize?expiration=1day&name=MyPersonalToken&scope=read,write,account&response_type=token&key=$trelloid&return_url=$redirectUri"))
         startActivity(intent)
     }
 
@@ -140,9 +140,11 @@ class SignServices : AppCompatActivity() {
     private fun uploadToken(service: String, token: String) {
         val queue = Volley.newRequestQueue(this)
         var url = globalclass.apilink + "/token"
+        val area = globalclass.token
         val postRequest = object : StringRequest(Request.Method.POST, url,
             Response.Listener { response ->
                 try {
+                    println(response)
                     println("okkkkkkkkkkkkkkkkkkkkkkkk")
                 } catch (e: Exception) {
                     println(e)
@@ -154,10 +156,15 @@ class SignServices : AppCompatActivity() {
         ) {
             override fun getParams(): Map<String, String> {
                 val params = HashMap<String, String>()
-                params["login"] = token
+                params["service_token"] = token
                 params["service"] = service
 
                 return params
+            }
+            override fun getHeaders(): MutableMap<String, String> {
+                val headers = HashMap<String, String>()
+                headers["Authorization"] = area
+                return headers
             }
         }
         queue.add(postRequest)
