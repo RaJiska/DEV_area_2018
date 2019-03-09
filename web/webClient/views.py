@@ -207,18 +207,14 @@ def services(request):
                 break
             if i != 0:
                 actionParams += ";";
-            actionParams += str(base64.b64encode(bytes(currParam, 'utf-8')).decode("utf-8"))
+            actionParams += base64.b64encode(currParam.encode('utf-8')).decode("'utf-8")
         for i in range(0, 1000):
             currParam = request.POST.get('reaction_param_' + str(i), None)
             if currParam == None:
                 break
             if i != 0:
                 reactionParams += ";";
-            reactionParams += str(base64.b64encode(bytes(currParam, 'utf-8')).decode("utf-8"))
-
-        #actionParams = request.POST.get('action_param_0', '')
-        # make sure that you serialise "request_getdata"
-        #print(datas)
+            reactionParams += base64.b64encode(currParam.encode('utf-8')).decode("utf-8")
 
         url = "http://area_server/trigger"
         response = requests.post(url, headers={'Authorization': auth_token}, data = {'action_service':request.POST.get('action_service', ''), 'reaction_service': request.POST.get('reaction_service', ''), 'action': request.POST.get('action', ''),  'reaction': request.POST.get('reaction', ''), 'action_params': actionParams, 'reaction_params': reactionParams})
