@@ -8,6 +8,10 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse, Http404
+import requests
+import json
+import os
 
 from .forms import LogForm
 
@@ -179,9 +183,17 @@ def services(request):
         datas = request.POST.get('token_list', None)
         # make sure that you serialise "request_getdata"
         print(datas)
-        
+
         url = "http://area_server/trigger"
         #response = requests.post(url, headers={'Authorization': auth_token}, data = {'action_service':'imgur', 'reaction_service': access_token, 'action': refresh_token,  'reaction': refresh_token, 'action_params': refresh_token, 'reaction_params': refresh_token})
         #print(response.text)
 
     return render(request, 'webClient/services.html', locals())
+
+def clientapk(request):
+    if (os.path.exists("/shared_folder/area.apk") == False):
+        raise Http404
+    with open("/shared_folder/area.apk", 'rb') as fh:
+        response = HttpResponse(fh.read(), content_type="application/vnd.android.package-archive")
+        response['Content-Disposition'] = 'inline; filename=client.apk'
+        return response

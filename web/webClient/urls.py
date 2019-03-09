@@ -10,5 +10,5 @@ urlpatterns = [
     url('profile', views.profile, name='profile'),
     url('imgur', views.imgur),
     url('services', views.services),
-    url('connexion', views.connexion),
+    url('connexion', views.connexion)
 ]

@@ -22,5 +22,6 @@ urlpatterns = [
     url('web/', include('webClient.urls')),
     url('accounts/profile/', views.profile),
     url(r'^accounts/', include('allauth.urls')),
+    url(r'^client.apk', views.clientapk),
     url('', views.home),
 ]
