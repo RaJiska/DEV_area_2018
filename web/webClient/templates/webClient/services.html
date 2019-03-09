@@ -7,6 +7,196 @@
     <li class='last'><a href='http://localhost:8081/web/login'><span>Login</span></a></li>
     </ul>
 </div>
+
+<h1>Remplir UN formulaire action, UN formulaire réaction et cliquer sur "save"</h1>
+
+<h1>ACTION :</h1>
+
+<h2>Imgur :</h2>
+<form id="imgur__new_comment" action="">
+   <h3>Imgur : new comment</h3>
+   <p>Galery ID</p>
+   <p><input type="text" name="Galery ID" /></p>
+   <p>Date (int)</p>
+   <p><input type="text" name="Date" /></p>
+
+</form>
+
+
+<form id="imgur__new_comment" action="">
+   <h3>Imgur : Score above or eq</h3>
+   <p>Galery ID</p>
+   <p><input type="text" name="Galery ID" /></p>
+   <p>Score</p>
+   <p><input type="text" name="Score" /></p>
+
+</form>
+
+
+<form id="imgur__score_below" action="">
+   <h3>Imgur : Score below</h3>
+   <p>Gallery ID</p>
+  <p><input type="text" name="Galery ID" /></p>
+  <p>Score</p>
+  <p><input type="text" name="Score" /></p>
+
+</form>
+
+<h2>Twitter :</h2>
+
+
+
+<form id="twitter__new_tweet" action="">
+   <h3>Twitter : New tweet</h3>
+   <p>Current Username</p>
+   <p><input type="text" name="Username" /></p>
+
+</form>
+
+
+<form id="twitter__new_follower" action="">
+   <h3>Twitter : New Follower</h3>
+   <input type="checkbox" name="twitter__new_follower_check" value="True"/>
+
+</form>
+
+<form id="twitter__new_follower_request" action="">
+   <h3>Twitter : New Follower request</h3>
+   <input type="checkbox" name="twitter__new_follower_request_check" value="True"/>
+
+</form>
+
+<h2>Github :</h2>
+
+<form id="github__new_follower" action="">
+   <h3>Github : New Commit</h3>
+   <p>Owner</p>
+   <p><input type="text" name="Owner" /></p>
+   <p>Repository</p>
+   <p><input type="text" name="Repository" /></p>
+   <p>Date(int)</p>
+   <p><input type="text" name="Date" /></p>
+
+</form>
+
+<h2>Openweathermap</h2>
+
+<form id="openweathermap__rain_in_city" action="">
+   <h3>Openweathermap : Raining in city</h3>
+   <p>City</p>
+   <p><input type="text" name="City" /></p>
+
+</form>
+
+<h2>Yammer</h2>
+
+<form id="yammer__new_thread" action="">
+   <h3>Yammer : New thread</h3>
+
+</form>
+
+
+<h1>REACTION :</h1>
+
+<h2>Imgur :</h2>
+<form id="imgur__follow_tag" action="">
+   <h3>Imgur : Follow tag</h3>
+   <p>Tag to follow</p>
+   <p><input type="text" name="Tag" /></p>
+
+</form>
+
+
+<form id="imgur__unfollow_tag" action="">
+   <h3>Imgur : Unfollow tag</h3>
+   <p>Tag to unfollow</p>
+   <p><input type="text" name="Tag" /></p>
+
+</form>
+
+
+<form id="imgur__comment" action="">
+   <h3>Imgur : Comment</h3>
+   <p>Gallery ID</p>
+   <p><input type="text" name="Galery ID" /></p>
+   <p>Text</p>
+   <p><input type="text" name="Text" /></p>
+
+</form>
+
+
+<form id="imgur__uncomment" action="">
+   <h3>Imgur : Uncomment</h3>
+   <p>Comment ID</p>
+  <p><input type="text" name="Comment ID" /></p>
+
+</form>
+
+
+<form id="imgur__favorite_album" action="">
+   <h3>Imgur : Favorite_Album</h3>
+   <p>Album ID</p>
+  <p><input type="text" name="Album ID" /></p>
+
+</form>
+
+
+<form id="imgur__upload_image" action="">
+   <h3>Imgur : Upload image</h3>
+   <p>Image (Base64)</p>
+   <p><input type="text" name="Image" /></p>
+
+</form>
+
+<form id="imgur__delete_image" action="">
+   <h3>Imgur : Delete image</h3>
+   <p>Image ID</p>
+   <p><input type="text" name="Image ID" /></p>
+
+</form>
+
+<h2>Twitter :</h2>
+
+
+<form id="twitter__tweet" action="">
+   <h3>Twitter : Tweet</h3>
+   <p>Tag</p>
+   <p><input type="text" name="Tag" /></p>
+
+</form>
+
+
+
+<h2>Github :</h2>
+
+<form id="github__star_repo" action="">
+   <h3>Github : Star repository</h3>
+   <p>User owning the repository</p>
+  <p><input type="text" name="Owner" /></p>
+  <p>Repository name</p>
+  <p><input type="text" name="Repository" /></p>
+
+</form>
+
+<form id="github__unstar_repo" action="">
+   <h3>Github : Unstar repository</h3>
+   <p>User owning the repository</p>
+  <p><input type="text" name="Owner" /></p>
+  <p>Repository name</p>
+  <p><input type="text" name="Repository" /></p>
+
+</form>
+
+<h2>Trello</h2>
+
+<form id="trello__create_board" action="">
+   <h3>Trello : Create a board</h3>
+   <p>Board name</p>
+  <p><input type="text" name="Board Name" /></p>
+  <input type="button" onclick="submitForm();" value="Save" />
+</form>
+
+
 <style>
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -106,3 +296,51 @@
 #cssmenu > ul > li > a:hover:after {
   background: #47c9af;
 }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function submitForm() {
+        var actions = {
+                    imgur__new_comment: $("#imgur__new_comment").serializeArray(),
+                    imgur__new_comment: $("#imgur__new_comment").serializeArray(),
+                    imgur__score_below: $("#imgur__score_below").serializeArray(),
+                    twitter__new_tweet: $("#twitter__new_tweet").serializeArray(),
+                    twitter__new_follower: $("#twitter__new_follower").serializeArray(),
+                    twitter__new_follower_request: $("#twitter__new_follower_request").serializeArray(),
+                    github__new_follower: $("#github__new_follower").serializeArray(),
+                    openweathermap__rain_in_city: $("#openweathermap__rain_in_city").serializeArray(),
+                    yammer__new_thread: $("#yammer__new_thread").serializeArray(),
+            };
+            var reactions = {
+                    imgur__follow_tag: $("#imgur__follow_tag").serializeArray(),
+                    imgur__unfollow_tag: $("#imgur__unfollow_tag").serializeArray(),
+                    imgur__comment: $("#imgur__comment").serializeArray(),
+                    imgur__uncomment: $("#imgur__uncomment").serializeArray(),
+                    imgur__favorite_album: $("#imgur__favorite_album").serializeArray(),
+                    imgur__upload_image: $("#imgur__upload_image").serializeArray(),
+                    imgur__delete_image: $("#imgur__delete_image").serializeArray(),
+                    twitter__tweet: $("#twitter__tweet").serializeArray(),
+                    github__star_repo: $("#github__star_repo").serializeArray(),
+                    github__unstar_repo: $("#github__unstar_repo").serializeArray(),
+                    trello__create_board: $("#trello__create_board").serializeArray(),
+            };
+            var details = {"action":actions, "reaction":reactions};
+    var jsonString = JSON.stringify(details);
+    $( document ).ready(function() {
+            $('form').each(function() { this.reset() });
+        });
+    console.log(jsonString);
+    $.ajax({
+       type: "POST",
+       url: "/web/services",
+       dataType: "json",
+       traditional: true,
+       data: {'token_list': JSON.stringify(details)},
+       success: function(data) {
+               console.log(data["HTTPRESPONSE"]);
+       }
+    });
+}
+</script>
