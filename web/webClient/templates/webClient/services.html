@@ -10,192 +10,105 @@
 
 <h1>Remplir UN formulaire action, UN formulaire réaction et cliquer sur "save"</h1>
 
-<h1>ACTION :</h1>
+<script type="text/javascript">
+   var json = {{ servicesJSON|safe }};
 
-<h2>Imgur :</h2>
-<form id="imgur__new_comment" action="">
-   <h3>Imgur : new comment</h3>
-   <p>Galery ID</p>
-   <p><input type="text" name="Galery ID" /></p>
-   <p>Date (int)</p>
-   <p><input type="text" name="Date" /></p>
+   function serviceChange(type) {
+      var elems = document.getElementById(type);
+      while (elems.hasChildNodes())
+         elems.removeChild(elems.firstChild);
+      var service = document.getElementById(type + '_service');
+      var selectedService = service.options[service.selectedIndex].text;
+      for (var i = 0; i < json['server']['services'].length; i++) {
+         var obj = json['server']['services'][i];
+         if (obj.name.localeCompare(selectedService) != 0)
+            continue;
+         for (var j = 0; j < Object.keys(obj[type + 's']).length; j++) {
+            var opt = document.createElement('option');
+            opt.value = Object.keys(obj[type + 's'])[j];
+            opt.innerHTML = Object.keys(obj[type + 's'])[j];
+            elems.appendChild(opt);
+         }
+         break;
+      }
+      accRecChange(type);
+   }
 
+   function accRecChange(type)
+   {
+      var params = document.getElementById(type + "_params");
+      while (params.hasChildNodes())
+         params.removeChild(params.firstChild);
+      var service = document.getElementById(type + '_service');
+      var selectedService = service.options[service.selectedIndex].text;
+      var accRec = document.getElementById(type);
+      var selectedAccRec = accRec.options[accRec.selectedIndex].text;
+      var serviceObj = null;
+      var accRecObj = null;
+      for (var i = 0; i < json['server']['services'].length; i++) {
+         var obj = json['server']['services'][i];
+         if (obj.name.localeCompare(selectedService) != 0)
+            continue;
+         serviceObj = obj;
+         break;
+      }
+      for (var i = 0; i < Object.keys(serviceObj[type + 's']).length; i++) {
+         if (Object.keys(serviceObj[type + 's'])[i].localeCompare(selectedAccRec) == 0) {
+            accRecObj = Object.values(obj[type + 's'])[i];
+            break;
+         }
+      }
+      for (var i = 0; i < Object.keys(accRecObj['arguments']).length; i++) {
+         var text = document.createElement('div');
+         text.innerHTML = Object.keys(accRecObj['arguments'])[i] + ": <input type='text' name='" + type + "_param_" + i + "'>";
+         params.appendChild(text);
+      }
+   }
+</script>
+
+<form action='services' method='post'>
+   Service Action
+   <select name='action_service' id='action_service' onchange='serviceChange("action")'>
+   </select>
+   Service Reaction
+   <select name='reaction_service' id='reaction_service' onchange='serviceChange("reaction")'>
+   </select>
+   <br>
+   Action
+   <select name='action' id='action' onchange='accRecChange("action")'>
+   </select>
+   Reaction
+   <select name='reaction' id='reaction' onchange='accRecChange("reaction")'>
+   </select>
+   <br>
+   <br>
+   <h2>Action Params</h2>
+   <div id='action_params'></div>
+   <h2>Reaction Params</h2>
+   <div id='reaction_params'></div>
+   <input type='submit'>
 </form>
 
+<script type="text/javascript">
 
-<form id="imgur__new_comment" action="">
-   <h3>Imgur : Score above or eq</h3>
-   <p>Galery ID</p>
-   <p><input type="text" name="Galery ID" /></p>
-   <p>Score</p>
-   <p><input type="text" name="Score" /></p>
+   action_service = document.getElementById('action_service');
+   reaction_service = document.getElementById('reaction_service');
+   for (var i = 0; i < json['server']['services'].length; i++) {
+      var obj = json['server']['services'][i];
+      var opt1 = document.createElement('option');
+      opt1.value = obj.name;
+      opt1.innerHTML = obj.name;
+      var opt2 = document.createElement('option');
+      opt2.value = obj.name;
+      opt2.innerHTML = obj.name;
+      action_service.appendChild(opt1);
+      reaction_service.appendChild(opt2);
+   }
 
-</form>
+   serviceChange("action");
+   serviceChange("reaction");
 
-
-<form id="imgur__score_below" action="">
-   <h3>Imgur : Score below</h3>
-   <p>Gallery ID</p>
-  <p><input type="text" name="Galery ID" /></p>
-  <p>Score</p>
-  <p><input type="text" name="Score" /></p>
-
-</form>
-
-<h2>Twitter :</h2>
-
-
-
-<form id="twitter__new_tweet" action="">
-   <h3>Twitter : New tweet</h3>
-   <p>Current Username</p>
-   <p><input type="text" name="Username" /></p>
-
-</form>
-
-
-<form id="twitter__new_follower" action="">
-   <h3>Twitter : New Follower</h3>
-   <input type="checkbox" name="twitter__new_follower_check" value="True"/>
-
-</form>
-
-<form id="twitter__new_follower_request" action="">
-   <h3>Twitter : New Follower request</h3>
-   <input type="checkbox" name="twitter__new_follower_request_check" value="True"/>
-
-</form>
-
-<h2>Github :</h2>
-
-<form id="github__new_follower" action="">
-   <h3>Github : New Commit</h3>
-   <p>Owner</p>
-   <p><input type="text" name="Owner" /></p>
-   <p>Repository</p>
-   <p><input type="text" name="Repository" /></p>
-   <p>Date(int)</p>
-   <p><input type="text" name="Date" /></p>
-
-</form>
-
-<h2>Openweathermap</h2>
-
-<form id="openweathermap__rain_in_city" action="">
-   <h3>Openweathermap : Raining in city</h3>
-   <p>City</p>
-   <p><input type="text" name="City" /></p>
-
-</form>
-
-<h2>Yammer</h2>
-
-<form id="yammer__new_thread" action="">
-   <h3>Yammer : New thread</h3>
-
-</form>
-
-
-<h1>REACTION :</h1>
-
-<h2>Imgur :</h2>
-<form id="imgur__follow_tag" action="">
-   <h3>Imgur : Follow tag</h3>
-   <p>Tag to follow</p>
-   <p><input type="text" name="Tag" /></p>
-
-</form>
-
-
-<form id="imgur__unfollow_tag" action="">
-   <h3>Imgur : Unfollow tag</h3>
-   <p>Tag to unfollow</p>
-   <p><input type="text" name="Tag" /></p>
-
-</form>
-
-
-<form id="imgur__comment" action="">
-   <h3>Imgur : Comment</h3>
-   <p>Gallery ID</p>
-   <p><input type="text" name="Galery ID" /></p>
-   <p>Text</p>
-   <p><input type="text" name="Text" /></p>
-
-</form>
-
-
-<form id="imgur__uncomment" action="">
-   <h3>Imgur : Uncomment</h3>
-   <p>Comment ID</p>
-  <p><input type="text" name="Comment ID" /></p>
-
-</form>
-
-
-<form id="imgur__favorite_album" action="">
-   <h3>Imgur : Favorite_Album</h3>
-   <p>Album ID</p>
-  <p><input type="text" name="Album ID" /></p>
-
-</form>
-
-
-<form id="imgur__upload_image" action="">
-   <h3>Imgur : Upload image</h3>
-   <p>Image (Base64)</p>
-   <p><input type="text" name="Image" /></p>
-
-</form>
-
-<form id="imgur__delete_image" action="">
-   <h3>Imgur : Delete image</h3>
-   <p>Image ID</p>
-   <p><input type="text" name="Image ID" /></p>
-
-</form>
-
-<h2>Twitter :</h2>
-
-
-<form id="twitter__tweet" action="">
-   <h3>Twitter : Tweet</h3>
-   <p>Tag</p>
-   <p><input type="text" name="Tag" /></p>
-
-</form>
-
-
-
-<h2>Github :</h2>
-
-<form id="github__star_repo" action="">
-   <h3>Github : Star repository</h3>
-   <p>User owning the repository</p>
-  <p><input type="text" name="Owner" /></p>
-  <p>Repository name</p>
-  <p><input type="text" name="Repository" /></p>
-
-</form>
-
-<form id="github__unstar_repo" action="">
-   <h3>Github : Unstar repository</h3>
-   <p>User owning the repository</p>
-  <p><input type="text" name="Owner" /></p>
-  <p>Repository name</p>
-  <p><input type="text" name="Repository" /></p>
-
-</form>
-
-<h2>Trello</h2>
-
-<form id="trello__create_board" action="">
-   <h3>Trello : Create a board</h3>
-   <p>Board name</p>
-  <p><input type="text" name="Board Name" /></p>
-  <input type="button" onclick="submitForm();" value="Save" />
-</form>
-
+</script>
 
 <style>
 

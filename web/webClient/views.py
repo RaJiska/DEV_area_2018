@@ -12,6 +12,7 @@ from django.http import HttpResponse, Http404
 import requests
 import json
 import os
+import base64
 
 from .forms import LogForm
 
@@ -180,14 +181,31 @@ def services(request):
     if request.method == 'POST':
         user = request.user
         auth_token = user.first_name.replace(' ', '')
-        datas = request.POST.get('token_list', None)
+        actionParams = '';
+        reactionParams = '';
+        for i in range(0, 1000):
+            currParam = request.POST.get('action_param_' + str(i), None)
+            if currParam == None:
+                break
+            if i != 0:
+                actionParams += ";";
+            actionParams += str(base64.b64encode(bytes(currParam, 'utf-8')).decode("utf-8"))
+        for i in range(0, 1000):
+            currParam = request.POST.get('reaction_param_' + str(i), None)
+            if currParam == None:
+                break
+            if i != 0:
+                reactionParams += ";";
+            reactionParams += str(base64.b64encode(bytes(currParam, 'utf-8')).decode("utf-8"))
+
+        #actionParams = request.POST.get('action_param_0', '')
         # make sure that you serialise "request_getdata"
-        print(datas)
+        #print(datas)
 
         url = "http://area_server/trigger"
-        #response = requests.post(url, headers={'Authorization': auth_token}, data = {'action_service':'imgur', 'reaction_service': access_token, 'action': refresh_token,  'reaction': refresh_token, 'action_params': refresh_token, 'reaction_params': refresh_token})
-        #print(response.text)
-
+        response = requests.post(url, headers={'Authorization': auth_token}, data = {'action_service':request.POST.get('action_service', ''), 'reaction_service': request.POST.get('reaction_service', ''), 'action': request.POST.get('action', ''),  'reaction': request.POST.get('reaction', ''), 'action_params': actionParams, 'reaction_params': reactionParams})
+        print(response.text)
+    servicesJSON = requests.get("http://area_server/about.json").text
     return render(request, 'webClient/services.html', locals())
 
 def clientapk(request):
