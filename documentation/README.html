@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="dev_area_2018">DEV_area_2018</h1>
+<h2 id="lancer-les-services">Lancer les services</h2>
+<ol>
+<li>
+<p><strong>Cloner</strong> le repository</p>
+</li>
+<li>
+<p><code>docker-compose build &amp;&amp; docker-compose up -d</code></p>
+</li>
+</ol>
+<h2 id="routes-api">Routes API</h2>
+<p>Url index: <a href="http://localhost:8080">http://localhost:8080</a></p>
+<p>GET <strong>/about.json</strong></p>
+<blockquote>
+<p>Liste les services / actions / réaction.</p>
+<h4 id="header">Header</h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="paramètres">Paramètres</h4>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+<p>GET <strong>/user</strong></p>
+<blockquote>
+<p>Connecte un utilisateur.</p>
+<h4 id="header-1">Header</h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="paramètres-1">Paramètres</h4>
+<ul>
+<li>login (string)</li>
+<li>pass (string)</li>
+</ul>
+</blockquote>
+<p>POST <strong>/user</strong></p>
+<blockquote>
+<p>Enregistre un utilisateur.</p>
+<h4 id="header-2">Header</h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="paramètres-2">Paramètres</h4>
+<ul>
+<li>login (string)</li>
+<li>pass (string)</li>
+</ul>
+</blockquote>
+<p>GET <strong>/token</strong></p>
+<blockquote>
+<p>Renvoie le token d’accès d’un utilisateur pour un service donné.</p>
+<h4 id="header-3">Header</h4>
+<ul>
+<li>Authorization: Bearer …(area access token)</li>
+</ul>
+<h4 id="paramètres-3">Paramètres</h4>
+<ul>
+<li>login (string)</li>
+<li>service (string)</li>
+</ul>
+</blockquote>
+<p>POST <strong>/token</strong></p>
+<blockquote>
+<p>Enregistre le token d’accès d’un utilisateur pour un service donné .</p>
+<h4 id="header-4">Header</h4>
+<ul>
+<li>Authorization: Bearer …(area access token)</li>
+</ul>
+<h4 id="paramètres-4">Paramètres</h4>
+<ul>
+<li>service (string)</li>
+<li>service_token (string)</li>
+<li>service_token_secret (string) (optional)</li>
+</ul>
+</blockquote>
+<p>POST <strong>/trigger</strong></p>
+<blockquote>
+<p>Ajoute un trigger pour l’utilisateur.</p>
+<h4 id="header-5">Header</h4>
+<ul>
+<li>Authorization: (area access token)</li>
+</ul>
+<h4 id="paramètres-5">Paramètres</h4>
+<ul>
+<li>action_service (string)</li>
+<li>reaction_service (string)</li>
+<li>action (string)</li>
+<li>reaction (string)</li>
+<li>action_params (base64 separated with ‘;’) (optional)</li>
+<li>reaction_params (base64 separated with ‘;’) (optional)</li>
+</ul>
+<p>Exemple action_params:<br>
+curl -X POST ‘<a href="http://localhost:8080/trigger">http://localhost:8080/trigger</a>’ --data 'action_service=imgur&amp;reaction_service=github&amp;action=new_comment&amp;reaction=star_repo&amp;action_params=UkN0aWpVRQ==;MTU1MTgwOTkzMw==&amp;reaction_params=UmFKaXNrYQ==;REVWX2FyZWFfMjAxOA==</p>
+</blockquote>
+<h2 id="contributeurs">Contributeurs</h2>
+<p>Sarah Godard<br>
+Doriann Corlouer<br>
+Quentin Santos<br>
+Kévin Severin<br>
+Cédric Ogire<br>
+Kévin Bidet</p>
+</div>
+</body>
+
+</html>
