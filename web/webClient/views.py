@@ -177,6 +177,24 @@ def imgur(request):
 
 @login_required
 @csrf_exempt
+def yammer(request):
+       # recuperation de la liste des bouteille
+    if request.method == 'POST':
+        user = request.user
+        auth_token = user.first_name.replace(' ', '')
+        # no need to do this
+        # request_csrf_token = request.POST.get('csrfmiddlewaretoken', '')
+        datas = request.POST.get('token_list', None)
+        # make sure that you serialise "request_getdata"
+        datas = datas.replace("\"", "").replace("{", "").replace("}", "").split(",")
+        access_token = datas[0].split(':')[1]
+        url = "http://area_server/token"
+        response = requests.post(url, headers={'Authorization': auth_token}, data = {'service':'yammer', 'service_token': access_token})
+        print(response.text)
+    return render(request, 'webClient/yammer.html', locals())
+
+@login_required
+@csrf_exempt
 def trello(request):
        # recuperation de la liste des bouteille
     if request.method == 'POST':

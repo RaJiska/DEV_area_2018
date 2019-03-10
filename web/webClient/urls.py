@@ -11,5 +11,6 @@ urlpatterns = [
     url('imgur', views.imgur),
     url('services', views.services),
     url('connexion', views.connexion),
-    url('trello', views.trello)
+    url('trello', views.trello),
+    url('yammer', views.yammer)
 ]
